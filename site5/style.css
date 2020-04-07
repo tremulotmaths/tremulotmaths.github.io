@@ -1,0 +1,26 @@
+h1 {
+    color:blue;
+    text-align:center;
+}
+body {
+    background-color:rgb(239, 239, 239);
+    font-size:130%;
+}
+#left {
+    text-align:left;
+}
+#right {
+    text-align:right;
+
+}
+#retind {
+    float:center;
+    background-color: lightgrey;
+    width: 30px;
+    padding: 5px;
+    margin: 2px;
+}
+a {
+    color:black;
+    font-weight: bold;
+}

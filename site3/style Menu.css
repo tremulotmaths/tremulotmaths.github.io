@@ -1,0 +1,60 @@
+body {
+	background-color: grey;
+	text-align: center;
+}
+
+h1 {
+	font-size: 15pt;
+	color: darkblue;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	border-width: 2pt;
+	border-style: solid;
+}
+
+h2 {
+	font-size: 25pt;
+	color: darkblue;
+	font-family: Papyrus;
+	text-align: center;
+	text-decoration: none;
+}
+
+.index {
+	background-color: darkorange;
+	text-decoration: none;
+	color: darkblue;
+	font-size: 15pt;
+	font-weight: bolder;
+}
+.index_suite {
+	font-size: 15pt;
+	background-color: darkorange;
+	color: darkorange;
+}
+.index_fin {
+	font-size: 15pt;
+	background-color: darkblue;
+	color: darkblue;
+}
+
+.boutton_debut {
+	border-style: outset;
+	border-color: darkblue;
+	border-width: 6px;
+	background-color: darkblue;
+	color: darkorange;
+	font-size: 12pt;
+	text-decoration: none;
+}
+
+.boutton {
+	border-style: outset;
+	border-color: darkblue;
+	border-width: 6px;
+	background-color: darkblue;
+	color: darkorange;
+	font-size: 12pt;
+	text-decoration: none;
+}

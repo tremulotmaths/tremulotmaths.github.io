@@ -1,0 +1,99 @@
+
+body {
+	background-color: rgb(200, 200, 0);
+}
+
+.index {
+	background-color: white;
+	color: darkblue;
+	text-decoration: none;
+	font-size: 20pt;
+}
+.index_suite {
+	font-size: 20pt;
+	background-color: white;
+	color: white;
+}
+.index_fin {
+	font-size: 20pt;
+	background-color: darkblue;
+	color: darkblue;
+}
+.blank {
+	background-color: rgb(200, 200, 0);
+	color: rgb(200, 200, 0);
+}
+
+.boutton_debut {
+	border-style: outset;
+	border-color: darkblue;
+	border-width: 6px;
+	background-color: darkblue;
+	color: rgb(200, 200, 0);
+	font-size: medium;
+	text-decoration: none;
+}
+.boutton {
+	border-style: outset;
+	border-color: darkblue;
+	border-width: 6px;
+	background-color: darkblue;
+	color: rgb(200, 200, 0);
+	font-size: medium;
+	text-decoration: none;
+}
+
+.choix {
+	border-style: outset;
+	border-color: black;
+	border-width: 8pt;
+	background-color: grey;
+	color: white;
+	font-size: medium;
+	text-decoration: none;
+}
+
+.lien {
+	font-size: 12pt;
+	background-color: rgb(200, 200, 0);
+	color: darkblue;
+	text-decoration: underline;
+	font-family: Arial;
+	font-weight: normal;
+}
+
+
+.grand_titre {}
+
+.titre {
+	font-size: 30pt;
+	color: darkblue;
+	font-family: Papyrus;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.soustitre {
+	font-size: 20pt;
+	color: darkred;
+	font-family: Papyrus;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.sousoustitre {
+	font-size: 18pt;
+	color: darkblue;
+	font-family: Arial;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.corps {
+	font-size: 12pt;
+	color: black;
+	font-family: Arial;
+	text-indent: 4ex;
+
+}
+
