@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+ 
+  <title>Notes des projets HTML/CSS</title>
+
+	<style type="text/css">
+	body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #e96b56;
+}
+
+a:hover {
+  color: #e6573f;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#header .logo h1 {
+  font-size: 26px;
+  padding: 0 0 0 8px;
+  margin: 11px 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  border-left: 8px solid #e96b56;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover {
+  color: #545454;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 0 0 80px 0;
+}
+
+.section-bg {
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e96b56;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Featured
+--------------------------------------------------------------*/
+.featured {
+  position: relative;
+  z-index: 2;
+}
+
+.featured .icon-box {
+  padding: 40px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.featured .icon-box i {
+  color: #e96b56;
+  font-size: 42px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.featured .icon-box h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.featured .icon-box h3 a {
+  color: #545454;
+  transition: 0.3s;
+}
+
+.featured .icon-box p {
+  color: #545454;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.featured .icon-box:hover {
+  background: #e96b56;
+}
+
+.featured .icon-box:hover i, .featured .icon-box:hover h3 a, .featured .icon-box:hover p {
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# styles ajoutés
+--------------------------------------------------------------*/
+
+.notes{
+	padding: 40px 30px;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	background: #fff;
+	transition: all ease-in-out 0.3s;
+}
+
+
+/*--------------------------------------------------------------
+# End style css
+--------------------------------------------------------------*/
+
+	</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    
+	  <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>NSI - Notes des projets HTML-CSS</span></a></h1>
+      </div>
+    
+  </header><!-- End Header -->
+
+ <main id="main">
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container">
+		  
+			<div class="icon-box">
+              <h3><a href="#groupe1">Groupe 1</a></h3>
+              <p>Yassine, Emre, Tom, Emilien</p>
+            </div>
+          
+
+            <div class="icon-box">
+              <h3><a href="#groupe2">Groupe 2</a></h3> 
+              <p>Loris, Niels, Romane, Léo</p>
+            </div>
+          
+          
+            <div class="icon-box">
+              <h3><a href="#groupe3">Groupe 3</a></h3>
+              <p>Oscar</p>
+            </div>
+          
+          
+            <div class="icon-box">
+              <h3><a href="#groupe4">Groupe 4</a></h3>
+              <p>Yanis, Julien, Timothée, Melvin</p>
+            </div>
+          
+      
+            <div class="icon-box">
+              <h3><a href="#groupe5">Groupe 5</a></h3>
+              <p>Hugo, Nicolas</p>
+            </div>
+		</div>
+    </section><!-- End Featured Section -->
+
+
+
+<div class="notes">
+	<h1>Notes des groupes</h1>
+	<h3><a href="#header">Retour à la liste</a></h3>
+
+	<div id="groupe1"> 
+		<h2>Groupe 1</h2>
+		<h3><a href="#header">Retour à la liste</a></h3>
+		<ol>
+			<li>Respect cahier des charges
+				<ul>
+					<li> groupe de 4 : 1/1 point</li>
+					<li> tâches attribuées : 1/1 point</li>
+					<li> liste des logiciels et/ou services web utilisés : 1/1 point</li>
+					<li> max 5 pages HTML + page principale nommée index.html : 0.5/1 point</li>
+					<li> inclure des images : 1/1 point</li>
+					<li> style CSS dans un fichier à part "style.css" : 1/1 point</li>
+					<li> CR au format pdf : 1/1 point</li>
+					<li> ensemble des fichiers envoyés .zip par email ou Pearltrees : 1/1 point</li>
+				</ul>
+			</li>
+			<li> Pertinence du contenu : 1.5/2 points</li>
+		</ol>
+	</div>
+
+	<div id="groupe2"> 
+		<h2>Groupe 2</h2>
+		<h3><a href="#header">Retour à la liste</a></h3>
+		<ol>
+			<li>Respect cahier des charges
+				<ul>
+					<li> groupe de 4 : 1/1 point</li>
+					<li> tâches attribuées : 1/1 point</li>
+					<li> liste des logiciels et/ou services web utilisés : 1/1 point</li>
+					<li> max 5 pages HTML + page principale nommée index.html : 0.5/1 point</li>
+					<li> inclure des images : 1/1 point</li>
+					<li> style CSS dans un fichier à part "style.css" : 0.5/1 point</li>
+					<li> CR au format pdf : 1/1 point</li>
+					<li> ensemble des fichiers envoyés .zip par email ou Pearltrees : 1/1 point</li>
+				</ul>
+			</li>
+			<li> Pertinence du contenu : 1/2 points</li>
+		</ol>
+	</div>
+	
+	<div id="groupe3"> 
+		<h2>Groupe 3</h2>
+		<h3><a href="#header">Retour à la liste</a></h3>
+		<ol>
+			<li>Respect cahier des charges
+				<ul>
+					<li> groupe de 4 : 0/1 point</li>
+					<li> tâches attribuées : 1/1 point</li>
+					<li> liste des logiciels et/ou services web utilisés : .../1 point</li>
+					<li> max 5 pages HTML + page principale nommée index.html : .../1 point</li>
+					<li> inclure des images : .../1 point</li>
+					<li> style CSS dans un fichier à part "style.css" : .../1 point</li>
+					<li> CR au format pdf : .../1 point</li>
+					<li> ensemble des fichiers envoyés .zip par email ou Pearltrees : .../1 point</li>
+				</ul>
+			</li>
+			<li> Pertinence du contenu : 2 points</li>
+		</ol>
+	</div>
+	
+	<div id="groupe4"> 
+		<h2>Groupe 4</h2>
+		<h3><a href="#header">Retour à la liste</a></h3>
+		<ol>
+			<li>Respect cahier des charges
+				<ul>
+					<li> groupe de 4 : .../1 point</li>
+					<li> tâches attribuées : .../1 point</li>
+					<li> liste des logiciels et/ou services web utilisés : .../1 point</li>
+					<li> max 5 pages HTML + page principale nommée index.html : .../1 point</li>
+					<li> inclure des images : .../1 point</li>
+					<li> style CSS dans un fichier à part "style.css" : .../1 point</li>
+					<li> CR au format pdf : .../1 point</li>
+					<li> ensemble des fichiers envoyés .zip par email ou Pearltrees : .../1 point</li>
+				</ul>
+			</li>
+			<li> Pertinence du contenu : 2 points</li>
+		</ol>
+	</div>
+	
+	<div id="groupe5"> 
+		<h2>Groupe 5</h2>
+		<h3><a href="#header">Retour à la liste</a></h3>
+		<ol>
+			<li>Respect cahier des charges
+				<ul>
+					<li> groupe de 4 : .../1 point</li>
+					<li> tâches attribuées : .../1 point</li>
+					<li> liste des logiciels et/ou services web utilisés : .../1 point</li>
+					<li> max 5 pages HTML + page principale nommée index.html : .../1 point</li>
+					<li> inclure des images : .../1 point</li>
+					<li> style CSS dans un fichier à part "style.css" : .../1 point</li>
+					<li> CR au format pdf : .../1 point</li>
+					<li> ensemble des fichiers envoyés .zip par email ou Pearltrees : .../1 point</li>
+				</ul>
+			</li>
+			<li> Pertinence du contenu : 2 points</li>
+		</ol>
+	</div>
+
+</div> 
+</body>
+
+</html>
