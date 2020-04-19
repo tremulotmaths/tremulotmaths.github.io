@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+<html lang="fr">
+
+	
+
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Ma note au Bac</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		
+		<header>
+			<h1>Ma note au Bac</h1>
+		</header>
+		
+		<div id="general">
+			<div class="texte">
+				<p>Ce simulateur vous permettra  de calculer votre note finale au Bac en entrant vos notes aux différentes épreuves.</p>
+				
+				<p>L'image ci-contre vous rappelle la répartition des coefficients de ces différentes épreuves.</p>
+			</div>
+			<img src="bac2021.jpg" alt="Bac 2021" />				
+		</div>
+		
+		<form id="notes" name="formulaire">
+			<div id="premiere">
+				<h2>Première</h2>
+				<div class="bulletins">
+					<h3>Bulletins</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
+						<p>Moyenne bulletins première :<span id="moy_bull"></span></p>
+				</div>
+				
+				<div class="e3c">
+					<h3>E3C</h3>
+						<h4>E3C 1</h4>
+						<label>Histoire-Géo. :<input type="number" name="hg_1" min="0" max="20" step='0.5'></label>
+						<label>LVA :<input type="number" name="lva_1" min="0" max="20" step='0.5'></label>
+						<label>LVB :<input type="number" name="lvb_1" min="0" max="20" step='0.5'></label>					
+					
+						<h4>E3C 2</h4>
+						<label>Histoire-Géo. :<input type="number" name="hg_2" min="0" max="20" step='0.5'></label>
+						<label>LVA :<input type="number" name="lva_2" min="0" max="20" step='0.5'></label>
+						<label>LVB :<input type="number" name="lvb_2" min="0" max="20" step='0.5'></label>	
+						<label>Enseignement Sci. :<input type="number" name="es_2" min="0" max="20" step='0.5'></label>
+						<label>Spécialité Première :<input type="number" name="spe_2" min="0" max="20" step='0.5'></label>				
+				</div>
+				<div class="e_t">
+					<h3>Épreuves terminales</h3>	
+					<label>Français écrit :<input type="number" name="fr_ecrit" min="0" max="20" step='0.5'></label>		
+					<label>Français oral :<input type="number" name="fr_oral" min="0" max="20" step='0.5'></label>
+				</div>
+			</div>		
+			
+			<div id="terminale">
+				<h2>Terminale</h2>
+				<div class="bulletins">
+					<h3>Bulletins</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
+						<p>Moyenne bulletins terminale :<span id="moy_bull_t"></span></p>
+				</div>
+				
+				<div class="e3c">
+					<h3>E3C</h3>
+					
+						<h4>E3C 3</h4>
+						<label>Histoire-Géo. :<input type="number" name="hg_3" min="0" max="20" step='0.5'></label>
+						<label>LVA :<input type="number" name="lva_3" min="0" max="20" step='0.5'></label>
+						<label>LVB :<input type="number" name="lvb_3" min="0" max="20" step='0.5'></label>	
+						<label>Enseignement Sci. :<input type="number" name="es_3" min="0" max="20" step='0.5'></label>
+						<label>EPS :<input type="number" name="eps_3" min="0" max="20" step='0.5'></label>				
+					
+				</div>
+				<div class="e_t">
+					<h3>Épreuves terminales</h3>	
+					<label>Philo :<input type="number" name="philo" min="0" max="20" step='0.5'></label>		
+					<label>Spécialité 1 :<input type="number" name="spe1" min="0" max="20" step='0.5'></label>
+					<label>Spécialité 2 :<input type="number" name="spe2" min="0" max="20" step='0.5'></label>
+					<label>Grand oral :<input type="number" name="gd_oral" min="0" max="20" step='0.5'></label>
+				</div>
+			</div>
+		</form>
+		
+		<div id="resultat">
+			<button type="button" name"calcul">Ma note au Bac</button>	
+			<span id="note_finale"></span></p>
+		</div>
+		
+		
+		
+		
+		
+	
+			
+		</div>
+		<!--<script type="text/javascript" src="..."></script>-->
+	</body>
+
+</html>

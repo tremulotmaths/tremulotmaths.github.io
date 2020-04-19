@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Formulaire exemple</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		
+		<header>
+			<h1>Formulaire exemple</h1>
+		</header>
+		
+		<form id="form1" action="https://tremulotmaths.github.io/interactions/reponse.php" method="GET">
+			<fieldset>
+				<legend>Formulaire de saisie</legend>
+				<p>
+					<label for="nom1">Nom :</label>
+					<input id="nom1" type="text" size="20" name="nom" title="Entrez votre nom (au moins 2 caractères alphabétiques)" pattern="[A-Za-z]{2,}" required placeholder="Jean Dupont"/>
+				</p>
+				<p>
+					<label for="email1">Email :</label>
+					<input id="email1" type="email" name="email" required placeholder="alain.dupond@monsite.fr"/>
+				</p>
+				<p>
+					<label for="tel1">Téléphone :</label>
+					<input id="tel1" type="tel" name="tel" pattern="[0-9]{10,14}" title="No de tél. entre 10 et 14 chiffres"/>
+				</p>
+				<p>
+					<label for="rdv">Date du rendez-vous :</label>
+					<input id="rdv" type="date" name="rdv"/>
+				</p>
+				<p>
+					<input type="submit" value="Envoi"/>
+				</p>
+			</fieldset>		
+			
+		</form>
+		<!--<script type="text/javascript" src="..."></script>-->
+	</body>
+
+</html>
