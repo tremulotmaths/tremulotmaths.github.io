@@ -1,32 +1,28 @@
 {
-    "nom": "essai",
+    "nom": "Essai QCM",
     "questions": [
         {
-            "type": "QCM",
-            "textquestion": "d\u00e9riv\u00e9e exp",
+            "type": "ouverte",
+            "textquestion": "Pr\u00e9nom",
             "numero": 1,
             "reponses": [
                 {
-                    "textrep": "exp",
+                    "textrep": "",
                     "score": 100
-                },
-                {
-                    "textrep": "ln",
-                    "score": 0
                 }
             ]
         },
         {
             "type": "QCM",
-            "textquestion": "primitive exp",
+            "textquestion": "D\u00e9riv\u00e9e de $x\\mapsto \\text{e}^x$ ?",
             "numero": 2,
             "reponses": [
                 {
-                    "textrep": "exp",
+                    "textrep": "$x\\mapsto \\text{e}^x$",
                     "score": 100
                 },
                 {
-                    "textrep": "ln",
+                    "textrep": "$x\\mapsto \\ln(x)$",
                     "score": 0
                 }
             ]
