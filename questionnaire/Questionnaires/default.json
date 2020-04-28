@@ -1,8 +1,9 @@
 {
-    "nom": "essai",
+    "nom": "Essai Questionnaire",
     "questions": [
         {
-            "textquestion": "D\u00e9riv\u00e9e exp ?",
+            "type": "QCM",
+            "textquestion": "D\u00e9riv\u00e9e de exp ?",
             "numero": 1,
             "reponses": [
                 {
@@ -13,8 +14,7 @@
                     "textrep": "ln",
                     "score": 0
                 }
-            ],
-            "type": "QCM"
+            ]
         }
     ]
 }
