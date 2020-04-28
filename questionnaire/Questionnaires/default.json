@@ -1,5 +1,5 @@
 {
-    "nom": "Essai QCM",
+    "nom": "Essai Questionnaire avec LaTeX",
     "questions": [
         {
             "type": "ouverte",
@@ -14,15 +14,15 @@
         },
         {
             "type": "QCM",
-            "textquestion": "D\u00e9riv\u00e9e de $x\\mapsto \\text{e}^x$ ?",
+            "textquestion": "<math>D\u00e9riv\u00e9e  de $x\\mapsto \\text{e}^x$  ?</math>",
             "numero": 2,
             "reponses": [
                 {
-                    "textrep": "$x\\mapsto \\text{e}^x$",
+                    "textrep": "<math>$x\\mapsto \\text{e}^x$</math>",
                     "score": 100
                 },
                 {
-                    "textrep": "$x\\mapsto \\ln(x)$",
+                    "textrep": "<math>$x\\mapsto \\ln(x)$</math>",
                     "score": 0
                 }
             ]
