@@ -1,31 +1,20 @@
 {
-    "nom": "Essai Questionnaire avec LaTeX",
+    "nom": "essai",
     "questions": [
         {
-            "type": "ouverte",
-            "textquestion": "Pr\u00e9nom",
+            "textquestion": "D\u00e9riv\u00e9e exp ?",
             "numero": 1,
             "reponses": [
                 {
-                    "textrep": "",
-                    "score": 100
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "<math>D\u00e9riv\u00e9e  de $x\\mapsto \\text{e}^x$  ?</math>",
-            "numero": 2,
-            "reponses": [
-                {
-                    "textrep": "<math>$x\\mapsto \\text{e}^x$</math>",
+                    "textrep": "exp",
                     "score": 100
                 },
                 {
-                    "textrep": "<math>$x\\mapsto \\ln(x)$</math>",
+                    "textrep": "ln",
                     "score": 0
                 }
-            ]
+            ],
+            "type": "QCM"
         }
     ]
 }
