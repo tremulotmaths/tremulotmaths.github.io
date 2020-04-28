@@ -3,7 +3,7 @@
     "questions": [
         {
             "type": "QCM",
-            "textquestion": "Quelle fonction est la d\u00e9riv\u00e9e de la fonction exp ?",
+            "textquestion": "Quelle fonction est la dérivée de la fonction exp ?",
             "numero": 1,
             "reponses": [
                 {
@@ -33,7 +33,7 @@
         },
         {
             "type": "QCM",
-            "textquestion": "Quelle valeur correspond \u00e0 cos(pi/4) ?",
+            "textquestion": "Quelle valeur correspond à cos(pi/4) ?",
             "numero": 3,
             "reponses": [
                 {
