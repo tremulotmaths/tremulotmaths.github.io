@@ -1,0 +1,86 @@
+------------------------------------ DIU EIL Bloc1 ------------------------------------
+--------- Alaric BRISSON, Arnaud MEUNIER, Dominique TREMOULOT, Guillaume WEIL ---------
+Projet:
+Création d'un questionnaire par un professeur sous forme de fichier JSON grâce à un 
+programme en Python et affichage web proposé à l'élève pour répondre au questionnaire.
+---------------------------------------------------------------------------------------
+Le professeur doit exécuter l'un des deux fichiers Python suivants pour créer son 
+questionnaire:
+
+- creationjson.py
+Cette création se fait en mode console, le professeur ne se sert que du clavier;
+
+- creationjson_tkinter.pyw
+Cette création se fait en mode fenêtré grâce au module Tkinter de Python.
+
+Ces deux modes de création créent un fichier default.json dans un répertoire 
+Questionnaires (le répertoire est créé avant s'il n'existe pas).
+---------------------------------------------------------------------------------------
+L'élève doit lancer le fichier questions.html pour pouvoir répondre aux questions.
+Ce fichier HTML est configuré par le fichier loadQuestions.js en fonction du contenu 
+du fichier JSON et la mise en forme est faite principalement par le fichier main.css 
+présent dans assets/css.
+---------------------------------------------------------------------------------------
+4 types de questions sont proposés au professeur:
+
+- ouverte
+Le professeur écrit lui-même l'énoncé de la question et entre une réponse correcte 
+avec un score de 100, mais a la possibilité d'entrer d'autres réponses avec un score 
+inférieur à 100.
+Le fichier Python en mode console vérifie la validité du score (entier de 0 à 100), 
+mais pas la version en mode Tkinter.
+
+- QCM
+Même chose que la question ouverte mais le score de chaque réponse est soit 0 soit 100 
+(validité vérifiée en mode console mais pas en mode Tkinter).
+Les deux types ouverte et QCM étant très proches, ils sont gérés quasiment de la même 
+façon que ce soit par les fichiers Python ou par le fichier JS.
+
+- aléatoire de changement de base
+Si le professeur choisit ce type, la question, générée avec une base de départ (au 
+hasard 2, 10 ou 16) et une base d'arrivée (au hasard 2, 10 ou 16) demande de convertir 
+un nombre tiré au hasard.
+
+- aléatoire de conversion C2
+Si le professeur choisit ce type, la question demande de convertir un entier négatif 
+(décimal) en binaire (complément à 2).
+---------------------------------------------------------------------------------------
+Lorsqu'un élève lance le fichier questions.html, il se retrouve avec le nom du 
+questionnaire et la liste des questions.
+Il répond aux questions et valide en cliquant sur un bouton en bas de page.
+La page réapparaît alors à partir du haut, affiche le score final de l'élève, et 
+affiche pour chaque question si la réponse proposée par lélève est correcte (en la 
+faisant apparaître en vert), incomplète (en orange), ou incorrecte (en rouge), en 
+donnant la bonne réponse et le score obtenu par l'élève à cette question.
+---------------------------------------------------------------------------------------
+Les structures des deux entités principales (questionnaire et réponse élève) sont 
+données dans des fichiers PDF dans le répertoire Documentation.
+---------------------------------------------------------------------------------------
+Il y a deux différences entre le mode console et le mode Tkinter (mis à part la forme 
+de l'interface évidemment):
+
+- le test de validité des scores précédemment abordé;
+
+- dans la version Tkinter, quelle que soit le type de question, l'interface propose 
+de conserver la question ou de la créer à nouveau. Cette fonctionnalité n'est pas 
+présente en mode console.
+---------------------------------------------------------------------------------------
+Améliorations possibles:
+
+- appliquer le test de validité des scores aussi en mode Tkinter;
+
+- actuellement, un nouveau questionnaire (fichier default.json) écrase le précédent.
+Donc c'est un seul questionnaire à la fois.
+Pour changer cela, l'idée première était que le nom du questionnaire passe en nom de 
+fichier JSON, les différents noms étant ensuite proposé à l'élève sous forme d'un menu. 
+Mais le fichier JS ne peut fouiller le contenu d'un répertoire (question de faille de 
+sécurité). On peut par contre demander à l'élève d'entrer lui-même le nom du 
+questionnaire dans un champ, le fichier JS ouvrant ensuite le JSON de ce nom.
+L'autre possibilité est de travailler toujours avec un seul fichier JSON, mais 
+défini à la racine comme une liste de questionnaires au lieu d'un seul questionnaire.
+Il faudrait donc à chaque création d'un questionnaire compléter cette liste.
+Un seul fichier serait lu par le JS, les noms des questionnaires étant proposés dans 
+un menu.
+---------------------------------------------------------------------------------------
+Ce fichier A_lire.txt est proposé dans ce format pour une question de compatibilité 
+avec un maximum d'environnements.

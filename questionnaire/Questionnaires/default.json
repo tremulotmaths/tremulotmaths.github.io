@@ -1,0 +1,35 @@
+{
+    "nom": "essai",
+    "questions": [
+        {
+            "type": "QCM",
+            "textquestion": "d\u00e9riv\u00e9e exp",
+            "numero": 1,
+            "reponses": [
+                {
+                    "textrep": "exp",
+                    "score": 100
+                },
+                {
+                    "textrep": "ln",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "primitive exp",
+            "numero": 2,
+            "reponses": [
+                {
+                    "textrep": "exp",
+                    "score": 100
+                },
+                {
+                    "textrep": "ln",
+                    "score": 0
+                }
+            ]
+        }
+    ]
+}
