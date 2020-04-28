@@ -1,9 +1,9 @@
 {
-    "nom": "Essai Questionnaire",
+    "nom": "QCM de fin de semaine",
     "questions": [
         {
             "type": "QCM",
-            "textquestion": "D\u00e9riv\u00e9e de exp ?",
+            "textquestion": "Quelle fonction est la d\u00e9riv\u00e9e de la fonction exp ?",
             "numero": 1,
             "reponses": [
                 {
@@ -12,6 +12,40 @@
                 },
                 {
                     "textrep": "ln",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Quelle fonction est une primitive de la fonction exp ?",
+            "numero": 2,
+            "reponses": [
+                {
+                    "textrep": "exp",
+                    "score": 100
+                },
+                {
+                    "textrep": "ln",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Quelle valeur correspond \u00e0 cos(pi/4) ?",
+            "numero": 3,
+            "reponses": [
+                {
+                    "textrep": "racine(2)/2",
+                    "score": 100
+                },
+                {
+                    "textrep": "1/racine(2)",
+                    "score": 100
+                },
+                {
+                    "textrep": "1/2",
                     "score": 0
                 }
             ]
