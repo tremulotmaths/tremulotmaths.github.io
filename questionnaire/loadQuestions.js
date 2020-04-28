@@ -83,7 +83,7 @@ function affiche_questions(listequestions){
     const bouton = document.createElement('input');
     bouton.setAttribute('type', 'button');
     bouton.setAttribute('id', 'valide');	
-    bouton.setAttribute('value', 'Envoyer les réponses');
+    bouton.setAttribute('value', 'Les réponses');
     let flag = true;
     bouton.onclick = function(){
         if (flag==true){
