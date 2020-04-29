@@ -1,0 +1,189 @@
+{
+    "nom": "Questionnaire semaine 5 (TS)",
+    "questions": [
+        {
+            "type": "QCM",
+            "textquestion": "Parmi les formes suivantes, laquelle correspond \u00e0 une forme trigonom\u00e9trique de racine(3)-i ?",
+            "numero": 1,
+            "reponses": [
+                {
+                    "textrep": "2[cos(pi/6)+i sin(pi/6)]",
+                    "score": 0
+                },
+                {
+                    "textrep": "2 e^(i pi/6)",
+                    "score": 0
+                },
+                {
+                    "textrep": "2[cos(-pi/6)+i sin(-pi/6)]",
+                    "score": 100
+                },
+                {
+                    "textrep": "2[cos(-pi/3)+i sin(-pi/3)]",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Quelle r\u00e9ponse correspond \u00e0 une forme exponentielle de -5 e^(i*pi/12) ?",
+            "numero": 2,
+            "reponses": [
+                {
+                    "textrep": "5 e^(i*13pi/12)",
+                    "score": 100
+                },
+                {
+                    "textrep": "5 e^(i*11pi/12)",
+                    "score": 0
+                },
+                {
+                    "textrep": "-5 e^(i*13pi/12)",
+                    "score": 0
+                },
+                {
+                    "textrep": "-5 e^(i*11pi/12)",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "E, F, G et H sont des points du plan complexe d'affixes e, f, g et h. \u00c0 la mesure de quel angle correspond arg((h-g)/(f-e)) ?",
+            "numero": 3,
+            "reponses": [
+                {
+                    "textrep": "(vect(GH),vect(EF))",
+                    "score": 0
+                },
+                {
+                    "textrep": "(vect(HG),vect(FE))",
+                    "score": 0
+                },
+                {
+                    "textrep": "(vect(EF),vect(GH))",
+                    "score": 100
+                },
+                {
+                    "textrep": "(vect(FE),vect(HG))",
+                    "score": 100
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Pour quelles valeurs de l'entier n, le nombre (2+2i*racine(3))^n est-il r\u00e9el ?",
+            "numero": 4,
+            "reponses": [
+                {
+                    "textrep": "n=3k+1 avec k entier",
+                    "score": 0
+                },
+                {
+                    "textrep": "n=3k+2 avec k entier",
+                    "score": 0
+                },
+                {
+                    "textrep": "n=-pi/3 +k*pi avec k entier",
+                    "score": 0
+                },
+                {
+                    "textrep": "n=3k avec k entier",
+                    "score": 100
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Quel est l'ensemble des points M(z) du plan complexe tels que |z-i|=|z| ?",
+            "numero": 5,
+            "reponses": [
+                {
+                    "textrep": "La droite (OA) o\u00f9 A est le point d'affixe i",
+                    "score": 0
+                },
+                {
+                    "textrep": "La m\u00e9diatrice de [OA] o\u00f9 A est le point d'affixe i",
+                    "score": 100
+                },
+                {
+                    "textrep": "Le cercle de centre A et de rayon 1",
+                    "score": 0
+                },
+                {
+                    "textrep": "Le cercle de centre A et de rayon i",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Quel est l'ensemble des points M(z) du plan complexe tels que |z-i|=5 ?",
+            "numero": 6,
+            "reponses": [
+                {
+                    "textrep": "La droite (OA) o\u00f9 A est le point d'affixe i",
+                    "score": 0
+                },
+                {
+                    "textrep": "Le cercle de centre A(i) et de rayon 5",
+                    "score": 100
+                },
+                {
+                    "textrep": "Le cercle de centre A(5) et de rayon i",
+                    "score": 0
+                },
+                {
+                    "textrep": "La m\u00e9diatrice du segment [AB] o\u00f9 A(i) et B(5)",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Quel est l'ensemble des points M(z) du plan complexe tels que |z-i|=-2 ?",
+            "numero": 7,
+            "reponses": [
+                {
+                    "textrep": "Le cercle de centre A(i) et de rayon 2",
+                    "score": 0
+                },
+                {
+                    "textrep": "La m\u00e9diatrice du segment [AB] o\u00f9 A(i) et B(-2)",
+                    "score": 0
+                },
+                {
+                    "textrep": "L'ensemble vide",
+                    "score": 100
+                },
+                {
+                    "textrep": "Le cercle de centre A(i) et de rayon -2",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Quel est l'ensemble des points M(z) tels que z=7+5*e^(i*x) o\u00f9 x est un r\u00e9el quelconque ?",
+            "numero": 8,
+            "reponses": [
+                {
+                    "textrep": "Le cercle de centre A(7) et de rayon 5",
+                    "score": 100
+                },
+                {
+                    "textrep": "Le cercle de centre A(5) et de rayon 7",
+                    "score": 0
+                },
+                {
+                    "textrep": "Le cercle de centre A(7+5i) et de rayon 1",
+                    "score": 0
+                },
+                {
+                    "textrep": "Le point d'affixe 7+5i",
+                    "score": 0
+                }
+            ]
+        }
+    ]
+}
