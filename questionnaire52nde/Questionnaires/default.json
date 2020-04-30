@@ -1,9 +1,9 @@
 {
-    "nom": "Questionnaire 2nde (semaine 5)",
+    "nom": "Questionnaire 2de (semaine 5)",
     "questions": [
         {
             "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. Alors cos(\u00c2)+sin(\u00c2)=1.",
+            "textquestion": "Si ABC est un triangle rectangle en B, alors cos(\u00c2)+sin(\u00c2)=1.",
             "numero": 1,
             "reponses": [
                 {
@@ -18,7 +18,7 @@
         },
         {
             "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. Alors cos\u00b2(\u00c2)+sin\u00b2(\u00c2)=1.",
+            "textquestion": "Si ABC est un triangle rectangle en B, alors cos\u00b2(\u00c2)+sin\u00b2(\u00c2)=1.",
             "numero": 2,
             "reponses": [
                 {
@@ -33,7 +33,7 @@
         },
         {
             "type": "QCM",
-            "textquestion": "EFG est un triangle rectangle en F. Alors cos(G)=sin(E).",
+            "textquestion": "Si EFG est un triangle rectangle en F, alors cos(E)=sin(F).",
             "numero": 3,
             "reponses": [
                 {
@@ -43,6 +43,131 @@
                 {
                     "textrep": "Faux",
                     "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Si ABC est un triangle rectangle en B tel que cos(\u00c2)=0,6, alors sin(\u00c2)=0,4.",
+            "numero": 4,
+            "reponses": [
+                {
+                    "textrep": "Vrai",
+                    "score": 0
+                },
+                {
+                    "textrep": "Faux",
+                    "score": 100
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Si ABC est un triangle rectangle en B tel que cos(\u00c2)=0,6, alors sin(\u00c2)=0,8.",
+            "numero": 5,
+            "reponses": [
+                {
+                    "textrep": "Vrai",
+                    "score": 100
+                },
+                {
+                    "textrep": "Faux",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Si le cercle circonscrit au triangle RST a pour centre le milieu M du segment [RT], alors le triangle n'est pas rectangle.",
+            "numero": 6,
+            "reponses": [
+                {
+                    "textrep": "Vrai",
+                    "score": 0
+                },
+                {
+                    "textrep": "Faux",
+                    "score": 100
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Si le cercle circonscrit au triangle RST a pour centre le milieu du segment [RT], alors le triangle est rectangle en R.",
+            "numero": 7,
+            "reponses": [
+                {
+                    "textrep": "Vrai",
+                    "score": 0
+                },
+                {
+                    "textrep": "Faux",
+                    "score": 100
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Dans un rep\u00e8re du plan, on donne A(2;5) et B(8;1). Le milieu de [AB] a pour coordonn\u00e9es...",
+            "numero": 8,
+            "reponses": [
+                {
+                    "textrep": "(10;6)",
+                    "score": 0
+                },
+                {
+                    "textrep": "(6;-4)",
+                    "score": 0
+                },
+                {
+                    "textrep": "(5;3)",
+                    "score": 100
+                },
+                {
+                    "textrep": "(-6;4)",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Dans un rep\u00e8re orthonorm\u00e9 du plan, on donne A(2;5) et B(8;1). La distance AB vaut...",
+            "numero": 9,
+            "reponses": [
+                {
+                    "textrep": "racine(52)",
+                    "score": 100
+                },
+                {
+                    "textrep": "2*racine(13)",
+                    "score": 100
+                },
+                {
+                    "textrep": "10",
+                    "score": 0
+                },
+                {
+                    "textrep": "racine(136)",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "Dans un rep\u00e8re orthonorm\u00e9 du plan, on donne A(3;4) et C(2;1). Le point B(-0,5;3) est...",
+            "numero": 10,
+            "reponses": [
+                {
+                    "textrep": "\u00e0 l'int\u00e9rieur du cercle de centre C passant par A",
+                    "score": 0
+                },
+                {
+                    "textrep": "sur le cercle de centre C passant par A",
+                    "score": 0
+                },
+                {
+                    "textrep": "\u00e0 l'ext\u00e9rieur du cercle de centre C passant par A",
+                    "score": 100
                 }
             ]
         }
