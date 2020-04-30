@@ -1,9 +1,9 @@
 {
-    "nom": "Questionnaire 2nde semaine 5",
+    "nom": "Questionnaire 2nde (semaine 5)",
     "questions": [
         {
             "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. $\\cos\\left(\\widehat{A}\\right)+\\sin\\left(\\widehat{A}\\right)=1$.",
+            "textquestion": "ABC est un triangle rectangle en B. Alors cos(\u00c2)+sin(\u00c2)=1.",
             "numero": 1,
             "reponses": [
                 {
@@ -13,6 +13,36 @@
                 {
                     "textrep": "Faux",
                     "score": 100
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "ABC est un triangle rectangle en B. Alors cos\u00b2(\u00c2)+sin\u00b2(\u00c2)=1.",
+            "numero": 2,
+            "reponses": [
+                {
+                    "textrep": "Vrai",
+                    "score": 100
+                },
+                {
+                    "textrep": "Faux",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "type": "QCM",
+            "textquestion": "EFG est un triangle rectangle en F. Alors cos(G)=sin(E).",
+            "numero": 3,
+            "reponses": [
+                {
+                    "textrep": "Vrai",
+                    "score": 100
+                },
+                {
+                    "textrep": "Faux",
+                    "score": 0
                 }
             ]
         }
