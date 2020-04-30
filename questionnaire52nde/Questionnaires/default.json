@@ -3,7 +3,7 @@
     "questions": [
         {
             "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. <math>$\\cos\\left(\\widehat{A}\\right)+\\sin\\left(\\widehat{A}\\right)=1$</math>.",
+            "textquestion": "ABC est un triangle rectangle en B. <code>$\cos\left(\widehat{A}\right)+\sin\left(\widehat{A}\right)=1$</code>.",
             "numero": 1,
             "reponses": [
                 {
