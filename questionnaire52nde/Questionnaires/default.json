@@ -1,101 +1,69 @@
 {
-    "nom": "Questionnaire semaine 5 (TS)",
+    "nom": "Questionnaire semaine 5 (2nde)",
     "questions": [
         {
             "type": "QCM",
-            "textquestion": "Parmi les formes suivantes, laquelle correspond \u00e0 une forme trigonom\u00e9trique de racine(3)-i ?",
+            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos\left(\widehat{A}\right)+\sin\left(\widehat{A}\right)=1$",
             "numero": 1,
             "reponses": [
                 {
-                    "textrep": "2[cos(pi/6)+i sin(pi/6)]",
+                    "textrep": "Vrai",
                     "score": 0
                 },
                 {
-                    "textrep": "2 e^(i pi/6)",
-                    "score": 0
-                },
-                {
-                    "textrep": "2[cos(-pi/6)+i sin(-pi/6)]",
+                    "textrep": "Faux]",
                     "score": 100
-                },
-                {
-                    "textrep": "2[cos(-pi/3)+i sin(-pi/3)]",
-                    "score": 0
                 }
             ]
         },
         {
             "type": "QCM",
-            "textquestion": "Quelle r\u00e9ponse correspond \u00e0 une forme exponentielle de -5 e^(i*pi/12) ?",
+            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos^2\left(\widehat{A}\right)-\sin^2\left(\widehat{A}\right)=1$",
             "numero": 2,
             "reponses": [
                 {
-                    "textrep": "5 e^(i*13pi/12)",
+                    "textrep": "Vrai",
+                    "score": 0
+                },
+                {
+                    "textrep": "Faux]",
                     "score": 100
-                },
-                {
-                    "textrep": "5 e^(i*11pi/12)",
-                    "score": 0
-                },
-                {
-                    "textrep": "-5 e^(i*13pi/12)",
-                    "score": 0
-                },
-                {
-                    "textrep": "-5 e^(i*11pi/12)",
-                    "score": 0
                 }
             ]
         },
         {
             "type": "QCM",
-            "textquestion": "E, F, G et H sont des points du plan complexe d'affixes e, f, g et h. \u00c0 la mesure de quel angle correspond arg((h-g)/(f-e)) ?",
+            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos^2\left(\widehat{A}\right)+\sin^2\left(\widehat{A}\right)=1$",
             "numero": 3,
             "reponses": [
                 {
-                    "textrep": "(vect(GH),vect(EF))",
-                    "score": 0
-                },
-                {
-                    "textrep": "(vect(HG),vect(FE))",
-                    "score": 0
-                },
-                {
-                    "textrep": "(vect(EF),vect(GH))",
+                    "textrep": "Vrai",
                     "score": 100
                 },
                 {
-                    "textrep": "(vect(FE),vect(HG))",
-                    "score": 100
+                    "textrep": "Faux]",
+                    "score": 0
                 }
             ]
         },
         {
             "type": "QCM",
-            "textquestion": "Pour quelles valeurs de l'entier n, le nombre (2+2i*racine(3))^n est-il r\u00e9el ?",
+            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos\left(\widehat{A}\right)-\sin\left(\widehat{A}\right)=1",
             "numero": 4,
             "reponses": [
                 {
-                    "textrep": "n=3k+1 avec k entier",
+                    "textrep": "Vrai",
                     "score": 0
                 },
                 {
-                    "textrep": "n=3k+2 avec k entier",
-                    "score": 0
-                },
-                {
-                    "textrep": "n=-pi/3 +k*pi avec k entier",
-                    "score": 0
-                },
-                {
-                    "textrep": "n=3k avec k entier",
+                    "textrep": "Faux]",
                     "score": 100
                 }
             ]
         },
         {
             "type": "QCM",
-            "textquestion": "Quel est l'ensemble des points M(z) du plan complexe tels que |z-i|=|z| ?",
+            "textquestion": "EFG est un triangle rectangle en F.",
             "numero": 5,
             "reponses": [
                 {
