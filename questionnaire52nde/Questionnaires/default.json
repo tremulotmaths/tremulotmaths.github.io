@@ -1,9 +1,9 @@
 {
-    "nom": "Questionnaire semaine 5 (2nde)",
+    "nom": "Questionnaire 2nde semaine 5",
     "questions": [
         {
             "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos\left(\widehat{A}\right)+\sin\left(\widehat{A}\right)=1$",
+            "textquestion": "ABC est un triangle rectangle en B. $\\cos\\left(\\widehat{A}\\right)+\\sin\\left(\\widehat{A}\\right)=1$.",
             "numero": 1,
             "reponses": [
                 {
@@ -11,145 +11,8 @@
                     "score": 0
                 },
                 {
-                    "textrep": "Faux]",
+                    "textrep": "Faux",
                     "score": 100
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos^2\left(\widehat{A}\right)-\sin^2\left(\widehat{A}\right)=1$",
-            "numero": 2,
-            "reponses": [
-                {
-                    "textrep": "Vrai",
-                    "score": 0
-                },
-                {
-                    "textrep": "Faux]",
-                    "score": 100
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos^2\left(\widehat{A}\right)+\sin^2\left(\widehat{A}\right)=1$",
-            "numero": 3,
-            "reponses": [
-                {
-                    "textrep": "Vrai",
-                    "score": 100
-                },
-                {
-                    "textrep": "Faux]",
-                    "score": 0
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "ABC est un triangle rectangle en B. Alors $\cos\left(\widehat{A}\right)-\sin\left(\widehat{A}\right)=1",
-            "numero": 4,
-            "reponses": [
-                {
-                    "textrep": "Vrai",
-                    "score": 0
-                },
-                {
-                    "textrep": "Faux]",
-                    "score": 100
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "EFG est un triangle rectangle en F.",
-            "numero": 5,
-            "reponses": [
-                {
-                    "textrep": "La droite (OA) o\u00f9 A est le point d'affixe i",
-                    "score": 0
-                },
-                {
-                    "textrep": "La m\u00e9diatrice de [OA] o\u00f9 A est le point d'affixe i",
-                    "score": 100
-                },
-                {
-                    "textrep": "Le cercle de centre A et de rayon 1",
-                    "score": 0
-                },
-                {
-                    "textrep": "Le cercle de centre A et de rayon i",
-                    "score": 0
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "Quel est l'ensemble des points M(z) du plan complexe tels que |z-i|=5 ?",
-            "numero": 6,
-            "reponses": [
-                {
-                    "textrep": "La droite (OA) o\u00f9 A est le point d'affixe i",
-                    "score": 0
-                },
-                {
-                    "textrep": "Le cercle de centre A(i) et de rayon 5",
-                    "score": 100
-                },
-                {
-                    "textrep": "Le cercle de centre A(5) et de rayon i",
-                    "score": 0
-                },
-                {
-                    "textrep": "La m\u00e9diatrice du segment [AB] o\u00f9 A(i) et B(5)",
-                    "score": 0
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "Quel est l'ensemble des points M(z) du plan complexe tels que |z-i|=-2 ?",
-            "numero": 7,
-            "reponses": [
-                {
-                    "textrep": "Le cercle de centre A(i) et de rayon 2",
-                    "score": 0
-                },
-                {
-                    "textrep": "La m\u00e9diatrice du segment [AB] o\u00f9 A(i) et B(-2)",
-                    "score": 0
-                },
-                {
-                    "textrep": "L'ensemble vide",
-                    "score": 100
-                },
-                {
-                    "textrep": "Le cercle de centre A(i) et de rayon -2",
-                    "score": 0
-                }
-            ]
-        },
-        {
-            "type": "QCM",
-            "textquestion": "Quel est l'ensemble des points M(z) tels que z=7+5*e^(i*x) o\u00f9 x est un r\u00e9el quelconque ?",
-            "numero": 8,
-            "reponses": [
-                {
-                    "textrep": "Le cercle de centre A(7) et de rayon 5",
-                    "score": 100
-                },
-                {
-                    "textrep": "Le cercle de centre A(5) et de rayon 7",
-                    "score": 0
-                },
-                {
-                    "textrep": "Le cercle de centre A(7+5i) et de rayon 1",
-                    "score": 0
-                },
-                {
-                    "textrep": "Le point d'affixe 7+5i",
-                    "score": 0
                 }
             ]
         }
