@@ -33,7 +33,7 @@
         },
         {
             "type": "QCM",
-            "textquestion": "Si EFG est un triangle rectangle en F, alors cos(E)=sin(F).",
+            "textquestion": "Si EFG est un triangle rectangle en G, alors cos(E)=sin(F).",
             "numero": 3,
             "reponses": [
                 {
