@@ -1,0 +1,25 @@
+h1 {
+	color: red;
+	text-align: left;
+	font-family: monospace;
+	margin-bottom: 1em;
+}
+
+input {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: left;
+	margin: 1em;
+	border-radius: 0.5em;
+}
+
+div.center-bloc {
+	display: block;
+	margin-left: auto;
+    margin-right: auto; /* Centre le block horizontalement */
+	width: 25%; /* Vous devez spécifiez une largeur */
+	padding: 1em;
+	border-radius: 0.5em;
+	background-color: #e0e0ff;
+}
