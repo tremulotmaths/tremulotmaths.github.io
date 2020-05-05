@@ -1,0 +1,58 @@
+h1,h2 {
+	color: red;
+	text-align: center;
+	font-family: monospace;
+	
+}
+
+.button {
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.button img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 100px;
+}
+
+.button img:hover {
+	transform: rotate(180deg);
+}
+
+div.center-bloc {
+	display: block;
+	margin-left: auto;
+    margin-right: auto; /* Centre le block horizontalement */
+	width: 25%; /* Vous devez spécifiez une largeur */
+	padding-left: auto;
+	padding-right: auto;
+}
+
+
+.bouton a {
+	display: block;
+	width: 150px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(boutonnoir.png) no-repeat;
+	color: white;
+	text-decoration: none;
+}
+.bouton a:hover {
+	background: url(boutonnoir2.png) no-repeat;
+}
+
+#bouton2 {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#bouton3 {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
