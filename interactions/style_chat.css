@@ -18,7 +18,7 @@ div.center-bloc {
 	display: block;
 	margin-left: auto;
     margin-right: auto; /* Centre le block horizontalement */
-	width: 25%; /* Vous devez spécifiez une largeur */
+	width: 30%; /* Vous devez spécifiez une largeur */
 	padding: 1em;
 	border-radius: 0.5em;
 	background-color: #e0e0ff;

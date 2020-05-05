@@ -14,7 +14,8 @@
 				}
 			else {
 				$nom = 'Inconnu';
-				} ?>
+				} 
+		?>
 		
 		<h2>Bonjour, <?php echo $nom ?></h2>
 		<?php
