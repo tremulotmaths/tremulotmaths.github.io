@@ -2,7 +2,7 @@
 
 function calcul(){
 	
-		let formulaire = document.getElementById("notes").; // "notes" est l'id du formulaire
+		let formulaire = document.getElementById("notes"); // "notes" est l'id du formulaire
 		let elmts = formulaire.elements; //"elmts" contient le tableau des éléments de formulaire
 				
 		let t1 = parseFloat(elmts[0].value); // on stocke dans 3 variables la valeur entrée dans les éléments 0, 1 et 2 du formulaire...
@@ -13,7 +13,7 @@ function calcul(){
 		
 		let elmt = document.getElementById('moy_bull');	// sélection de la balise "span", d'id = "moy_bull", où l'on va afficher la moyenne
 		
-		elmt.innerHTML = moyenne; // modification du texte				
+		elmt.innerHTML = Math.round(100*moyenne)/100; // modification du texte				
 		t1 = parseFloat(elmts[13].value); // on peut "réutiliser" les variables précédentes, leur contenu ne nous intéresse plus...
 		t2 = parseFloat(elmts[14].value);
 		t3 = parseFloat(elmts[15].value);
@@ -21,7 +21,7 @@ function calcul(){
 		let moyenne_t = (t1 + t2 + t3)/3; // par contre il faut donner un autre nom à la nouvelle variable moyenne : on aura besoin des deux moyennes par la suite !
 		
 		elmt = document.getElementById('moy_bull_t');	// attention, il faut avoir donné un autre id à la balise "span" de la section de Terminale pour la différencier de la première !!
-		elmt.innerHTML = moyenne_t;	
+		elmt.innerHTML = Math.round(100*moyenne_t)/100;	
 		
 		let moy_e3c_1 = 1.25*(parseFloat(elmts[3].value) +parseFloat(elmts[4].value) +parseFloat(elmts[5].value) +parseFloat(elmts[6].value) +parseFloat(elmts[7].value) +parseFloat(elmts[8].value))+2.5*parseFloat(elmts[9].value) + 5*parseFloat(elmts[10].value)  ;
 		let franc = 5*(parseFloat(elmts[11].value) + parseFloat(elmts[12].value));
@@ -33,6 +33,6 @@ function calcul(){
 		let note_bac = ( moyenne*5 + moyenne_t*5 + moy_e3c_1 + moy_e3c_t + franc + spe + gd_oral	+ philo) / 100;
 		
 		elmt = document.getElementById("note_finale"); // sélection de l'élément "note_finale"
-		elmt.innerHTML = note_bac; // affectation du contenu texte	
+		elmt.innerHTML = Math.round(100*note_bac)/100; // affectation du contenu texte	
 }
 
