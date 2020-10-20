@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />-->
+<html lang="fr">
+
+<!--<link type="text/css" href="../css/bibstyle.css" rel="stylesheet" />-->
+<script type="text/x-mathjax-config">MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$']]} });</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="Author" CONTENT="Dominique Trémulot">
+	<meta name="Description" CONTENT="Remise à niveau">
+ 
+	<title>Calculs avec la fonction exponentielle</title>
+
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<link type="text/css" rel="stylesheet" href="ressources.css"/>
+</head>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<body>
+
+<!--<div style="display:none">
+	$$
+	\newcommand{\mtn}{\mathbb{N}}
+	\DeclareMathOperator{\ch}{ch}
+	$$
+</div>-->
+
+
+  	<!-- ======= Header ======= -->
+	<header id="header">
+    
+		<div class="logo">
+			<h1 class="text-light"><span>Calculs avec la fonction exponentielle</span></h1>
+		</div>
+    </header>
+   	<!-- End Header -->
+
+<main id="main">
+	<a href="../remiseaniveau.html"><button>Retour au menu</button></a>
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+    	<div class="container">
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 1</div>
+					<div class=inner>
+						Pour chaque question, déterminer la fraction irréductible égale à l'expression numérique donnée.<br>
+						<ol>
+							<li>
+								$A=\dfrac{7}{5}-\dfrac{3}{2}$
+							</li><br>
+							<li>
+								$B=2+\dfrac{1}{9}$
+							</li><br>
+							<li>
+								$C=\dfrac{9}{5}-\dfrac{1}{5}\times \dfrac{3}{2}$
+							</li><br>
+							<li>
+								$D=\dfrac{2}{5}-\dfrac{1}{5}\div \dfrac{3}{2}$
+							</li>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg11">Indication</button>
+					<div id="d11" class=hide>
+						<ol>
+							<li>
+								Mettre au même dénominateur
+							</li>
+							<li>
+								Mettre au même dénominateur
+							</li>
+							<li>
+								Respecter les priorités opératoires
+							</li>
+							<li>
+								Respecter les priorités opératoires...
+								et diviser par un nombre (non nul) revient à multiplier par son inverse.
+							</li>
+						</ol>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg12">Corrigé</button>
+					<div id="d12" class=hide >
+						<ol>
+							<li>
+								$A=\dfrac{7}{5}-\dfrac{3}{2}$<br><br>
+								$A=\dfrac{7\times 2}{5\times 2}-\dfrac{3\times 5}{2\times 5}$<br><br>
+								$A=\dfrac{14}{10}-\dfrac{15}{10}$<br><br>
+								$A=\dfrac{14-15}{10}$<br><br>
+								$A=\dfrac{-1}{10}$
+							</li><br>
+							<li>
+								$B=2+\dfrac{1}{9}$<br><br>
+								$B=\dfrac{2}{1}+\dfrac{1}{9}$<br><br>
+								$B=\dfrac{2\times 9}{1\times 9}+\dfrac{1}{9}$<br><br>
+								$B=\dfrac{18}{9}+\dfrac{1}{9}$<br><br>
+								$B=\dfrac{18+1}{9}$<br><br>
+								$B=\dfrac{19}{9}$
+							</li><br>
+							<li>
+								$C=\dfrac{9}{5}-\dfrac{1}{5}\times \dfrac{3}{2}$<br><br>
+								$C=\dfrac{9}{5}-\dfrac{1\times 3}{5\times 2}$<br><br>
+								$C=\dfrac{9}{5}-\dfrac{3}{10}$<br><br>
+								$C=\dfrac{9\times 2}{5\times 2}-\dfrac{3}{10}$<br><br>
+								$C=\dfrac{18}{10}-\dfrac{3}{10}$<br><br>
+								$C=\dfrac{18-3}{10}$<br><br>
+								$C=\dfrac{15}{10}$<br><br>
+								$C=\dfrac{15\div 5}{10\div 5}$<br><br>
+								$C=\dfrac{3}{2}$
+							</li><br>
+							<li>
+								$D=\dfrac{2}{5}-\dfrac{1}{5}\div \dfrac{3}{2}$<br><br>
+								$D=\dfrac{2}{5}-\dfrac{1}{5}\times \dfrac{2}{3}$<br><br>
+								$D=\dfrac{2}{5}-\dfrac{1\times 2}{5\times 3}$<br><br>
+								$D=\dfrac{2}{5}-\dfrac{2}{15}$<br><br>
+								$D=\dfrac{2\times 3}{5\times 3}-\dfrac{2}{15}$<br><br>
+								$D=\dfrac{6}{15}-\dfrac{2}{15}$<br><br>
+								$D=\dfrac{6-2}{15}$<br><br>
+								$D=\dfrac{4}{15}$
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 2</div>
+					<div class=inner>
+						Écrire sous la forme d'un seul quotient les expressions suivantes.<br>
+						On "simplifera" au maximum l'expression obtenue, sans s'occuper de l'ensemble de définition de celle-ci.<br>
+						<ol>
+							<li>
+								$A=\dfrac{1}{x}+\dfrac{1}{x+1}$
+							</li><br>
+							<li>
+								$B=\dfrac{x+1}{x}-\dfrac{x}{x+1}$
+							</li><br>
+							<li>
+								$C=x-1+\dfrac{1}{x+1}$
+							</li><br>
+							<li>
+								$D=x+\dfrac{1}{x}+\dfrac{1}{x^2}$
+							</li><br>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg21">Indication</button>
+					<div id="d21" class=hide>
+						<br>
+						Mettre au même dénominateur...
+						et éviter de sortir les baguettes magiques pour "simplifier" les expressions obtenues.
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg22">Corrigé</button>
+					<div id="d22" class=hide>
+						<ol>
+							<li>
+								$A=\dfrac{1}{x}+\dfrac{1}{x+1}$<br><br>
+								$A=\dfrac{1\times (x+1)}{x\times (x+1)}+\dfrac{1\times x}{(x+1)\times x}$<br><br>
+								$A=\dfrac{x+1}{x(x+1)}+\dfrac{x}{x(x+1)}$<br><br>
+								$A=\dfrac{x+1+x}{x(x+1)}$<br><br>
+								$A=\dfrac{2x+1}{x(x+1)}$
+							</li><br>
+							<li>
+								$B=\dfrac{x+1}{x}-\dfrac{x}{x+1}$<br><br>
+								$B=\dfrac{(x+1)\times (x+1)}{x\times (x+1)}-\dfrac{x\times x}{(x+1)\times x}$<br><br>
+								$B=\dfrac{(x+1)^2}{x(x+1)}-\dfrac{x^2}{x(x+1)}$<br><br>
+								$B=\dfrac{(x+1)^2-x^2}{x(x+1)}$<br><br>
+								$B=\dfrac{x^2+2x+1-x^2}{x(x+1)}$<br><br>
+								$B=\dfrac{2x+1}{x(x+1)}$<br><br>
+							</li><br>
+							<li>
+								$C=x-1+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{x-1}{1}+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{(x-1)\times (x+1)}{1\times (x+1)}+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{(x-1)(x+1)}{x+1}+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{(x-1)(x+1)+1}{x+1}$<br><br>
+								$C=\dfrac{x^2-1+1}{x+1}$<br><br>
+								$C=\dfrac{x^2}{x+1}$
+							</li><br>
+							<li>
+								$D=x+\dfrac{1}{x}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x}{1}+\dfrac{1}{x}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x\times x^2}{1\times x^2}+\dfrac{1\times x}{x\times x}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x^3}{x^2}+\dfrac{x}{x^2}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x^3+x+1}{x^2}$
+							</li><br>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		</div>
+    </section><!-- End Featured Section -->
+
+<script type="text/javascript" src="fonctions.js"></script>
+
+</body>
+
+</html>
+
+

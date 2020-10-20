@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />-->
+<html lang="fr">
+
+<!--<link type="text/css" href="../css/bibstyle.css" rel="stylesheet" />-->
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$']]} });</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="Author" CONTENT="Dominique Trémulot">
+	<meta name="Description" CONTENT="Remise à niveau">
+ 
+	<title>Calculs avec des racines carrées</title>
+
+	<link type="text/css" rel="stylesheet" href="../style.css"/>
+	<link type="text/css" rel="stylesheet" href="../ressources.css"/>
+</head>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<body>
+
+<!--<div style="display:none">
+	$$
+	\newcommand{\mtn}{\mathbb{N}}
+	\DeclareMathOperator{\ch}{ch}
+	$$
+</div>-->
+
+
+  	<!-- ======= Header ======= -->
+	<header id="header">
+    
+		<div class="logo">
+			<h1 class="text-light"><span>Calculs avec des racines carrées</span></h1>
+		</div>
+    </header>
+   	<!-- End Header -->
+
+<main id="main">
+	<a href="../remiseaniveau.html"><button>Retour au menu</button></a>
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+    	<div class="container">
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 1</div>
+					<div class=inner>
+						Écrire les nombres suivants sous la forme $a\sqrt{b}$ avec $a\in\mathbb{Q}$ et $b\in\mathbb{Q}$ sous forme de fractions irréductibles.<br>
+						<ol>
+							<li>
+								$\sqrt{72}$
+							</li><br>
+							<li>
+								$\sqrt{\dfrac{12}{49}}$
+							</li><br>
+							<li>
+								$\sqrt{\dfrac{5}{36}}+2\sqrt{\dfrac{20}{9}}$
+							</li><br>
+							<li>
+								$\sqrt{\dfrac{14}{3}}\times \sqrt{\dfrac{3}{8}}$
+							</li><br>
+							<li>
+								$\sqrt{50}+\sqrt{32}-\sqrt{18}$
+							</li>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg11">Indication</button>
+					<div id="d11" class=hide>
+						<ul>
+							<li>
+								Si $a$ et $b$ sont des réels positifs, on a :
+								$\sqrt{a^2b}=\sqrt{a^2}\sqrt{b}=a\sqrt{b}$et
+								$\sqrt{a\times b}=\sqrt{a}\times \sqrt{b}$
+							</li>
+							<li>
+								Si de plus $b\neq 0$, alors
+								$\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}$
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg12">Corrigé</button>
+					<div id="d12" class=hide>
+						<ol>
+							<li>
+								$\sqrt{72}=\sqrt{36\times 2}=\sqrt{36}\times \sqrt{2}=6\sqrt{2}$
+							</li><br>
+							<li>
+								$\sqrt{\dfrac{12}{49}}
+								=\dfrac{\sqrt{12}}{\sqrt{49}}
+								=\dfrac{\sqrt{4\times 3}}{7}
+								=\dfrac{\sqrt{4}\times \sqrt{3}}{7}
+								=\dfrac{2}{7}\sqrt{3}$
+							</li><br>
+							<li>
+								$\sqrt{\dfrac{5}{36}}+2\sqrt{\dfrac{20}{9}}
+								=\dfrac{\sqrt{5}}{\sqrt{36}}+2\times \dfrac{\sqrt{20}}{\sqrt{9}}
+								=\dfrac{\sqrt{5}}{6}+2\times \dfrac{2\sqrt{5}}{3}
+								=\dfrac{\sqrt{5}}{6}+\dfrac{4\sqrt{5}}{3}
+								=\dfrac{\sqrt{5}}{6}+\dfrac{8\sqrt{5}}{6}
+								=\dfrac{5\sqrt{5}}{6}
+								=\dfrac{5}{6}\sqrt{5}$
+							</li><br>
+							<li>
+								$\sqrt{\dfrac{14}{3}}\times \sqrt{\dfrac{3}{8}}
+								=\dfrac{\sqrt{14}}{\sqrt{3}}\times\dfrac{\sqrt{3}}{\sqrt{8}}
+								=\dfrac{\sqrt{14}\times \sqrt{3}}{\sqrt{3}\times \sqrt{8}}
+								=\dfrac{\sqrt{7}\sqrt{2}}{2\sqrt{2}}
+								=\dfrac{\sqrt{7}}{2}
+								=\dfrac{1}{2}\sqrt{7}$
+							</li><br>
+							<li>
+								$\sqrt{50}+\sqrt{32}-\sqrt{18}
+								=\sqrt{25\times 2}+\sqrt{16\times 2}-\sqrt{9\times 2}
+								=5\sqrt{2}+4\sqrt{2}-3\sqrt{2}
+								=6\sqrt{2}$
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 2</div>
+					<div class=inner>
+						Écrire les nombres suivants sans racines carrées au dénominateur :
+
+						<ol>
+							<li>
+								$\dfrac{3}{2\sqrt{7}}$
+							</li><br>
+							<li>
+								$\dfrac{1}{1+\sqrt{7}}$
+							</li><br>
+							<li>
+								$\dfrac{\sqrt{7}}{2+\sqrt{7}}$
+							</li><br>
+							<li>
+								$\dfrac{\sqrt{7}-2}{\sqrt{7}+2}$
+							</li>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg21">Indication</button>
+					<div id="d21" class=hide>
+						<ul>
+							<li>
+								Lorsqu'un nombre est du type 
+								$\dfrac{a}{\sqrt{b}}$, en multipliant numérateur et dénominateur par $\sqrt{b}$, on obtient ce qui est demandé.
+							</li>
+							<li>
+								Lorsqu'un nombre est du type 
+								$\dfrac{c}{a+\sqrt{b}}$, en multipliant numérateur et dénominateur par $a-\sqrt{b}$, on obtient ce qui est demandé.
+							</li>
+							<li>
+								Lorsqu'un nombre est du type 
+								$\dfrac{c}{a-\sqrt{b}}$, en multipliant numérateur et dénominateur par $a+\sqrt{b}$, on obtient ce qui est demandé.
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg22">Corrigé</button>
+					<div id="d22" class=hide>
+						<ol>
+							<li>
+								$\dfrac{3}{2\sqrt{7}}
+								=\dfrac{3\times \sqrt{7}}{2\sqrt{7}\times \sqrt{7}}
+								=\dfrac{3\sqrt{7}}{2\times 7}
+								=\dfrac{3\sqrt{7}}{14}$
+							</li><br>
+							<li>
+								$\dfrac{1}{1+\sqrt{7}}
+								=\dfrac{1\times \left(1-\sqrt{7}\right)}{\left(1+\sqrt{7}\right)\times \left(1-\sqrt{7}\right)}
+								=\dfrac{1-\sqrt{7}}{1^2-\sqrt{7}^2}
+								=\dfrac{1-\sqrt{7}}{1-7}
+								=\dfrac{1-\sqrt{7}}{-6}
+								=\dfrac{-1+\sqrt{7}}{6}$
+							</li><br>
+							<li>
+								$\dfrac{\sqrt{7}}{2+\sqrt{7}}
+								=\dfrac{\sqrt{7}\times \left(2-\sqrt{7}\right)}{\left(2+\sqrt{7}\right)\times \left(2-\sqrt{7}\right)}
+								=\dfrac{2\sqrt{7}-7}{2^2-\sqrt{7}^2}
+								=\dfrac{2\sqrt{7}-7}{4-7}
+								=\dfrac{2\sqrt{7}-7}{-3}
+								=\dfrac{-2\sqrt{7}+7}{3}$
+							</li><br>
+							<li>
+								$\dfrac{\sqrt{7}-2}{\sqrt{7}+2}
+								=\dfrac{\left(\sqrt{7}-2\right)\times \left(\sqrt{7}-2\right)}{\left(\sqrt{7}+2\right)\times \left(\sqrt{7}-2\right)}
+								=\dfrac{\left(\sqrt{7}-2\right)^2}{\sqrt{7}^2-2^2}
+								=\dfrac{\sqrt{7}^2-4\sqrt{7}+2^2}{7-4}
+								=\dfrac{11-4\sqrt{7}}{3}$
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		</div>
+    </section><!-- End Featured Section -->
+
+<script type="text/javascript" src="fonctions.js"></script>
+
+</body>
+
+</html>
+
+
