@@ -51,30 +51,169 @@
 				<div class="icon-box">
 					<div class=titreexo>Exercice 1</div>
 					<div class=inner>
-						&Eacute;crire en extension (c'est-à-dire en donnant tous leurs éléments) les ensembles suivants :
-						$$A=\left\{\textrm{nombres entiers compris entre $\sqrt{2}$ et $2\pi$}\right\}.$$
-						$$B=\left\{x\in\mtq;\ \exists(n,p)\in\mtn\times\mtn,\ x=\frac{p}{n}\textrm{ et }1\leq p\leq 2n\leq 7\right\}.$$
+						<p>Développer, réduire et ordonner les expressions suivantes :</p>
+						<ol>
+							<li>
+								$A=3x(5x-2)+(1-x)^2$
+							</li>
+							<li>
+								$B=7-5x(2x+7)$
+							</li>
+							<li>
+								$C=(3-4x)^2-(7-5x)^2$
+							</li>
+						</ol>
 					</div>
             	</div>
 			
 			
 				<div class=indication>
-					<button id="togg1">Indication</button>
-					<div id="d1" class=hide>
-						<p>Pour $B$, prendre garde aux répétitions.</p>
-						<p>Ce deuxième paragraphe également</p>
+					<button id="togg11">Indication</button>
+					<div id="d11" class=hide>
+						<p>Les formules de développement sont les suivantes :</p>
+						<p>$k(a-b)=ka-kb$</p>
+						<p>$(a+b)(c+d)=ac+ad+bc+bd$</p>
+						<p>$(a+b)^2=a^2+2ab+b^2$</p>
+						<p>$(a-b)^2=a^2-2ab+b^2$</p>
+						<p>$(a+b)(a-b)=a^2-b^2$</p>
 					</div>
 				</div>
 				
 				<div class=corrige>
-					<button id="togg2">Corrigé</button>
-					<div id="d2" class=hide>
-						<p>On a :
-						$$A=\left\{2,3,4,5,6\right\}.$$
-						Pour écrire $B$, on remarque que $1/2\leq n\leq 7/2\implies n=1,2$ ou $3$. Pour chaque valeur possible de $n$, on écrit les valeurs possibles de $p$, et on obtient :
-						$$B=\left\{1,2,\frac{1}{2},\frac{3}{2},\frac{1}{3},\frac{2}{3},\frac{4}{3},\frac{5}{3}\right\}.$$
-						On n'a pas écrit plusieurs fois 1, qui s'obtient aussi avec 2/2 et 3/3, ni plusieurs fois 2, qu'on obtient avec 2/1, 4/2 et 6/3.</p>
-						<p>Ce deuxième paragraphe également</p>
+					<button id="togg12">Corrigé</button>
+					<div id="d12" class=hide>
+						<ol>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$A=3x(5x-2)+(1-x)^2$</p>
+								<p>$A=3x\times 5x+3x\times (-2)+1^2-2\times 1\times x+x^2$</p>
+								<p>$A=15x^2-6x+1-2x+x^2$</p>
+								<p>$A=16x^2-8x+1$</p>
+							</li>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$B=7-5x(2x+7)$</p>
+								<p>$B=7-5x\times 2x-5x\times 7$</p>
+								<p>$B=7-10x^2-35x$</p>
+								<p>$B=-10x^2-35x+7$</p>
+							</li>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$C=(3-4x)^2-(7-5x)^2$</p>
+								<p>$C=3^2-2\times 3\times 4x+(4x)^2-\left(7^2-2\times 7\times 5x+(5x)^2\right)$</p>
+								<p>$C=9-24x+16x^2-\left(49-70x+25x^2\right)$</p>
+								<p>$C=9-24x+16x^2-49+70x-25x^2$</p>
+								<p>$C=-9x^2+46x-40$</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 2</div>
+					<div class=inner>
+						<p>Factoriser les expressions suivantes au maximum :</p>
+						<ol>
+							<li>$A=3x(x+1)+3x$</li>
+							<li>$B=(5-x)^2-x(5-x)$</li>
+							<li>$C=(3-4x)^2-(7-5x)^2$</li>
+							<li>$D=x^2-2x-(5x+1)(x-2)$</li>
+							<li>$E=x^2-x-30$</li>
+							<li>$F=3x^3+3x^2-6x$</li>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg21">Indication</button>
+					<div id="d21" class=hide>
+						<p>Les formules de factorisation sont les suivantes :</p>
+						<p>$ka+kb=k(a+b)$ et $ka-kb=k(a-b)$</p>
+						<p>$a^2+2ab+b^2=(a+b)^2$</p>
+						<p>$a^2-2ab+b^2=(a-b)^2$</p>
+						<p>$a^2-b^2=(a+b)(a-b)$</p>
+						<p>Vous avez également vu en $1\iere$ la factorisation des polynômes du second degré.</p>
+						<p><strong>Rappel :</strong></p>
+						<p>Si $P(x)=ax^2+bx+c$ avec $a\neq 0$ admet pour racines $x_1$ et $x_2$, alors $P(x)$ se factorise sous la forme :</p>
+						<p>$P(x)=a(x-x_1)(x-x_2$</p>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg22">Corrigé</button>
+					<div id="d22" class=hide>
+						<ol>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$A=3x(x+1)+3x$</p>
+								<p>$A=3x\times (x+1)+3x\times 1$</p>
+								<p>$A=3x\times\left[(x+1)+1\right]$</p>
+								<p>$A=3x(x+1+1)$</p>
+								<p>$A=3x(x+2)$</p>
+							</li>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$B=(5-x)^2-x(5-x)$</p>
+								<p>$B=(5-x)(5-x)-x(5-x)$</p>
+								<p>$B=(5-x)\let[(5-x)-x\right]$</p>
+								<p>$B=(5-x)(5-x-x)$</p>
+								<p>$B=(5-x)(5-2x)$</p>
+							</li>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$C=(3-4x)^2-(7-5x)^2$</p>
+								<p>$C=\left[(3-4x)+(7-5x)\right]\times \left[(3-4x)-(7-5x)\right]$</p>
+								<p>$C=(3-4x+7-5x)(3-4x-7+5x)$</p>
+								<p>$C=(-9x+10)(x-4)$</p>
+							</li>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$D=x^2-2x-(5x+1)(x-2)$</p>
+								<p>$D=x\times x-x\times 2-(5x+1)(x-2)$</p>
+								<p>$D=x(x-2)-(5x+1)(x-2)$</p>
+								<p>$D=(x-2)\left[x-(5x+1)\right]$</p>
+								<p>$D=(x-2)(x-5x-1)$</p>
+								<p>$D=(x-2)(-4x-1)$</p>
+							</li>
+							<li>
+								<p>Pour tout réel $x$, </p>
+								<p>$E=x^2-x-30$</p>
+								<p>L'expression E est un polynôme du second degré.</p>
+								<p>Son discriminant est $\Delta=(-1)^2-4\times 1\times (-30)$</p>
+								<p>$\Delta=1+120=121$</p>
+								<p>$\Delta>0$ donc l'expression E admet deux racines réelles distinctes :</p>
+								<p>$x_1=\dfrac{-(-1)-\sqrt{121}}{2\times 1}
+								=\dfrac{1-11}{2}=-5$</p>
+								<p>et $x_2=\dfrac{-(-1)+\sqrt{121}}{2\times 1}
+								=\dfrac{1+11}{2}=6$</p>
+								<p>On en déduit la factorisation suivante de E :</p>
+								<p>$E=(x-(-5))(x-6)$</p>
+								<p>$E=(x+5)(x-6)$</p>
+							</li>
+							<li>
+								<p>
+									<p>Pour tout réel $x$, </p>
+									<p>$F=3x^3+3x^2-6x$</p>
+									<p>$F=3x\left(x^2+x-2\right)$</p>
+									<p>Notons $P(x)$ le polynôme $x^2+x-2$.</p>
+									<p>C'est un polynôme du second degré.</p>
+									<p>Son discriminant est $\Delta=1^2-4\times 1\times (-2)$</p>
+									<p>$\Delta=1+8=9$</p>
+									<p>$\Delta>0$ donc l'expression $P(x)$ admet deux racines réelles distinctes :</p>
+									<p>$x_1=\dfrac{-1-\sqrt{9}}{2\times 1}=\dfrac{-1-3}{2}=-2$</p>
+									<p>et $x_2=\dfrac{-1+\sqrt{9}}{2\times 1}=\dfrac{-1+3}{2}=1$</p>
+									<p>On en déduit la factorisation suivante de $P(x)$ :</p>
+									<p>$P(x)=(x-(-2))(x-1)$</p>
+									<p>$P(x)=(x+2)(x-1)$</p>
+									<p>Par conséquent, $F=3x(x+2)(x-1)$</p>
+								</p>
+							</li>
+						</ol>
 					</div>
 				</div>
 			</div>
