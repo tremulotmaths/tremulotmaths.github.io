@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />-->
+<html lang="fr">
+
+<!--<link type="text/css" href="../css/bibstyle.css" rel="stylesheet" />-->
+<script type="text/x-mathjax-config">MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$']]} });</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="Author" CONTENT="Dominique Trémulot">
+	<meta name="Description" CONTENT="Remise à niveau">
+ 
+	<title>Calculs avec la fonction exponentielle</title>
+
+	<link type="text/css" rel="stylesheet" href="../style.css"/>
+	<link type="text/css" rel="stylesheet" href="../ressources.css"/>
+</head>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<body>
+
+<div style="display:none">
+	$$
+	\newcommand{\e}{\text{e}}
+	<!--\DeclareMathOperator{\ch}{ch}-->
+	$$
+</div>
+
+
+  	<!-- ======= Header ======= -->
+	<header id="header">
+    
+		<div class="logo">
+			<h1 class="text-light"><span>Étude du signe d'une expression</span></h1>
+		</div>
+    </header>
+   	<!-- End Header -->
+
+<main id="main">
+	<a href="../remiseaniveau.html"><button>Retour au menu</button></a>
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+    	<div class="container">
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 1</div>
+					<div class=inner>
+						<p>Étudier le signe de chacune des expressions suivantes sur $\mathbb{R}$.</p>
+						<p><ol>
+							<li>
+								<p>$A(x)=8x-7$</p>
+							</li>
+							<li>
+								<p>$B(x)=5-2x$</p>
+							</li>
+							<li>
+								<p>$C(x)=\left(\dfrac{1}{3}-\dfrac{5}{2}x\right)\left(7-\dfrac{1}{2}x\right)$</p>
+							</li>
+							<li>
+								<p>$D(x)=\dfrac{x}{9x+1}$</p>
+							</li>
+						</ol>
+						</p>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg11">Indication</button>
+					<div id="d11" class=hide>
+						<p><ol>
+							<li>
+								<p>Résoudre, par exemple, l'inéquation $A(x)>0$ et isoler $x$.</p>
+							</li>
+							<li>
+								<p>Résoudre, par exemple, l'inéquation $B(x)>0$ et isoler $x$.</p>
+							</li>
+							<li>
+								<p>Étudier le signe de chacun des facteurs comme aux questions 1. et 2., puis conclure en utilisant la règle des signes.</p>
+							</li>
+							<li>
+								<p>Étudier le signe de chacun des facteurs comme aux questions 1. et 2., puis conclure en utilisant la règle des signes.</p>
+							</li>
+						</ol>
+						</p>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg12">Corrigé</button>
+					<div id="d12" class=hide >
+						<ol>
+							<li>
+								<p>$A(x)=8x-7$</p>
+								<p>Soit un réel $x$.</p>
+								<p>$A(x)>0\Leftrightarrow 8x-7>0$</p>
+								<p>$A(x)>0\Leftrightarrow 8x>7$</p>
+								<p>$A(x)>0\Leftrightarrow x>\frac{7}{8}$</p>
+								<p>On obtient le tableau de signes suivant :</p>
+								<p><img src="tableau1.png" width="50%" ></p>
+							</li>
+							<li>
+								<p>$B(x)=5-2x$</p>
+								<p>Soit un réel $x$.</p>
+								<p>$B(x)>0\Leftrightarrow 5-2x>0$</p>
+								<p>$B(x)>0\Leftrightarrow 5>2x$</p>
+								<p>$B(x)>0\Leftrightarrow \frac{5}{2}>x$</p>
+								<p>On obtient le tableau de signes suivant :</p>
+								<p><img src="tableau2.png" width="50%" ></p>
+							</li>
+							<li>
+								<p>$C(x)=\left(\dfrac{1}{3}-\dfrac{5}{2}x\right)\left(7-\dfrac{1}{2}x\right)$</p>
+								<p>Étudions le signe de chacun des facteurs séparément.</p>
+								<p>Soit un réel $x$.</p>
+								<p>$\frac{1}{3}-\frac{5}{2}x>0\Leftrightarrow \frac{1}{3}>\frac{5}{2}x$</p>
+								<p>$\frac{1}{3}-\frac{5}{2}x>0\Leftrightarrow \dfrac{\frac{1}{3}}{\frac{5}{2}}>x$</p>
+								<p>$\frac{1}{3}-\frac{5}{2}x>0\Leftrightarrow \frac{1}{3}\times \frac{2}{5}>x$</p>
+								<p>$\frac{1}{3}-\frac{5}{2}x>0\Leftrightarrow \frac{2}{15}>x$</p>
+								<p>Soit un réel $x$.</p>
+								<p>$7-\dfrac{1}{2}x>0\Leftrightarrow 7>\frac{1}{2}x$</p>
+								<p>$7-\dfrac{1}{2}x>0\Leftrightarrow \dfrac{7}{\frac{1}{2}}>x$</p>
+								<p>$7-\dfrac{1}{2}x>0\Leftrightarrow 14>x$</p>
+								<p>En utilisant la règle du signe d'un produit de deux expressions, on obtient le tableau de signes suivant :</p>
+								<p><img src="tableau3.png" width="50%" ></p>
+							</li>
+							<li>
+								<p>$D(x)=\dfrac{x}{9x+1}$</p>
+								<p>L'expression étant un quotient, il peut exister des "valeurs interdites".</p>
+								<p>Pour que $D(x)$ existe il faut et il suffit que $9x+1\neq 0$, soit $x\neq \frac{-1}{9}$.</p>
+								<p>Étudions le signe de chacun des facteurs séparément.</p>
+								<p>Soit un réel $x$.</p>
+								<p>$x>0\Leftrightarrow x>0$</p>
+								<p>Soit un réel $x$.</p>
+								<p>$9x+1\Leftrightarrow 9x>-1$</p>
+								<p>$9x+1\Leftrightarrow x>\frac{-1}{9}$</p>
+								<p>En utilisant la règle du signe d'un quotient de deux expressions, on obtient le tableau de signes suivant :</p>
+								<p><img src="tableau4.png" width="50%" ></p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 2</div>
+					<div class=inner>
+						<p>Étudier le signe de chacune des expressions suivantes sur $\mathbb{R}$.</p>
+						<p><ol>
+							<li>
+								<p>$A(x)=8x^2-7$</p>
+							</li>
+							<li>
+								<p>$B(x)=5+4x-2x^2$</p>
+							</li>
+							<li>
+								<p>$C(x)=5+4x+2x^2$</p>
+							</li>
+							<li>
+								<p>$D(x)=x^4-x^2+1$</p>
+							</li>
+							<li>
+								<p>$E(x)=(9x-3)^2-(1-x)^2$</p>
+							</li>
+							</ol>
+						</p>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg21">Indication</button>
+					<div id="d21" class=hide>
+						<p><ol>
+							<li>
+								<p>On pourra factoriser ou utiliser le cours en commençant par calculer le discriminant de ces expressions polynomiales du second degré.</p>
+							</li>
+							<li>
+								<p>Utiliser le cours en commençant par calculer le discriminant de ces expressions polynomiales du second degré.</p>
+							</li>
+							<li>
+								<p>Utiliser le cours en commençant par calculer le discriminant de ces expressions polynomiales du second degré.</p>
+							</li>
+							<li>
+								<p>Poser $X=x^2$ et...</p>
+							</li>
+							<li>
+								<p>Factoriser l'expression avant de se reposer la question.</p>
+							</li>
+							</ol>
+						</p>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg22">Corrigé</button>
+					<div id="d22" class=hide>
+						<p><ol>
+							<li>
+								<p>$A(x)=8x^2-7$</p>
+								<p><strong>Méthode 1</strong></p>
+							</li>
+							<li>
+								<p>$B(x)=5+4x-2x^2$</p>
+							</li>
+							<li>
+								<p>$C(x)=5+4x+2x^2$</p>
+							</li>
+							<li>
+								<p>$D(x)=x^4-x^2+1$</p>
+							</li>
+							<li>
+								<p>$E(x)=(9x-3)^2-(1-x)^2$</p>
+							</li>
+							</ol>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 3</div>
+					<div class=inner>
+						<p>Montrer que pour tout réel $x$ :</p>
+						<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x-1}{\e^x+1}$</p>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg31">Indication</button>
+					<div id="d31" class=hide>
+						<p>On peut utiliser le fait que pour tout réel $x$, $\e^{-x}=\dfrac{1}{\e^x}$.</p>
+						<p>On peut également mutliplier numérateur et dénominateur par un nombre bien choisi.</p>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg32">Corrigé</button>
+					<div id="d32" class=hide>
+						<ol>
+							<ul>
+								<p><strong>Première méthode</strong></p>
+								<p>Soit un réel $x$.</p>
+								<p>$\e^{-x}=\dfrac{1}{\e^x}$</p>
+								<p>Donc $\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{1-\dfrac{1}{\e^x}}{1+\dfrac{1}{\e^x}}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\dfrac{\e^x}{\e^x}-\dfrac{1}{\e^x}}{\dfrac{\e^x}{\e^x}+\dfrac{1}{\e^x}}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\dfrac{\e^x-1}{\e^x}}{\dfrac{\e^x+1}{\e^x}}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x-1}{\e^x}\times \dfrac{\e^x}{\e^x+1}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x-1}{\e^x+1}$</p>
+							</ul>
+							<ul>
+								<p><strong>Deuxième méthode</strong></p>
+								<p>Soit un réel $x$.</p>
+								<p>En mutlipliant numérateur et dénominateur par $\e^x$ (qui est bien non nul), on obtient :</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x\times\left(1-\e^{-x}\right)}{\e^x\times\left(1+\e^{-x}\right)}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x-\e^x\times\e^{-x}}{\e^x+\e^x\times\e^{-x}}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x-\e^{x+(-x)}}{\e^x+\e^{x+(-x)}}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x-\e^{0}}{\e^x+\e^{0}}$</p>
+								<p>$\dfrac{1-\e^{-x}}{1+\e^{-x}}=\dfrac{\e^x-1}{\e^x+1}$</p>
+							</ul>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		</div>
+    </section><!-- End Featured Section -->
+
+<script type="text/javascript" src="fonctions.js"></script>
+
+</body>
+
+</html>
+
+
