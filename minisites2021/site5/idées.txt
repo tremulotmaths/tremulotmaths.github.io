@@ -1,0 +1,26 @@
+ - Présentation Nsi en gros avec la définition
+
+(ce qu'on fait durant l'année)
+exemple python ou autres boutons cliquable ou lien
+(lien apprentissage langages)
+(projet a réalisé durant l'année (créer un site internet)
+Pourquoi choisir NSI ! 
+
+ 
+- études a faire 
+● Institut Universitaire de Technologie (DUT)
+● Licences diverses (à caractère scientifique ou non)
+● Classe Préparatoire aux Grandes Écoles (CPGE)
+● Écoles d'ingénieurs avec préparation intégrée (type INSA)
+ 
+
+
+- Métier 
+● Informatique de gestion (commandes, facturation, paie des salariés,
+trésorerie...)
+● Informatique industrielle (concevoir des bâtiments ou des produits de haute
+technologie...)
+● Data science (analyser pour les entreprises les masses de données...)
+● Informatique décisionnelle (business intelligence...)
+● Réalité virtuelle, systèmes intelligents (robots, véhicules autonomes,
+simulation d'activités industrielles ou médicales, jeux vidéo...)

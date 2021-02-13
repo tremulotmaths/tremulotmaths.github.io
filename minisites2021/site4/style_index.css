@@ -1,0 +1,183 @@
+.navbar {
+    float:top ;
+    text-align: center;
+    background-color:	#4682B4;
+    list-style:none;
+    padding: 20px;
+    margin: 0px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+a:hover {
+  border-bottom:solid 2px white;
+  color:black
+}
+
+a:link { 
+ text-decoration:none;
+ margin: 4em;
+ font-weight: 850;
+ color: white;
+} 
+
+a:visited{
+  color: black
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    background: #eee;
+    position: relative;
+    right: 10px;
+    padding: 10px 1px;
+    border: 3px solid #eee;
+}
+
+p span {
+    border: 2px solid #ccc;
+    padding: 0.5rem;
+    background: #fff;
+}
+p .js-copy {
+    background:#ccc;
+    color: black;
+    padding: 0.5rem;
+    border: 2px solid #F41536;
+    font-size: inherit;
+}
+
+
+
+.owner {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: #45A6C5;
+
+}
+
+
+
+.actual {
+  border-bottom:solid 2px #F41536;
+
+
+
+
+}
+
+#bouton {
+  border:none;
+  text-decoration: none;
+  color: initial;
+ }
+
+#bouton:hover{
+  color:#F41536;
+}
+
+
+input{
+  opacity: 0;
+}
+
+button {
+  position: relative;
+  right: 150px;
+  padding: 8px 13px;
+  font-size: .5em;
+  border: 2px solid #FFF;
+  background-color: #E91E63;
+  color: #FFF;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
+              0 3px 6px rgba(0, 0, 0, .23);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background:	#B0C4DE;
+  font-size: large;
+  left: 50px;
+  display:flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-content {
+  background-color: white;
+  width: 758px;
+  margin: 20px 5px 0px 5px;
+  padding-top: 10px;
+}
+
+
+li {
+  list-style: none;
+}
+
+summary{
+  font-size: large;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.som{
+  position: relative;
+  right: 100px;
+}
+
+.som a{
+  color:black;
+}
+
+
+
+.icon-box {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 15px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out 0s;
+}
+.icon-box:hover {
+  background: rgb(70,130,180);
+}
+
+.pos{
+  position: relative;
+  width: 30%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.pos2{
+  position: absolute;
+  width: 30%;
+  right: 10px;
+  top: 50px;
+  padding-right: 20px;
+}
+.pos3{
+  position: absolute;
+  width: 30%;
+  right: 10px;
+  bottom: 215px;
+  padding-right: 20px;
+}
+.mt-4{
+  margin-top: 3rem !important;
+}
+
+
+
+img{
+  position:absolute;
+  top: 50px;
+  left: 455px;
+}
+
+#body {
+  background-image:url(image/background-index.jpg);
+}  
+
