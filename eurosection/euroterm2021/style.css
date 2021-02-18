@@ -1,0 +1,143 @@
+body {
+  font-family: "Audiowide", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #e96b56;
+}
+
+a:link{
+	color: #0000FF;
+	text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}*/
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#header .logo h1 {
+  font-size: 26px;
+  padding: 0 0 0 8px;
+  margin: 11px 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /*font-family: "Audiowide", sans-serif;*/
+  border-left: 8px solid #e96b56;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover {
+  color: #545454;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  /* padding: 0 0 80px 0;*/
+  margin-left: auto;
+  margin-right: auto; /* Centre le block horizontalement */
+  /*font-family: "Audiowide", sans-serif;*/
+}
+
+.section-bg {
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  /*font-family: "Poppins", sans-serif;*/
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e96b56;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Featured
+--------------------------------------------------------------*/
+
+.featured{
+  display: inline-block;
+	margin-left: auto;
+  margin-right: auto; /* Centre le block horizontalement */
+	width: 100%; /* Vous devez spécifiez une largeur */
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.featured div {
+  position: relative;
+  z-index: 2;
+}
+
+.bouton a {
+	display: inline-block;
+	width: 150px;
+	height: 180px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(von_koch.png) no-repeat;
+	color: black;
+  font-weight: bold;
+}
+
+.bouton a:hover {
+	background: url(von_koch_duff.png) no-repeat;
+  transform: rotate(180deg);
+}
+
+
+
+
+/*--------------------------------------------------------------
+# End style css
+--------------------------------------------------------------*/
