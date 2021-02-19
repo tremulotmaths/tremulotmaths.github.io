@@ -3,7 +3,7 @@ body {
   color: #444444;
 }
 
-a {
+/*a {
   color: #e96b56;
 }
 
@@ -15,11 +15,9 @@ a:link{
 a:hover {
   color: #fff;
   text-decoration: none;
-}
-
-/*h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
 }*/
+
+
 
 /*--------------------------------------------------------------
 # Header
@@ -43,7 +41,6 @@ a:hover {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  /*font-family: "Audiowide", sans-serif;*/
   border-left: 8px solid #e96b56;
 }
 
@@ -62,44 +59,15 @@ a:hover {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  /* padding: 0 0 80px 0;*/
   margin-left: auto;
   margin-right: auto; /* Centre le block horizontalement */
-  /*font-family: "Audiowide", sans-serif;*/
-}
-
-/*.section-bg {
-  background-color: white;
-}*/
+ }
 
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
 
-.section-title h2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  /*font-family: "Poppins", sans-serif;*/
-}
-
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #e96b56;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-
-.section-title p {
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # Featured
@@ -108,7 +76,7 @@ section {
 .featured{
   display: inline-block;
 	margin-left: auto;
-  margin-right: auto; /* Centre le block horizontalement */
+	margin-right: auto; /* Centre le block horizontalement */
 	width: 100%; /* Vous devez spécifiez une largeur */
 	padding-left: auto;
 	padding-right: auto;
