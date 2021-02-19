@@ -125,13 +125,13 @@ section {
 	height: 180px;
 	text-align: center;
 	vertical-align: middle;
-	background: url(von_koch.png) no-repeat;
+	background: url(vonkoch.png) no-repeat;
 	color: black;
   font-weight: bold;
 }
 
 .bouton a:hover {
-	background: url(von_koch_duff.png) no-repeat;
+	background: url(vonkochduff.png) no-repeat;
   transform: rotate(180deg);
 }
 
