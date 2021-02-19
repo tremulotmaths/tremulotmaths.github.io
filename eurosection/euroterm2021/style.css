@@ -93,14 +93,16 @@ section {
 	height: 180px;
 	text-align: center;
 	vertical-align: middle;
-	background: url("vonkoch.png") no-repeat;
+	background-image: url('vonkoch.png');
+	background-repeat: no-repeat;
 	color: black;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .bouton a:hover {
-	background: url("vonkochduff.png") no-repeat;
-  transform: rotate(180deg);
+	background-image: url('vonkochduff.png');
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
 }
 
 
