@@ -1,5 +1,6 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Audiowide", sans-serif;
   color: #444444;
 }
 
@@ -17,9 +18,9 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Header
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
   border-left: 8px solid #e96b56;
 }
 
@@ -80,7 +81,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
 }
 
 .section-title h2::after {
