@@ -88,6 +88,13 @@ div .container
 	height: 0;
 }
 
+.calameo{
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 0; 
+	height: 0;
+}
+
 .bouton {
   text-align: center;
 }
