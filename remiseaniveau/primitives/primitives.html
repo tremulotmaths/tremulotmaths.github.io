@@ -156,6 +156,207 @@
 			</div>
 
 			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 2</div>
+					<div class=inner>
+						<p>Dans chaque cas, déterminer toutes les primitives de la fonction $f$ sur l'intervalle $I$.</p>
+						<p>On reprend les mêmes fonctions qu'à l'exercice 1 pour voir ce que cela change.</p>
+						<ol>
+							<li>$f(x)=3x^8+5x^5-\dfrac{1}{3}x^3$, $I=\mathbb{R}$.</li><br>
+							<li>$g(x)=\dfrac{x}{3}\left(x^2-5\right)^{31}$, $I=\mathbb{R}$.</li><br>
+							<li>$h(x)=\dfrac{10+10x^4}{\left(5x+x^5\right)^4}$, $I=]0;+\infty[$.</li><br>
+							<li>$k(x)=\dfrac{10+10x^4}{5x+x^5}$, $I=]0;+\infty[$.</li><br>
+							<li>$\ell(x)=x\text{e}^{5x^2-1}$, $I=\mathbb{R}$</li><br>
+							<li>$m(x)=\dfrac{x}{\sqrt{x^2-9}}$, $I=]3;+\infty[$</li>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg21">Indication</button>
+					<div id="d21" class=hide>
+						<p>Apprenez à reconnaître la bonne formule.</p>
+						<ol>
+							<li>$f$ est une fonction polynôme.</li><br>
+							<li>$g$ ressemble à $u'\times u^n$.</li><br>
+							<li>$h$ ressemble à $\dfrac{u'}{u^n}$ avec $n\in\mathbb{N}, n\geq 2$ ou $u'\times u^n$ avec $n\in\mathbb{Z}, n\leq -2$.</li><br>
+							<li>$k$ ressemble à $\dfrac{u'}{u}$.</li><br>
+							<li>$\ell$ ressemble $u'\text{e}^u$</li><br>
+							<li>$m$ ressemble $\dfrac{u'}{\sqrt{u}}$</li>
+						</ol>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg22">Corrigé</button>
+					<div id="d22" class=hide>
+						<ol>
+							<li>$f(x)=3x^8+5x^5-\dfrac{1}{3}x^3$, $I=\mathbb{R}$.<br><br>
+								$f$ est une fonction polynôme.<br><br>
+								Une primitive de $f$ sur $I$ est :<br><br>
+								$F:x\mapsto 3\times \dfrac{1}{9}x^9+5\times \dfrac{1}{6}x^6-\dfrac{1}{3}\times \dfrac{1}{4}x^4$,<br><br>
+								soit $F:x\mapsto \dfrac{1}{3}x^9+\dfrac{5}{6}x^6-\dfrac{1}{12}x^4$.<br><br>
+								Les primitives de $f$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \dfrac{1}{3}x^9+\dfrac{5}{6}x^6-\dfrac{1}{12}x^4+k$ où $k$ est un réel quelconque.<br><br>
+							</li>
+							<li>$g(x)=\dfrac{x}{3}\left(x^2-5\right)^{31}$, $I=\mathbb{R}$.<br><br>
+								$g$ ressemble à $u'\times u^n$ avec $u(x)=x^2-5$ et $n=31$.<br><br>
+								La fonction $u$ est dérivable sur $I$ et pour tout $x\in I$,<br><br>
+								$u'(x)=2x$.<br><br>
+								Ainsi, pour tout $x\in I$, $u'(x)\times u(x)^n=2x\left(x^2-5\right)^{31}$.<br><br>
+								Par conséquent, $g=\dfrac{1}{6}u'u^n$.<br><br>
+								Une primitive de $g$ sur $I$ est donc :<br><br>
+								$G:x\mapsto \dfrac{1}{6}\times \dfrac{1}{n+1}u^{n+1}$,<br><br>
+								soit $G:x\mapsto \dfrac{1}{6}\times \dfrac{1}{32}\left(x^2-5\right)^{32}$,<br><br>
+								c'est-à-dire $G:x\mapsto \dfrac{1}{192}\left(x^2-5\right)^{32}$.<br><br>
+								Les primitives de $g$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \dfrac{1}{192}\left(x^2-5\right)^{32}+k$ où $k$ est un réel quelconque.<br><br>
+							</li>
+							<li>$h(x)=\dfrac{10+10x^4}{\left(5x+x^5\right)^4}$, $I=]0;+\infty[$.<br><br>
+								$h$ ressemble à $\dfrac{u'}{u^n}$ avec $n\in\mathbb{N}, n\geq 2$ ou $u'\times u^n$ avec $n\in\mathbb{Z}, n\leq -2$.
+								<h4>Première méthode</h4>
+								$h$ ressemble à $\dfrac{u'}{u^n}$ avec $n=4$ et $u(x)=5x+x^5$.<br><br>
+								La fonction $u$ est dérivable et ne s'annule pas sur $I$.<br><br>
+								Pour tout $x\in I$, $u'(x)=5+5x^4$,<br><br>
+								donc $\dfrac{u'(x)}{u(x)^n}=\dfrac{5+5x^4}{\left(5x+x^5\right)^4}$.<br><br>
+								Ainsi $h=2\times \dfrac{u'}{u^n}$.<br><br>
+								Une primitive de $h$ sur $I$ est donc $H=2\times\dfrac{-1}{(n-1)u^{n-1}}$,<br><br>
+								soit $H:x\mapsto \dfrac{-2}{3\left(5x+x^5\right)^3}$.<br><br>
+								Les primitives de $h$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \dfrac{-2}{3\left(5x+x^5\right)^3}+k$ où $k$ est un réel quelconque.<br><br>
+								<h4>Deuxième méthode</h4>
+								Pour tout $x\in I$, $h(x)=\left(10+10x^4\right)\left(5x+x^5\right)^{-4}$.<br><br>
+								$h$ ressemble à $u'u^n$ avec $n=-4$ et $u(x)=5x+x^5$.<br><br>
+								La fonction $u$ est dérivable et ne s'annule pas sur $I$.<br><br>
+								Pour tout $x\in I$, $u'(x)=5+5x^4$,<br><br>
+								donc $u'(x)u(x)^n=\left(5+5x^4\right)\left(5x+x^5\right)^{-4}$.<br><br>
+								Ainsi $h=2\times u'u^n$.<br><br>
+								Une primitive de $h$ sur $I$ est donc $H=2\times\dfrac{1}{n+1}u^{n+1}$,<br><br>
+								soit $H:x\mapsto \dfrac{2}{-3}\left(5x+x^5\right)^{-3}$.<br><br>
+								On retrouve bien $H:x\mapsto \dfrac{-2}{3\left(5x+x^5\right)^3}$.<br><br>
+								Les primitives de $h$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \dfrac{-2}{3\left(5x+x^5\right)^3}+k$ où $k$ est un réel quelconque.<br><br>
+							</li>
+							<li>$k(x)=\dfrac{10+10x^4}{5x+x^5}$, $I=]0;+\infty[$.<br><br>
+								$k$ ressemble à $\dfrac{u'}{u}$ avec $u(x)=5x+x^5$.<br><br>
+								La fonction est dérivable et strictement positive sur $I$, <br><br>
+								et pour tout $x\in I$, 	$u'(x)=5+5x^4$,<br><br>
+								donc $\dfrac{u'(x)}{u(x)}=\dfrac{5+5x^4}{5x+x^5}$.<br><br>
+								Ainsi $k=2\times \dfrac{u'}{u}$.<br><br>
+								Comme $u$ est strictement positive sur $I$, une primitive de $k$ sur $I$ est :<br><br>
+								$K=2\times \ln(u)$, soit $K:x\mapsto \ln\left(5x+x^5\right)$.<br><br>
+								Les primitives de $k$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \dfrac{-2}{3\left(5x+x^5\right)^3}+C$ où $C$ est un réel quelconque.<br><br>
+							</li>
+							<li>$\ell(x)=x\text{e}^{5x^2-1}$, $I=\mathbb{R}$.<br><br>
+								$\ell$ ressemble $u'\text{e}^u$ avec $u(x)=5x^2-1$.<br><br>
+								La fonction $u$ est dérivable sur $I$,<br><br>
+								et pour tout $x\in I$, $u'(x)=10x$.<br><br>
+								Ainsi, pour tout $x\in I$, $u'(x)\text{e}^{u(x)}=10x\text{e}^{5x^2-1}$,<br><br>
+								donc $\ell=\dfrac{1}{10}u'\text{e}^{u}$.<br><br>
+								Une primitive de $\ell$ sur $I$ est donc :<br><br>
+								$L = \dfrac{1}{10}\text{e}^{u}$,<br><br>
+								soit $L:x\mapsto \dfrac{1}{10}\text{e}^{5x^2-1}$.<br><br>
+								Les primitives de $\ell$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \dfrac{1}{10}\text{e}^{5x^2-1}+k$ où $k$ est un réel quelconque.<br><br>
+							</li>
+							<li>$m(x)=\dfrac{x}{\sqrt{x^2-9}}$, $I=]3;+\infty[$.<br><br>
+								$m$ ressemble $\dfrac{u'}{\sqrt{u}}$ avec $u(x)=x^2-9$.<br><br>
+								La fonction $u$ est dérivable et strictement positive sur $I$ <br><br>
+								et pour tout $x\in I$, $u'(x)=2x$,<br><br>
+								donc $\dfrac{u'(x)}{\sqrt{u(x)}}=\dfrac{2x}{\sqrt{x^2-9}}$.<br><br>
+								Aini $m=\dfrac{1}{2}\times \dfrac{u'}{\sqrt{u}}$.<br><br>
+								Une primitive de $m$ sur $I$ est donc :<br><br>
+								$M = \dfrac{1}{2}\times 2\sqrt{u}$,<br><br>
+								soit $M:x\mapsto \sqrt{x^2-9}$.<br><br>
+								Les primitives de $m$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \sqrt{x^2-9}+k$ où $k$ est un réel quelconque.<br><br>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 3</div>
+					<div class=inner>
+						<ol>
+							<li>Soit $\ell$ la fonction définie sur $\mathbb{R}$ par $\ell(x)=x\text{e}^{5x^2-1}$.<br><br>
+								Déterminer la primitive $L$ de $\ell$ sur $\mathbb{R}$ qui s'annule en 5.
+							</li><br>
+							<li>Soit $\ell$ la fonction définie sur $I=]3;+\infty[$ par $m(x)=\dfrac{x}{\sqrt{x^2-9}}$.<br><br>
+								Déterminer la primitive $M$ de $m$ sur $I$ telle que $M(10)=1$.
+							</li><br>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg31">Indication</button>
+					<div id="d31" class=hide>
+						<p>Apprenez à reconnaître la bonne formule.</p>
+						<ol>
+							<li>$\ell$ ressemble $u'\text{e}^u$</li><br>
+							<li>$m$ ressemble $\dfrac{u'}{\sqrt{u}}$</li>
+						</ol>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg32">Corrigé</button>
+					<div id="d32" class=hide>
+						<ol>
+							<li>$\ell(x)=x\text{e}^{5x^2-1}$, $I=\mathbb{R}$.<br><br>
+								$\ell$ ressemble $u'\text{e}^u$ avec $u(x)=5x^2-1$.<br><br>
+								La fonction $u$ est dérivable sur $I$,<br><br>
+								et pour tout $x\in I$, $u'(x)=10x$.<br><br>
+								Ainsi, pour tout $x\in I$, $u'(x)\text{e}^{u(x)}=10x\text{e}^{5x^2-1}$,<br><br>
+								donc $\ell=\dfrac{1}{10}u'\text{e}^{u}$.<br><br>
+								Une primitive de $\ell$ sur $I$ est donc :<br><br>
+								$\dfrac{1}{10}\text{e}^{u}$,<br><br>
+								soit $x\mapsto \dfrac{1}{10}\text{e}^{5x^2-1}$.<br><br>
+								Les primitives de $\ell$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \dfrac{1}{10}\text{e}^{5x^2-1}+k$ où $k$ est un réel quelconque.<br><br>
+								Notons $L$ la primite de $\ell$ sur $I$ qui s'annule en 5.<br><br>
+								On sait qu'il existe un réel $k$ tel que :<br><br>
+								$L(x)=\dfrac{1}{10}\text{e}^{5x^2-1}+k$ pour tout $x\in I$.<br><br>
+								Ainsi $L(5)=\dfrac{1}{10}\text{e}^{124}+k$.<br><br>
+								Donc $L(5)=0\Leftrightarrow \dfrac{1}{10}\text{e}^{124}+k=0\Leftrightarrow k=-\dfrac{1}{10}\text{e}^{124}$<br><br>
+								La fonction $L$ cherchée est donc :<br><br>
+								$L:x\mapsto \dfrac{1}{10}\text{e}^{5x^2-1}-\dfrac{1}{10}\text{e}^{124}$.<br><br>
+							</li>
+							<li>$m(x)=\dfrac{x}{\sqrt{x^2-9}}$, $I=]3;+\infty[$.<br><br>
+								$m$ ressemble $\dfrac{u'}{\sqrt{u}}$ avec $u(x)=x^2-9$.<br><br>
+								La fonction $u$ est dérivable et strictement positive sur $I$ <br><br>
+								et pour tout $x\in I$, $u'(x)=2x$,<br><br>
+								donc $\dfrac{u'(x)}{\sqrt{u(x)}}=\dfrac{2x}{\sqrt{x^2-9}}$.<br><br>
+								Aini $m=\dfrac{1}{2}\times \dfrac{u'}{\sqrt{u}}$.<br><br>
+								Une primitive de $m$ sur $I$ est donc :<br><br>
+								$\dfrac{1}{2}\times 2\sqrt{u}$,<br><br>
+								soit $:x\mapsto \sqrt{x^2-9}$.<br><br>
+								Les primitives de $m$ sur $I$ sont donc les fonctions du type :<br><br>
+								$x\mapsto \sqrt{x^2-9}+k$ où $k$ est un réel quelconque.<br><br>
+								Notons $M$ la primite de $m$ sur $I$ telle que $M(10)=1$.<br><br>
+								On sait qu'il existe un réel $k$ tel que :<br><br>
+								$M(x)=\sqrt{x^2-9}+k$ pour tout $x\in I$.<br><br>
+								Ainsi $M(10)=\sqrt{91}+k$.<br><br>
+								Donc $M(10)=1\Leftrightarrow \sqrt{91}+k=1\Leftrightarrow k=1-\sqrt{91}$<br><br>
+								La fonction $M$ cherchée est donc :<br><br>
+								$M:x\mapsto \sqrt{x^2-9}+1-\sqrt{91}$.<br><br>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 		</div>
     </section><!-- End Featured Section -->
 
