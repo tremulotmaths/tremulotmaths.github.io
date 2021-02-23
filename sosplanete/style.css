@@ -1,0 +1,172 @@
+body {
+  font-family: "Audiowide", sans-serif;
+  color: #444444;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#header .logo h1 {
+  text-align: center;
+  font-size: 55px;
+  padding: 0 0 0 8px;
+  margin: 11px 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover {
+  color: #545454;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  margin-left: auto;
+  margin-right: auto; /* Centre le block horizontalement */
+ }
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+
+
+div .container
+{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.jigsaw
+{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.genially{
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 0; 
+	height: 0;
+}
+
+.calameo{
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 0; 
+	height: 0;
+}
+
+
+.bouton1 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Audiowide", sans-serif;
+}
+
+.bouton1:hover {
+  background-color: #5735a7;
+}
+
+.bouton2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  width: 600px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Audiowide", sans-serif;
+}
+
+.bouton2:hover {
+  background-color: #5735a7;
+}
+
+.menu {
+  background-color: #f4511e;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Audiowide", sans-serif;
+}
+
+.menu:hover {
+  background-color: #5735a7;
+}
+
+.global {
+  /*display: flex;*/
+  overflow:auto;
+}
+.gauche {
+  float:left;
+  width:50%;
+}
+.droit {
+  overflow:auto;
+}
+
+h1{
+  font-size: 40px;
+}
+
+/*--------------------------------------------------------------
+# End style css
+--------------------------------------------------------------*/
