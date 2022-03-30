@@ -149,7 +149,7 @@
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 20,
-    time: 1000
+    time: 10
   });
 
   // Skills section

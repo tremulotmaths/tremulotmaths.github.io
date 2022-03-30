@@ -2195,3 +2195,17 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+/*---------------------------------------*/
+/* Images  */
+.img-fluid{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.logo{
+  display:inline;
+  width: 50%;
+}
