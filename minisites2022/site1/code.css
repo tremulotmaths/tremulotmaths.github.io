@@ -1,0 +1,230 @@
+body {
+    background-color:rgb(11, 10, 10);
+}
+
+.titre {
+    color: rgb(89, 114, 173);
+    padding: 2em;
+}
+
+.image {
+    width: 100%;
+    height: 100%; 
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    color:yellow;
+    border: 2px solid #ccc;
+    padding: 0.5rem;
+    background: rgb(15, 161, 197);
+}
+
+.rect {
+    box-shadow: rgba(192, 6, 6, 0.15);
+    border-radius: 10x;
+    border-bottom: 10px solid #be688d;
+    background: rgb(254, 255, 255);
+    
+  }
+.rect:hover {
+    background: rgb(219, 170, 7);}
+    
+
+
+a:link { 
+    text-decoration:none;
+    margin: 7em;
+    font-weight: 850;
+    color: #f10b0b;
+}
+
+a:visited{
+    color: #a13161}
+
+p {
+        
+        background: #eee;
+        
+        left: 10px;
+        padding: 5px 15px;
+        border: 7px solid rgb(231, 22, 22);
+}
+
+a{
+    color: rgb(1, 98, 216);
+    
+}
+
+
+  header {
+    position: fixed;
+    background-color : #5e2484;
+    width: 100%;
+    height: 133px; 
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    }
+
+
+.image1 {
+        width: 30%;
+        height: 15%;
+        position:absolute;
+        top: 11em; 
+        left:3em;
+}
+
+    
+.image1 img {
+        width: 20%;
+        height: 80%;
+
+    }
+
+
+
+.image2 {
+        width: 30%;
+        height: 15%; 
+        position:absolute;
+        top: 11em; 
+        left:35em ;
+    }
+    
+.image2 img {
+        width: 20%;
+        height: 80%;
+    }
+
+
+.image3 {
+        width: 30%;
+        height: 15%;
+        position:absolute;
+        top: 11em;
+        left:67em ;
+
+    }
+    
+.image3 img {
+        width: 20%;
+        height: 80%;
+    }
+
+.image4 {
+    width: 80%;
+        height: 200%;
+        position:absolute;
+        top: 9em;
+        
+        
+        
+}
+
+.image4 img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 80%;
+    height: 200%;
+}
+
+h5 {
+    position:absolute;
+    font-size:24px;
+    color: #eee;
+    left:42em ;
+    top:3em ;
+}
+
+h3 {
+    size:10px;
+    color: #eee;
+}
+
+h4 {
+    font-size:20px;
+    color: #eee;
+    position:absolute;
+    top:30em ;
+    
+}
+
+.image5 {
+    width: 20%;
+        height: 45%;
+        position:absolute;
+        top: 32em;
+        right:1em ;
+}
+
+.image5 img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 70%;
+    height: 300%;
+}
+
+.image_metier {
+    width: 20%;
+    height: 25%;
+    position:absolute;
+    top: 14em;
+    left:54em ;
+
+}
+    
+
+
+.image_metier img {
+    width: 200%;
+    height: 200%;
+
+}
+
+.image1_metier {
+    width: 20%;
+    height: 25%;
+    position:absolute;
+    top: 14em; 
+    left:3em ;
+}
+
+
+.image1_metier img {
+    width: 200%;
+    height: 200%;
+    float: left;
+    margin: 0 5px 15px 0;
+
+}
+
+.titre1 {
+    position: absolute;
+	left: 20%;
+    top:5em;
+    font-size: 40px;
+    color: rgb(235, 0, 0);
+    padding: 2em;
+    
+}
+
+.rect2 {
+    box-shadow: rgba(192, 6, 6, 0.15);
+    
+    background: rgb(209, 209, 209);
+}
+
+.imagepython {
+    position: absolute;
+    top: 28em;
+    
+    
+}
+
+
