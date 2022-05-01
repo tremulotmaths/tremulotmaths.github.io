@@ -1,0 +1,96 @@
+/*autre code de style de Céline*/
+
+body{
+    color:black;
+    background: url(img/woow.png) center 0% no-repeat scroll; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    color:rgb(214, 202, 184);
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5em;
+}
+
+
+#contenu{
+    display: inline-block;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px 50px;
+    vertical-align: top;
+    border-radius: 100px;
+}
+
+#contenu .box{
+    background-color: rgba(132, 0, 255, 0.582);
+    padding : 50px;
+    border-radius: 100px;
+
+}
+
+
+
+#contenu h1{
+    text-align: center;
+    background-color: blueviolet;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    font-size: 50px;
+}
+
+#contenu .box1 div{
+    display:inline-block;
+    width: 48%;
+    vertical-align: middle;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.p1{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenu .box2 div{
+    display:inline-block;
+    width: 48%;
+    vertical-align: middle;
+    font-size: 20px;
+    text-align: justify;
+}
+.p2{
+    display:block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contenu .box3 div{
+    display:inline-block;
+    width: 48%;
+    vertical-align: middle;
+    font-size: 20px;
+    text-align: justify;
+}
+.p3{
+    display:block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer p{
+    color: white;
+    background-color:black;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+

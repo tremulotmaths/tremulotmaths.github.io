@@ -1,0 +1,63 @@
+/*CSS de la page d'accueil par Gabrielle*/
+
+img {
+    height : 26em;
+}
+
+#entete {
+    background-color: rgb(46, 51, 54);
+    text-align: center;
+    color: white;
+    font-family : Noto Sans, sans-serif;
+    font-weight: bold;
+    font-size : 3em;
+    height: 6em;
+    line-height: 6em;
+}
+
+#photo1 {
+    padding-top: 20em;
+    padding-left : 6em ;
+    position: absolute;
+    top: 4em;
+    left: 1em;
+}
+
+.texte {
+    font-size: larger;
+    font-family: Noto Sans, sans-serif;
+    font-weight: bold;
+    border : 4pt solid rgb(46, 51, 54);
+    width: 50%;
+    padding: 0.8em;
+    background-color: white;
+}
+
+#categorie{
+    padding-left: 55em;
+    padding-top: 7em ;
+}
+
+#categorie :hover {
+	background-color: rgb(46, 51, 54);
+    color: white;
+}
+
+address{
+    margin-top: 7em;
+    margin-left: 1em;
+    padding-top: 1em;
+    border-top : thin double;
+    font-family: Noto Sans, sans-serif;
+}
+
+a:visited {
+    color: rgb(14, 175, 122) 
+}
+
+#bouton{
+    background-color :rgb(46, 51, 54);
+    padding-left: 50%;
+    padding-right: 50%;
+    margin-top: 10em;
+}
