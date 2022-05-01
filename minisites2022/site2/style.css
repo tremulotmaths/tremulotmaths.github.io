@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-image:url(informatique.jpg)
+}
+
+.titre {
+	color: white;
+	font-family: arial;
+	padding: 0.5em;
+}
+
+.accueil {
+	width: 5%;
+	height: 1em;
+	position: absolute;
+	left: 2em;
+	top: 1em;
+	text-align: center;
+}
+
+
+.hdp {
+	width: 100%;
+	height: 4em;
+	background-color: black;
+	text-align: center;
+}
+
+
+.bdp {
+	width: 100%;
+	height: 5em;
+	background-color: black;
+	bottom: 0;
+	position:absolute;
+}
+
+
+.p, .p1, .p2{
+	width: 25%;
+    height: 32em;
+	background-color: white;
+	text-align: center;
+	display: inline-block;
+	margin: 3.7em;
+	padding: 1em;
+	justify-content: space-evenly;
+	border-radius: 1em;
+	font-family: arial;
+	border-radius: 5em;
+	border-color: black;
+}
+
+.phtml, .phtml1, .phtml2{
+	width: 25%;
+    height: 24em;
+	background-color: gray;
+	text-align: center;
+	display: inline-block;
+	margin: 3.5em;
+	padding: 1em;
+	justify-content: space-evenly;
+	border-radius: 1em;
+	font-family: arial;
+	border-radius: 5em;
+	border-color: black;
+}
+
+#bouton{
+	width: 50%;
+	height: 4em;
+	margin: 1.5em;
+	background-color: rgb(104, 104, 104);
+	border-radius: 1em;
+	border-color: black;
+}
+
+.l{
+	list-style-type:none;
+    text-align: left;
+    padding: 1.5em;
+}
+
+.image{
+	padding: 1em;
+	width: 13em;
+	height: auto;
+}
+
+#couleur{
+	color: cyan;
+}
+
+#souligne{
+	text-decoration: underline;
+}
+
+a:link {
+    color: #0062e7;
+}
+
+a:visited {
+    color: #00159d;
+}
+
+a:hover {
+    color: #18c3ff;
+}
