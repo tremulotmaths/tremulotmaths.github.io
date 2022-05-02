@@ -5,7 +5,23 @@ body {
 .titre {
     color: rgb(89, 114, 173);
     padding: 2em;
+    position: absolute;
+    left:-1em ;
+    top: 0em;
 }
+
+.titre1 {
+    position: absolute;
+	left: 20%;
+    top:5em;
+    font-size: 40px;
+    color: rgb(235, 0, 0);
+    padding: 2em;    
+}
+
+
+
+
 
 .image {
     width: 100%;
@@ -17,6 +33,176 @@ body {
     height: 100%;
 }
 
+.image1 {
+    width: 30%;
+    height: 15%;
+    position:absolute;
+    top: 11em; 
+    left:2em;
+}
+
+
+.image1 img {
+    width: 20%;
+    height: 80%;
+}
+
+
+
+.image2 {
+    width: 30%;
+    height: 15%; 
+    position:absolute;
+    top: 11em; 
+    left:34em ;
+}
+
+.image2 img {
+    width: 20%;
+    height: 80%;
+}
+
+
+.image3 {
+    width: 30%;
+    height: 15%;
+    position:absolute;
+    top: 11em;
+    left:66em ;
+}
+
+.image3 img {
+    width: 20%;
+    height: 80%;
+}
+
+.image4 {
+width: 70%;
+    height: 30%;
+    position:absolute;
+    top: 11em;    
+}
+
+.image4 img {
+margin: 0 15px 15px 0;
+width: 80%;
+height: 200%;
+}
+
+.image5 {
+    width: 40%;
+    height: 65%;
+    position:absolute;
+    top: 20em;
+    right:-11em ;
+}
+
+.image5 img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 60%;
+    height: 50%;
+}
+
+.image_metier {
+    width: 20%;
+    height: 25%;
+    position:absolute;
+    top: 14em;
+    left:54em ;
+}
+    
+.image_metier img {
+    width: 200%;
+    height: 200%;
+}
+
+.image1_metier {
+    width: 20%;
+    height: 25%;
+    position:absolute;
+    top: 14em; 
+    left:3em ;
+}
+
+.image1_metier img {
+    width: 200%;
+    height: 200%;
+    float: left;
+    margin: 0 5px 15px 0;
+}
+
+.imagepython {
+    position: absolute;
+    top: 28em;    
+}
+
+.imgAugustin {
+    position: absolute;
+    top:3em ;
+    left:17em ;
+}
+
+.imgAugustin img {
+    width:5em ;
+    height:3em ;
+
+}
+
+.imgbouton {
+    position: absolute;
+    top:12em ;
+    left:9em ;
+}
+
+.imgbouton img{
+    width:14em ;
+    height:10em ;
+}
+
+.imgbouton img:hover {
+	transform:rotateZ(20deg);
+}
+
+.imgbouton2 {
+    position: absolute;
+    top:13em ;
+    left:48em ;
+}
+
+.imgbouton2 img{
+    width:14em ;
+    height:10em ;
+}
+
+.imgbouton2 img:hover {
+	transform:rotateZ(20deg);
+}
+
+
+
+
+.button {
+	position: absolute;
+    top:29em ;
+    left:-7em ;
+}
+
+.button img {
+	height:5em ;
+    width:6em ;
+}
+
+.bouton a {
+	display: block;
+	width: 150px;
+	line-height: 50px;
+	
+}
+
+
+
+
 span {
     color:yellow;
     border: 2px solid #ccc;
@@ -25,15 +211,54 @@ span {
 }
 
 .rect {
+    position:absolute;
+    top: 1em;
+    left:23em ;
+    padding: 40px 170px;
     box-shadow: rgba(192, 6, 6, 0.15);
-    border-radius: 10x;
-    border-bottom: 10px solid #be688d;
+    border-radius: 20px;
+    border-bottom: 18px solid #be688d;
     background: rgb(254, 255, 255);
     
   }
 .rect:hover {
-    background: rgb(219, 170, 7);}
+    background: rgb(219, 170, 7);
+}
+
+.rect2 {
+    box-shadow: rgba(192, 6, 6, 0.15);
     
+    background: rgb(209, 209, 209);
+}
+
+.rect3 {
+        position:absolute;
+        top: 1em;
+        left:46em ;
+        padding: 40px 170px;
+        box-shadow: rgba(192, 6, 6, 0.15);
+        border-radius: 20px;
+        border-bottom: 18px solid #be688d;
+        background: rgb(254, 255, 255);
+        
+}
+.rect3:hover {
+        background: rgb(219, 170, 7);}
+
+
+.rect4 {
+    position:absolute;
+    top: 1em;
+    left:69em ;
+    padding: 40px 170px;
+    box-shadow: rgba(192, 6, 6, 0.15);
+    border-radius: 20px;
+    border-bottom: 18px solid #be688d;
+    background: rgb(254, 255, 255);
+            
+}
+.rect4:hover {
+background: rgb(219, 170, 7);}
 
 
 a:link { 
@@ -56,12 +281,15 @@ p {
 }
 
 a{
-    color: rgb(1, 98, 216);
+    color: rgb(156, 195, 242);
+    top:5em ;
+    position: absolute;
+    left:1em ;
     
 }
 
 
-  header {
+header {
     position: fixed;
     background-color : #5e2484;
     width: 100%;
@@ -72,78 +300,18 @@ a{
     }
 
 
-.image1 {
-        width: 30%;
-        height: 15%;
-        position:absolute;
-        top: 11em; 
-        left:3em;
-}
-
-    
-.image1 img {
-        width: 20%;
-        height: 80%;
-
-    }
 
 
 
-.image2 {
-        width: 30%;
-        height: 15%; 
-        position:absolute;
-        top: 11em; 
-        left:35em ;
-    }
-    
-.image2 img {
-        width: 20%;
-        height: 80%;
-    }
-
-
-.image3 {
-        width: 30%;
-        height: 15%;
-        position:absolute;
-        top: 11em;
-        left:67em ;
-
-    }
-    
-.image3 img {
-        width: 20%;
-        height: 80%;
-    }
-
-.image4 {
-    width: 80%;
-        height: 200%;
-        position:absolute;
-        top: 9em;
-        
-        
-        
-}
-
-.image4 img {
-    float: left;
-    margin: 0 15px 15px 0;
-    width: 80%;
-    height: 200%;
-}
-
-h5 {
-    position:absolute;
-    font-size:24px;
-    color: #eee;
-    left:42em ;
-    top:3em ;
-}
 
 h3 {
-    size:10px;
+    position:absolute;
+    top: -402px;
+    left:-237px ;
+    font-size: 2em;
+    display: inline;
+    width: 25px;
+    white-space: nowrap;
     color: #eee;
 }
 
@@ -151,80 +319,28 @@ h4 {
     font-size:20px;
     color: #eee;
     position:absolute;
-    top:30em ;
-    
+    top:30em ;    
 }
 
-.image5 {
-    width: 20%;
-        height: 45%;
-        position:absolute;
-        top: 32em;
-        right:1em ;
-}
-
-.image5 img {
-    float: left;
-    margin: 0 15px 15px 0;
-    width: 70%;
-    height: 300%;
-}
-
-.image_metier {
-    width: 20%;
-    height: 25%;
+h5 {
     position:absolute;
-    top: 14em;
-    left:54em ;
-
-}
-    
-
-
-.image_metier img {
-    width: 200%;
-    height: 200%;
-
-}
-
-.image1_metier {
-    width: 20%;
-    height: 25%;
-    position:absolute;
-    top: 14em; 
-    left:3em ;
+    font-size:24px;
+    color: #eee;
+    top:18em ;
 }
 
 
-.image1_metier img {
-    width: 200%;
-    height: 200%;
-    float: left;
-    margin: 0 5px 15px 0;
 
-}
 
-.titre1 {
+
+
+
+
+.vidéo {
     position: absolute;
-	left: 20%;
-    top:5em;
-    font-size: 40px;
-    color: rgb(235, 0, 0);
-    padding: 2em;
-    
+    top:11em ;
+    right:3em ;
 }
 
-.rect2 {
-    box-shadow: rgba(192, 6, 6, 0.15);
-    
-    background: rgb(209, 209, 209);
-}
-
-.imagepython {
-    position: absolute;
-    top: 28em;
-    
-    
-}
 
 
