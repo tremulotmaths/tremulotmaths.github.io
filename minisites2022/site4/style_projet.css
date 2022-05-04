@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+#acadre{
+    border-style: inset;
+    border-color: rgb(255, 127, 127);
+    border-width: 4px;
+    width: 550px;
+}
+#b{
+    border-style: groove;
+    border-color: rgb(255, 127, 127);
+    border-width: 4px;
+    width: 550px;
+}
+#c{
+    border-style: ridge;
+    border-color: rgb(255, 127, 127);
+    border-width: 4px;
+    width: 450px;
+}
+#d{
+    border-style: groove;
+    border-color: rgb(255, 127, 127);
+    border-width: 4px;
+    width: 240px;
+}
+#e{
+    border: outset 4px rgb(255, 127, 127);
+    width: 480px
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+#home{
+    background-image: url("background-black.jpg");
+}
+nav{
+    background-color: transparent;
+    height: 100px;
+}
+nav img{
+    width: 150px;
+}
+form{
+    background-color: rgba(0, 0, 0, .75);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
+
+p{
+    color: #ffffff;
+}
+a{
+    color: #fff;
+}
+
+li{
+    color: #fff;
+}
+.content{ 
+    margin: 0 10%;
+    margin-top: 150px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+#profil-page{
+    background-color: #141414;
+}
+h2{
+    color: rgb(221, 126, 126);
+}
+.space-between{
+    justify-content: space-between;
+}
+
+
+@import
+url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.accueil-button{
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-family: 'Pacifico',cursive;
+    border-bottom: 5px solid #720909;
+    text-shadow: #720909;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    float: right;
+    
+}
+
+.accueil-button:active{
+    transform: translate(0,5px);
+    border-bottom: 1px solid;
+}
+
+.suivant-button{
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-family: 'Pacifico',cursive;
+    border-bottom: 5px solid #720909;
+    text-shadow: #720909;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    float: right;
+    
+}
+
+.suivant-button:active{
+    transform: translate(0,5px);
+    border-bottom: 1px solid;
+}
