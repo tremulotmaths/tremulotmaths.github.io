@@ -1,0 +1,97 @@
+/* style pour la page programme scolaire */
+
+/* -------------------------------------------------------------- General ---- */
+
+.parent {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.child {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid #fff
+    /* border: 1px solid #000; utilisé pour reperer des eventuels problèmes, en voyant les limites du div */ 
+}
+
+/* -------------------------------------------------------------- para ---- */
+
+.para {
+    text-align: center;
+    padding: 6vh 20vh 10vh 20vh;
+    font-size: 25px;
+}
+
+/* -------------------------------------------------------------- tableau ---- */
+
+.tableau{
+    padding: 20vh 10vw 10vh 0vw;
+}
+
+.tableau img{
+    width: 35vw;
+    height: auto;  
+}
+
+/* -------------------------------------------------------------- presentations programmes ---- */
+
+.presentText {
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 32px;
+}
+
+.containerP {
+    padding: 5vh 10vh 20vh 10vh;
+}
+
+.containerP .txt {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.containerP .txt p {
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 30px;
+}
+
+.containerP .img {
+    display: flex;
+    align-content: center;
+}
+
+.img a {
+    display: block;
+    margin:auto;
+}
+
+.img a img{
+    width: 30vh;
+    height: auto;
+}
+
+.bloc1 .minicontainer {
+    margin-right: 9vh;
+}
+
+.bloc2 .minicontainer{
+    margin-left: 9vh;
+}
+
+.bloc1 {
+    border-right: 0.5px solid #000;
+}
+
+.bloc2 {
+    border-left: 0.5px solid #000;
+}
+
+.containerP a{
+    transition: 0.2s;
+}
+
+.containerP a:hover {
+    transform: scale(1.1);
+}

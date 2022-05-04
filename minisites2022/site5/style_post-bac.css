@@ -1,0 +1,76 @@
+/* style pour la page post-bac */
+
+/* ------------------------------------------------------------------ General ---- */
+
+.parent {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.child {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    /* border: 1px solid #000; utilisé pour reperer des eventuels problèmes, en voyant les limites du div */ 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.primary {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 110vh;
+}
+
+.secondary {
+    display: fixed;
+    background-color: rgb(221, 241, 240);
+    padding-bottom: 10vh;
+    width: 100%;
+    height: 80vh;
+}
+
+/* ------------------------------------------------------------------ para ---- */
+
+.para {
+    padding: 11vh 20vh 25vh 20vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* ------------------------------------------------------------------ diplomeo ---- */
+
+.txtDip {
+    padding-top: 13vh;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.presBac {
+    padding: 5em 20vh 16vh 20vh;
+}
+
+.imgBac img {
+    transition: 0.2s;
+}
+
+.imgBac img:hover {
+    transform: scale(1.1);
+}
+
+.texteBac {
+    font-size: 29px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.texteBac b {
+    font-weight: 500;
+}
+
+
+/* ------------------------------------------------------------------ footer ---- */
