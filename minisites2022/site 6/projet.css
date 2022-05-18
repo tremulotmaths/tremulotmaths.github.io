@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+body{background:#78D3EF}
+h1{text-align:center;
+color:#4D3CE9;
+font-family: 'Oleo Script Swash Caps', cursive;
+font-size:4rem
+}
+
+a button{background-color:rgb(200, 67, 233);/*la couleur du fond du block est blanc*/
+    color:blue;/*le text est bleu*/
+    display:inline-block;/*bouton non-coller à la page du haut*/
+    padding:10px;/*la taille d'un bouton*/
+    margin:0 6px 0 0;/*l'écart entre deux boutons*/
+    text-decoration:none;/*retirer la ligne aux liens*/
+    overflow:auto;}
+
