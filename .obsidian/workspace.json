@@ -60,6 +60,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "ec4e5f4d6c0c8f15",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -127,6 +135,16 @@
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
   },
   "active": "c54efff4423bdd46",
   "lastOpenFiles": []

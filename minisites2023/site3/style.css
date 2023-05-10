@@ -1,0 +1,373 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body-index1 {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url('https://www.phosphore.com/wp-content/uploads/2020/05/AdobeStock_323829966.jpg ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.body-index2 {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: url('ressources/index2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+.container-first {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #ffa600;
+    font-family: Abril fatface, sans-serif;
+}
+h1 span {
+    position: relative;
+}
+p span{
+    position: relative;
+}
+.container-btns {
+    position: relative;
+    top: 50px;
+}
+.btn-first {
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+    border-end-start-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:rgba(167, 167, 167, 0.527);
+}
+.btn-first:nth-child(1){
+    margin-right: 30px;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+
+.btn-first2 {
+    border: 2px solid #ffa600;
+    outline: none;
+    background: transparent;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 1cm;
+    width: 300px;
+    color: #ffa600;
+    cursor: pointer;
+    border-end-start-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:rgba(167, 167, 167, 0.527);
+}
+
+.text-index3{
+    margin-bottom: 20px;
+}
+
+.btn-first2:nth-child(1){
+    margin-right: 30px;
+}
+.btn-first2:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+
+
+.lignes {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1 {
+    width: 250px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.l2 {
+    width: 140px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo {
+    position: absolute;
+    right: 2.9%;
+    top: 4%;
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+    background-color: #ffa600;
+    border-end-start-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
+}
+
+.dev-text{
+    max-width: 600px;
+    background-color: rgba(167, 167, 167, 0.527);
+    border-end-start-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dev-text2{
+    max-width: 1500px;
+    background-color: rgba(167, 167, 167, 0.527);
+    border-end-start-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text-accueil{
+    color: #ffffff;
+    font-weight: 900;
+    margin: 20px;
+}
+
+/* =============================== page 2 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+	--violet: #f7a800;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+}
+
+header {
+	background: linear-gradient(#285783, #1e2477, #0d7cd6);
+}
+
+header nav {
+	padding: 30px 5% 0px 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav h1 {
+	margin: 0;
+	text-transform: uppercase;
+	color: var(--violet);
+}
+header nav .right {
+	display: flex;
+	align-items: center;
+}
+header nav .right p {
+	margin: 0 15px 0 0;
+	color: #ccc;
+}
+header nav .right p:hover {
+	color: white;
+	cursor: pointer;
+}
+header nav .right button {
+	padding: 5px 15px;
+	font-size: 16px;
+	background-color: inherit;
+	border: 1px solid var(--blue);
+	border-radius: 5px;
+	color: var(--blue);
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button:hover {
+	color: inherit;
+	background-color: var(--blue);
+}
+
+.presentation {
+	padding: 30px 5%;
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.presentation .product-presentation {
+	width: 100%;
+	flex-shrink: 3;
+}
+.presentation .product-presentation h1 {
+	margin: 0;
+	font-size: 4vw;
+	width: 80%;
+}
+.presentation .product-presentation p {
+	font-weight: 300;
+	color: #e9e9e9;
+}
+.presentation .product-presentation button {
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.presentation .image-presentation img {
+	width: 100%;
+}
+
+.first .product-presentation button {
+	background-color: var(--violet);
+	color: white;
+	border: 1px solid var(--violet);
+	transition: background-color 0.5s, color 0.5s;
+}
+.first .product-presentation button:hover {
+	background-color: inherit;
+	color: var(--violet);
+}
+.first .product-presentation .small-images {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.first .product-presentation .small-images .small {
+	padding: 20px;
+	background-color: #f5a803;
+	margin: 0 15px 15px 0;
+	border-radius: 20px;
+	transition: filter 0.5s;
+}
+.first .product-presentation .small-images .small:hover {
+	filter: brightness(50%);
+}
+.first .product-presentation .small-images .small img {
+	width: 120px;
+}
+
+.second {
+	margin: 0;
+	background-color: #13181d;
+}
+.second .product-presentation .new {
+	color: var(--violet);
+}
+.second .product-presentation button {
+	background-color: inherit;
+	border: 1px solid var(--violet);
+	color: var(--violet);
+	transition: background-color 0.5s, color 0.5s;
+}
+.second .product-presentation button:hover {
+	background-color: var(--violet);
+	color: white;
+}
+
+footer {
+	margin: 0;
+	padding: 20px;
+	background-color: rgb(1, 30, 46);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer h3 {
+	color: var(--violet);
+}
+footer p {
+	cursor: pointer;
+	color: #ccc;
+}
+footer p:hover {
+	color: white;
+}
+
+@media screen and (max-width: 640px) {
+	nav .right p {
+		display: none;
+	}
+
+	.presentation .product-presentation h1 {
+		font-size: 2em;
+	}
+	.presentation .image-presentation {
+		display: none;
+	}
+	.first .product-presentation .small-images .small img {
+		width: 90px;
+	}
+
+	footer {
+		justify-content: flex-start;
+	}
+	footer .column {
+		width: 80%;
+	}
+}
