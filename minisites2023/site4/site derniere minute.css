@@ -1,0 +1,84 @@
+.rouge{color:rgb(240,139,115);}
+
+.bleu{color:rgb(18, 179, 207);}
+
+.centre{text-align: center;}
+
+.img{width:500px; margin: auto; display: block;}
+
+.img1{width:350px; margin: auto; display: block;}
+
+.img1c{width:350px; display: block;}
+
+.img2{width:200px; margin: auto; display: block;}
+
+.image_click{width:500px; margin: auto; display: block;}
+
+.image_click:hover{width:550px; margin: auto; display: block;}
+
+.souligne{text-decoration:underline ;}
+
+.fond{background-color: rgb(255, 255, 255);}
+
+
+
+#titre_accueil
+
+	{color:rgb(18, 179, 207);
+
+	font-style: italic;
+
+	text-align: center;
+
+	text-transform: uppercase;}
+
+
+
+.blocmenu 
+
+	{width:800;
+
+	height:40px;
+
+	background-color:rgb(18, 179, 207);
+
+	text-align: center;
+
+	border: 3px solid grey;}
+
+
+
+#menu li
+
+	{line-height:30px;
+
+	width:19%;
+
+	float:left;
+
+	text-align: center;
+
+	list-style-type: none;}
+
+#menu li a, #menu li a:visited
+
+	{line-height:30px;
+
+	text-decoration:none;
+
+	font-size:20px;
+
+	color: rgb(255, 255, 255);}
+
+#menu li a:hover
+
+	{line-height:30px;
+
+	font-size: 16px;
+
+	background-color: rgb(255, 199, 255); 
+
+	color:gray;}
+
+
+
