@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />-->
+<html lang="fr">
+
+<!--<link type="text/css" href="../css/bibstyle.css" rel="stylesheet" />-->
+<script type="text/x-mathjax-config">MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$']]} });</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="Author" CONTENT="Dominique Trémulot">
+	<meta name="Description" CONTENT="Remise à niveau">
+ 
+	<title>Calculs avec des quotients</title>
+
+	<link type="text/css" rel="stylesheet" href="../style.css"/>
+	<link type="text/css" rel="stylesheet" href="../ressources.css"/>
+</head>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<body>
+
+<!--<div style="display:none">
+	$$
+	\newcommand{\mtn}{\mathbb{N}}
+	\DeclareMathOperator{\ch}{ch}
+	$$
+</div>-->
+
+
+  	<!-- ======= Header ======= -->
+	<header id="header">
+    
+		<div class="logo">
+			<h1 class="text-light"><span>Calculs avec des puissances</span></h1>
+		</div>
+    </header>
+   	<!-- End Header -->
+
+<main id="main">
+	<a href="../remiseaniveau.html"><button>Retour au menu</button></a>
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+    	<div class="container">
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		  	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 1</div>
+					<div class=inner>
+						Écrire sous la forme $a^n$ avec $a\in\mathbb{N}$ et $n\in\mathbb{Z}$.<br>
+						<ol>
+							<li>
+								$A=2^7\times 2^3\times 2^{-5}$
+							</li><br>
+							<li>
+								$B=\dfrac{3^5\times 3^2}{3^8}$
+							</li><br>
+							<li>
+								$C=\dfrac{\left(3^5\right)^3}{3^8}$
+							</li><br>
+							<li>
+								$D=\dfrac{10^5\times 5^3}{2^5}$
+							</li>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg11">Indication</button>
+					<div id="d11" class=hide>
+						<ol>
+							<li>
+								$a^n\times a^m=a^{n+m}$
+							</li>
+							<li>
+								$a^n\times a^m=a^{n+m}$ et $\dfrac{a^n}{a^m}=a^{n-m}$
+							</li>
+							<li>
+								$\left(a^n\right)^m=a^{nm}$ et $\dfrac{a^n}{a^m}=a^{n-m}$
+							</li>
+							<li>
+								$\dfrac{a^n}{b^n}=\left(\dfrac{a}{b}\right)^n$
+							</li>
+						</ol>
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg12">Corrigé</button>
+					<div id="d12" class=hide >
+						<ol>
+							<li>
+								$A=2^7\times 2^3\times 2^{-5}$<br><br>
+								$A=2^{7+3+(-5)}$<br><br>
+								$A=2^5$
+							</li><br>
+							<li>
+								$B=\dfrac{3^5\times 3^2}{3^8}$<br><br>
+								$B=\dfrac{3^{5+2}}{3^8}$<br><br>
+								$B=\dfrac{3^7}{3^8}$<br><br>
+								$B=3^{7-8}$<br><br>
+								$B=3^{-1}$
+							</li><br>
+							<li>
+								$C=\dfrac{\left(3^5\right)^3}{3^8}$<br><br>
+								$C=\dfrac{3^{5\times 3}}{3^8}$<br><br>
+								$C=\dfrac{3^{15}}{3^8}$<br><br>
+								$C=3^{15-8}$<br><br>
+								$C=3^7$
+							</li><br>
+							<li>
+								$D=\dfrac{10^5\times 5^3}{2^5}$<br><br>
+								$D=\dfrac{10^5}{2^5}\times 5^3$<br><br>
+								$D=\left(\dfrac{10}{2}\right)^5\times 5^3$<br><br>
+								$D=5^5\times 5^3$<br><br>
+								$D=5^{5+3}$<br><br>
+								$D=5^8$
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class=exo>
+				<div class="icon-box">
+					<div class=titreexo>Exercice 2</div>
+					<div class=inner>
+						Déterminer l'écriture scientifique des nombres décimaux suivants.<br>
+						<ol>
+							<li>
+								$A=$
+							</li><br>
+							<li>
+								$B=$
+							</li><br>
+							<li>
+								$C=$
+							</li><br>
+							<li>
+								$D=$
+							</li><br>
+						</ol>
+					</div>
+            	</div>
+			
+			
+				<div class=indication>
+					<button id="togg21">Indication</button>
+					<div id="d21" class=hide>
+						<br>
+						Mettre au même dénominateur...
+						et éviter de sortir les baguettes magiques pour "simplifier" les expressions obtenues.
+					</div>
+				</div>
+				
+				<div class=corrige>
+					<button id="togg22">Corrigé</button>
+					<div id="d22" class=hide>
+						<ol>
+							<li>
+								$A=\dfrac{1}{x}+\dfrac{1}{x+1}$<br><br>
+								$A=\dfrac{1\times (x+1)}{x\times (x+1)}+\dfrac{1\times x}{(x+1)\times x}$<br><br>
+								$A=\dfrac{x+1}{x(x+1)}+\dfrac{x}{x(x+1)}$<br><br>
+								$A=\dfrac{x+1+x}{x(x+1)}$<br><br>
+								$A=\dfrac{2x+1}{x(x+1)}$
+							</li><br>
+							<li>
+								$B=\dfrac{x+1}{x}-\dfrac{x}{x+1}$<br><br>
+								$B=\dfrac{(x+1)\times (x+1)}{x\times (x+1)}-\dfrac{x\times x}{(x+1)\times x}$<br><br>
+								$B=\dfrac{(x+1)^2}{x(x+1)}-\dfrac{x^2}{x(x+1)}$<br><br>
+								$B=\dfrac{(x+1)^2-x^2}{x(x+1)}$<br><br>
+								$B=\dfrac{x^2+2x+1-x^2}{x(x+1)}$<br><br>
+								$B=\dfrac{2x+1}{x(x+1)}$<br><br>
+							</li><br>
+							<li>
+								$C=x-1+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{x-1}{1}+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{(x-1)\times (x+1)}{1\times (x+1)}+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{(x-1)(x+1)}{x+1}+\dfrac{1}{x+1}$<br><br>
+								$C=\dfrac{(x-1)(x+1)+1}{x+1}$<br><br>
+								$C=\dfrac{x^2-1+1}{x+1}$<br><br>
+								$C=\dfrac{x^2}{x+1}$
+							</li><br>
+							<li>
+								$D=x+\dfrac{1}{x}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x}{1}+\dfrac{1}{x}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x\times x^2}{1\times x^2}+\dfrac{1\times x}{x\times x}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x^3}{x^2}+\dfrac{x}{x^2}+\dfrac{1}{x^2}$<br><br>
+								$D=\dfrac{x^3+x+1}{x^2}$
+							</li><br>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		</div>
+    </section><!-- End Featured Section -->
+
+<script type="text/javascript" src="fonctions.js"></script>
+
+</body>
+
+</html>
+
+
