@@ -1,20 +1,20 @@
 {"questionlist":[
-    {"cardfront":"CAT",
-    "cardback":"GATO"
+    {"cardfront":"CAT" $f(x)=x^2$,
+    "cardback":"GATO" $f(x)=x^2$
     },
-    {"cardfront":"DOG",
-    "cardback":"PERRO"
+    {"cardfront":"DOG" $f(x)=x^2$,
+    "cardback":"PERRO" $f(x)=x^2$
     },
-    {"cardfront":"HORSE",
-    "cardback":"CABALLO"
+    {"cardfront":"HORSE" $f(x)=x^2$,
+    "cardback":"CABALLO" $f(x)=x^2$
     },
-    {"cardfront":"RABBIT",
-    "cardback":"CONEJO"
+    {"cardfront":"RABBIT" $f(x)=x^2$,
+    "cardback":"CONEJO" $f(x)=x^2$
     },
-    {"cardfront":"TIGER",
-    "cardback":"TIGRE"
+    {"cardfront":"TIGER" $f(x)=x^2$,
+    "cardback":"TIGRE" $f(x)=x^2$
     },
-    {"cardfront":"KANGAROO",
-    "cardback":"CANGURO"
+    {"cardfront":"KANGAROO" $f(x)=x^2$,
+    "cardback":"CANGURO" $f(x)=x^2$
     }
    ]}
