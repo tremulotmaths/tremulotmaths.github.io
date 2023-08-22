@@ -1,6 +1,6 @@
 {"questionlist":[
-    {"cardfront":"CAT" $f(x)=x^2$,
-    "cardback":"GATO" $f(x)=x^2$
+    {"cardfront":"CAT $f(x)=x^2$",
+    "cardback":"GATO $f(x)=x^2$"
     },
     {"cardfront":"DOG" $f(x)=x^2$,
     "cardback":"PERRO" $f(x)=x^2$
