@@ -2,19 +2,19 @@
     {"cardfront":"CAT $f(x)=x^2$",
     "cardback":"GATO $f(x)=x^2$"
     },
-    {"cardfront":"DOG" $f(x)=x^2$,
-    "cardback":"PERRO" $f(x)=x^2$
+    {"cardfront":"DOG",
+    "cardback":"PERRO"
     },
-    {"cardfront":"HORSE" $f(x)=x^2$,
-    "cardback":"CABALLO" $f(x)=x^2$
+    {"cardfront":"HORSE",
+    "cardback":"CABALLO"
     },
-    {"cardfront":"RABBIT" $f(x)=x^2$,
-    "cardback":"CONEJO" $f(x)=x^2$
+    {"cardfront":"RABBIT",
+    "cardback":"CONEJO"
     },
-    {"cardfront":"TIGER" $f(x)=x^2$,
-    "cardback":"TIGRE" $f(x)=x^2$
+    {"cardfront":"TIGER",
+    "cardback":"TIGRE"
     },
-    {"cardfront":"KANGAROO" $f(x)=x^2$,
-    "cardback":"CANGURO" $f(x)=x^2$
+    {"cardfront":"KANGAROO",
+    "cardback":"CANGURO"
     }
    ]}
