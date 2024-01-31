@@ -1,0 +1,16 @@
+body {
+	font-family:arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.alignement{
+	/* Objectif aligner une image à droite et une image à gauche */
+	display: flex;
+}
+
+.alignement img{
+	/* Toutes les images des blocs de class "alignement"*/
+	scale:0.5;
+}
