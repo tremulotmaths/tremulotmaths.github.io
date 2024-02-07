@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sources | Spécialité NSI</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="Pictures/logo_lycee.ico">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><img src="Pictures/logo_lycee.png" alt="logo_lycee"></a>
+                <a href="programme_nsi.html" class="a_texte">Le programme de NSI</a>
+                <a href="projets_nsi.html" class="a_texte">Les projets en NSI</a>
+                <a href="etudes.html" class="a_texte">Les études post-bac</a>
+                <a href="#contact" class="bouton">Contactez-nous !</a>
+            </nav>
+        </header>
+        <main>
+            <section id="sources">
+                <p>Voici les sources dont nous nous sommes servis :</p>
+                <ul>
+                    <li><a class="a_texte" href="https://developer.mozilla.org/en-US/">Documentation MDN (Mozilla Developer Network)</a></li>
+                    <li><a class="a_texte" href="https://codepen.io/fusco/pen/JEJMGX">Degradé animé</a></li>
+                    <li><a class="a_texte" href="https://codepen.io/goodkatz/pen/LYPGxQz">Vagues CSS du footer</a></li>
+                    <li><a class="a_texte" href="https://www.instagram.com/reel/CwXSzwBtCUQ/">Cartes dépliantes au survol</a></li>
+                </ul>
+            </section>
+            <section id="contact">
+                <form>
+                    <h1>Contactez-nous !</h1>
+                    <label>
+                        <p>Votre nom : <input type="text" placeholder="Votre nom"></p>
+                    </label>
+                    <label>
+                        <p>Votre adresse email : <input type="email" placeholder="Votre adresse email"></p>
+                    </label>
+                    <label>
+                        <p>Votre message : <input type="text" placeholder="Votre message"></p>
+                    </label>
+                    <label>
+                        <p><input type="submit" value="Envoyer"></p>
+                    </label>
+                </form>
+            </section>
+        </main>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+        <footer>
+            <a class="a_texte" href="sources.html">Sources</a>
+            <a class="a_texte" href="compte-rendu.pdf" target="_blank">Compte-rendu <img class="new_tab" src="Pictures/nouvel_onglet.png" alt="Nouvel onglet"></a>
+            <div class="createurs">
+                <p>Créé par Maël Antier Gomiot, Sacha Gouchet, Maxime Desgland et Antoine Rossignol</p>
+            </div>
+        </footer>
+    </body>
+</html>
