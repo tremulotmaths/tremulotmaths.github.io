@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>Projets</title>
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="prism.css" />
+			
+					
+	</head>
+
+	<body>
+
+<!--		<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="prism.css" />
+<link rel="stylesheet" type="text/css" href="ace.css" /> -->
+
+</head>
+
+<body>
+
+   	<div id="super-div">
+		
+		<div class="contenu_1">
+		
+      	<h1>Projet de fin d'année</h1>
+      	
+			<h2>Organisation du travail</h2>
+			
+			<p>Vous devez donc maintenant vous répartir les fonctions suivantes et les coder. Les contraintes sont les suivantes :</p>
+	
+			<ul>
+				<li>Vous devez <b>au maximum</b> utiliser les autres fonctions (si vous refaites dans votre fonction quelque chose qui est déjà présent ailleurs, elle sera considérée comme fausse)</li>
+				<li>Les membres d'une même équipe ne doivent pas coder l'un à coté de l'autre</li>
+			</ul>
+			
+			<p>Pour ce projet nous allons utiliser utiliser une méthode de projet par étape ou "Run". <br> 
+						
+			<p>À l'issue de chaque "Run", vous devez présenter votre travail à l'enseignant.</p>
+			
+			<h2>Le projet : Puissance 4</h2>
+			
+			<p>Voila un projet qui met en jeu, comme beaucoup de choses en informatique, des <em><strong>capacités d'abstraction</strong></em> pour représenter en mémoire d'un ordinateur le plateau d'un jeu 
+			de société et permettre de jouer à ce jeu.</p>
+			 				
+			<p>Un grand classique qu'on ne présente plus...Vous coderez un jeu à deux joueurs jouant successivement.</p>
+			
+			<p>Dans un premier temps, vous n'utiliserez pour l'affichage du plateau de jeu et pour l'interaction avec les utilisateurs que la console.</p>
+			
+			<pre><code class="language-shell">
+Entrez la colonne joueur Jaune : 2
+
+1	2	3	4	5	6	7	
+x	x	x	x	x	x	x
+x	x	x	x	x	x	x	
+x	x	J	x	x	x	x
+x	x	R	J	R	x	x
+x	J	R	R	J	x	x
+R	J	J	J	R	R	x			
+			</code></pre>
+			
+			<p>Dans un deuxième temps, une fois que votre jeu fonctionnera, vous utiliserez une interface graphique pour pouvoir notamment contrôler le jeu à la souris : un clic sur une colonne de la grille doit faire tomber le pion du joueur, 
+			alternativement rouge ou jaune.</p>
+			
+			<div class="bloc_image">
+				<div class='fig'>
+					<img src="puissance4.jpg" alt="Puissance 4" title = 'Par François Haffner - fr.wikipedia, Domaine public, https://commons.wikimedia.org/w/index.php?curid=497215' />					
+				</div>				
+			</div>
+				
+			<h3>Principe</h3>
+			
+			<p>Le "plateau de jeu" peut être vu comme une <em>grille</em> de 6 lignes et 7 colonnes; dans chaque "case" de cette grille peut être affichée un rond rouge ou jaune.</p>
+				
+				<div class="bloc_image">
+					<div class='fig'>
+						<img src="grille_p4.png" alt="Grille Puissance 4" />					
+					</div>				
+				</div>
+				
+				<p>Le plateau de jeu sera donc représenté dans le script par un <em>tableau de tableaux</em> de 6 lignes de 7 colonnes, soit autant de "cases" qu'il y a dans la grille du jeu; chaque élément de 
+				ce tableau de tableaux peut contenir une valeur qui code le "contenu" de la "case" correspondante de la grille, par exemple :</p>
+				
+				<ul>
+					<li>0 = case vide</li>
+					<li>1 = pion rouge</li>
+					<li>2 = pion jaune</li>	
+				</ul>	
+				
+				<p>Ce tableau de tableaux permettra de <em><strong>garder en mémoire</strong></em> l'état de la grille du jeu et de pouvoir gérer celle-ci, l'afficher, déterminer si un joueur gagne, etc...</p>
+				
+				<pre><code class="language-python">
+grille = [
+	[0, 0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0, 0],	
+	[0, 0, 2, 0, 0, 0, 0],
+	[0, 0, 1, 2, 1, 0, 0],
+	[0, 2, 1, 1, 2, 0, 0],
+	[1, 2, 2, 2, 1, 1, 0]]			
+			</code></pre>
+			
+				<p>Le script demandera à tour de rôle à chaque joueur d'indiquer la colonne ( de 1 à 7 ) dans laquelle il souhaite placer un pion; le script déterminera alors comment modifier le tableau de tableaux
+				 pour représenter le coup joué.</p>
+				
+				<p>A chaque pion joué, le script devra également mettre à jour l'affichage du plateau de jeu, et bien entendu déterminer si le coup est gagnant.</p>
+				
+			<h3>Run n°1 : création de la grille de jeu et fonction d'affichage</h3>
+			
+			<p>Deux fonctions à coder, ce qui peut se faire en parallèle par deux personnes différentes :</p>
+			
+	<div class="travail">
+			<ol>
+				<li>Écrire une fonction <code>genere_grille</code> qui crée le tableau de tableaux représentant la grille du jeu, l'initialise et renvoie ce tableau.
+					<pre><code class="language-python">
+def genere_grille():
+	'''Fonction qui initialise la grille du jeu
+	Entrée :
+		aucune
+	Sortie :
+		le tableau de tableaux représentant la grille du jeu initialisée
+	'''
+	pass
+			
+	return grille		
+					</code></pre>				
+				</li>				
+				<li>écrire une fonction <code>affiche_grille</code> qui permet d'afficher le jeu dans la console en faisant apparaître le "contenu" de chaque "case" conformément aux
+				informations stockées dans le tableau de tableaux passé en paramètre.
+				<pre><code class="language-python">
+def affiche_grille(grille):
+	'''Fonction qui affiche la grille du jeu.
+	'x' = case vide, 'R' = pion rouge, 'J' = pion jaune ( par exemple ).
+	Les numéros de colonne de 1 à 7 doivent apparaître au dessus de la grille.
+	Entrée :
+		grille = le tableau de tableau représentant la grille du jeu
+	Sortie :
+		aucune
+	'''
+	pass
+					
+					</code></pre>	
+				</li>
+				<li>Bien entendu, il faudra tester chacune de ces fonctions. A vous de réfléchir aux tests à réaliser.</li>	
+			</ol>
+	</div>
+	
+			<h3>Run n°2 : un joueur joue</h3>
+	
+	<div class="travail">
+		<ol>
+			<li>après avoir réfléchi au problème, écrire <em><strong>sur papier</strong></em> l'algorithme à suivre pour savoir si une colonne est pleine, et si non, à déterminer le numéro de la ligne où un pion pourrait y être placé en
+			 "tombant" de puis le haut de la colonne.<br>
+			 <em>Travailler sur un exemple de grille</em> pour bien comprendre le problème.</li>
+			<li>écrire une fonction <code>est_jouable</code> qui :
+				<ul>
+					<li>prend comme paramètre le tableau de tableau représentant la grille du jeu, et un entier représentant le numéro d'une colonne.</li>				
+					<li>détermine si un pion peut être placé dans cette colonne ( c'est à dire si cette colonne n'est pas pleine ), et dans l'affirmative détermine le numéro de la ligne à laquelle le pion se 
+					placera en "tombant" depuis le haut de la grille.</li>
+					<li>renvoie ce numéro de ligne si le pion peut être placé, ou la valeur -1 si la colonne est pleine.</li>
+				</ul>			
+				<pre><code class="language-python">
+def est_jouable(grille, colonne):
+	"""Fonction qui détermine si un pion peut être placé dans une colonne donnée.
+	Entrées :
+		grille = le tableau de tableau représentant la grille du jeu
+		colonne = le numéro de la colonne où placer un pion
+	Sorties :
+		le numéro de la ligne où le pion se placera, -1 si la colonne est pleine
+	"""					
+	pass
+	
+	return ligne			
+				
+				</code></pre>
+			</li>
+			<li>
+				<p>Écrire une fonction <code>place_pion</code> qui prend comme paramètres :</p>
+				
+				<ul>
+					<li>le tableau de tableaux représentant la grille du jeu</li>
+					<li>le joueur qui souhaite placer un pion</li>
+					<li>le numéro de colonne dans laquelle un joueur souhaite placer son pion</li>
+				</ul>
+		
+				<p>Elle utilisera la fonction <code>est_jouable</code> pour savoir si le coup est possible, et renverra :
+				
+				<ul>			
+					<li>le tableau de tableaux modifié par le coup joué.</li>
+					<li>l'indice de la ligne où le pion est "tombé"</li>
+				</ul>
+				
+				<pre><code class="language-python">
+def place_pion(grille, joueur, colonne):
+	'''Fonction qui place le pion d'un joueur dans une case de la grille
+	Entrée :
+		grille = le tableau de tableaux représentant la grille du jeu
+		joueur = le numéro du joueur
+		colonne = le numéro de colonne dans laquelle le joueur souhaite placer un pion 
+	Sortie :
+		le tableau de tableaux modifié par le placement du pion
+		ligne = l'indice de la ligne où le pion a été posé
+	'''
+	pass
+	
+	
+	return grille, ligne
+					
+				</code></pre>
+			</li>
+		</ol>
+	</div>
+			
+			<h3>Run n°3 : un joueur gagne ?</h3>
+			
+			<p>Voila le cœur du problème : comment le script va-t-il pouvoir déterminer si, après qu'il a placé un pion, le joueur qui vient de jouer est gagnant ?</p>
+			
+			<p>Pour bien comprendre le problème, nous vous proposons de le décomposer en sous-problèmes plus simples :</p>
+			
+			<div class="important">
+				<p>Il y a plusieurs méthodes pour traiter ces problèmes; nous vous en proposons une ici, mais rien ne vous empêche de développer la vôtre, à condition bien sûr qu'il ne s'agisse pas d'un 
+				copier-coller depuis le web. Pensez à <em>expliquer</em> votre démarche ! </p>			
+			</div>
+			
+			<h4>Vérification d'un alignement sur une ligne</h4>
+			
+			<div class="image_cote">
+				<div class="texte">			
+					<p>Nous utiliserons la méthode dite "par force brute", aussi dite "naïve", qui consiste à parcourir toute la ligne où un joueur vient de poser un pion, et à compter, en partant du début de la ligne,
+					 le nombre de pions de la couleur du joueur placés les uns à la suite des autres : </p>
+				</div>
+				<figure>
+					<img src="parcours_ligne_p4.png" alt="Parcours par ligne" />				
+				</figure>
+			</div>
+			
+			<pre><code class="language-none">
+fonction alignement_ligne(grille, ligne, joueur):
+	nb_pion ← 0
+	pour chaque case de la ligne :
+			si la case contient un pion de la couleur du joueur :
+				incrémenter nb_pion	
+				si nb_pion vaut 4:
+					renvoyer VRAI
+			sinon ( si la case est vide ou contient un pion de l'autre joueur ) :
+				nb_pion ← 0
+	renvoyer FAUX ( on n'a pas compté 4 pions successifs )
+			</code></pre>
+			
+			<p>L'idée est que, lors du parcours d'une ligne, lorsqu'on rencontre un pion de la couleur du joueur qui vient de poser un pion, on incrémente un compteur.<br>
+			On teste alors si on a incrémenté 4 fois le compteur, ce qui signifie avoir trouvé un alignement de 4 pions : dans ce cas, on sort de la fonction en renvoyant un résultat indiquant que le joueur est 
+			gagnant ( un booléen <code>True</code> par exemple ).</p>
+			
+			<p>Si on rencontre lors du parcours une case vide ou un pion de la couleur de l'autre joueur, alors on remet à zéro le compteur, et on recommence le comptage...</p>
+						
+	<div class="travail">
+			<p>Écrire une fonction <code>alignement_ligne</code>, qui permet de déterminer si une suite de 4 pions d'une même couleur se trouve sur une ligne de la grille.</p>
+			
+			<p>Cette fonction prend comme paramètres le tableau de tableaux représentant la grille du jeu, l'indice de la ligne où un pion vient d'être joué, le numéro du joueur, et renvoie une information 
+			indiquant si le joueur est gagnant ou pas.</p>
+			
+			<pre><code class="language-python">
+def alignement_ligne(grille, ligne, joueur)- :
+	'''Fonction qui détermine si une suite de 4 pions de la couleur d'un joueur donné se trouve sur une des lignes de la grille.
+	Entrée :
+		grille = le tableau de tableau représentant la grille du jeu
+		ligne = l'indice de la ligne sur laquelle le joueur vient de poser un pion
+		joueur = la valeur identifiant un joueur
+	Sortie :
+		une information indiquant si le joueur est gagnant ou pas
+	'''
+	pass
+						
+			</code></pre>
+	</div>
+			
+			<h4>Vérification d'un alignement sur une colonne</h4>
+			
+			<div class="image_cote">
+				<div class="texte">
+					<p>Le principe est le même sauf que, vous vous en doutez, la recherche se fait sur une même colonne...</p>
+				</div>
+				<figure>
+					<img src="parcours_colonne_p4.png" alt="Parcours par colonne." />				
+				</figure>
+			</div>
+			
+	<div class="travail">
+			<p>Écrire une fonction <code>alignement_colonne</code> qui permet de savoir si une suite de 4 pions d'une même couleur se trouve sur une colonne de la grille.</p>
+			
+			<p>Cette fonction prend comme paramètres le tableau de tableaux représentant la grille du jeu, l'indice de la colonne où un pion vient d'être joué, le numéro du joueur, et renvoie une information 
+			indiquant si le joueur est gagnant ou pas.</p>
+			
+			<pre><code class="language-python">
+def alignement_colonne(grille, colonne, joueur):
+	'''Fonction qui détermine si une suite de 4 pions de la couleur d'un joueur donné se trouve sur une des colonnes de la grille.
+	Entrée :
+		grille = le tableau de tableau représentant la grille du jeu
+		colonne = l'indice de la colonne sur laquelle le joueur vient de poser un pion
+		joueur = la valeur identifiant un joueur
+	Sortie :
+		une information indiquant si le joueur est gagnant ou pas
+	'''
+	pass
+	
+	
+		
+			</code></pre>
+	</div>	
+		
+			<h4>Vérification d'un alignement sur une diagonale</h4>
+			
+			<p>Ah, là c'est un peu plus compliqué...Et il faut en plus distinguer les diagonales descendantes ( de haut en bas vers la droite ) des ascendantes ( de bas en haut vers la droite )...</p>
+			
+			<h5>Alignement sur une diagonale descendante</h5>
+
+			<div class="image_cote">
+				<div class="texte">			
+					<p>L'idée : toujours avec l'approche "force brute", nous allons, en partant de sa case la plus en haut à gauche, parcourir la diagonale descendante jusqu'en bas de la grille, et compter sur 
+					cette diagonale le nombre de pions successifs de la couleur du joueur, en utilisant le même principe que précédemment.</p>
+			 	</div>
+			 	<figure>
+					<img src="parcours_descendant_p4.png" alt="Parcours diagonale descendante" />			 	
+			 	</figure>
+			 </div>
+			 
+			 <p>Tout le problème est de savoir à quelle case commencer le parcours de la diagonale : cette case peut être n'importe où sur la première colonne OU la première ligne...</p>
+			 
+			 <p>D'où l'idée : depuis la case où le pion du joueur vient d'être placé, on va tout d'abord "remonter" à la case de départ, en décrémentant les indices de ligne et de colonne ( valeurs passées
+			  en paramètres à la fonction ), jusqu'à arriver à la première colonne OU à la première ligne.</p>
+			  
+			 
+			 <pre><code class="language-none">
+fonction alignement_descendant(grille, ligne, colonne, joueur):
+	1. Détermination de la case de départ de la diagonale
+	tant qu'on n'est pas "remonté" à la première colonne ou à la première ligne:
+		décrémenter l'indice de ligne et celui de colonne ( on "remonte" ainsi case par case )
+		
+	2. "Descente" le long de la diagonale et comptage des pions alignés
+	tant qu'on n'est pas "descendu" jusqu'à la dernière ligne ou la dernière colonne:
+		faire le comptage des pions du joueur comme précédemment
+		si on a compté 4 pions alignés:
+			renvoyer VRAI
+			
+		incrémenter l'indice de ligne et celui de colonne ( on "descend" ainsi case par case )
+		
+	renvoyer FAUX
+			 
+			 </code></pre>
+			 
+			 <p>Attention, il faut bien réfléchir aux tests à faire dans les boucles, notamment lors de la "redescente" le long de la diagonale : il faut prendre garde à bien compter le pion sur la dernière case de la
+			  diagonale...</p>
+			
+	<div class="travail">
+			<p>traduire l'algorithme précédent en une fonction Python <code>alignement_descendant</code> qui :
+					<ul>
+						<li>prend comme paramètre le tableau de tableau représentant la grille, les indices de ligne et de colonne où le pion a été posé, et le numéro du joueur</li>	
+						<li>renvoie une information indiquant si le joueur est gagnant ou pas.</li>				
+					</ul>
+					<pre><code class="language-python">
+def alignement_descendant(grille, ligne, colonne, joueur):
+	'''Fonction qui détermine si une suite de 4 pions d'une même couleur se trouve sur une diagonale descendante de la grille.
+	Entrée :
+		grille = le tableau de tableau représentant la grille du jeu
+		ligne, colonne = indices de la case où un pion vient d'être posé
+		joueur = le numéro du joueur qui vient de poser le pion
+	Sortie :
+		une information indiquant si le joueur est gagnant ou pas
+	'''
+	pass
+	
+				
+					</code></pre>				
+				</li>
+			</ol>
+	</div>
+	
+			<h5>Alignement sur une diagonale ascendante</h5>
+			
+			<div class="image_cote">
+				<div class="texte">			
+					<p>Enfin, il faut vérifier si un alignement de 4 pions d'une même couleur se trouve sur une diagonale ascendante de la grille.</p>
+				</div>
+				<figure>
+					<img src="parcours_ascendant_p4.png" alt="Parcours des diagonales ascendantes" />				
+				</figure>
+			</div>
+			
+	<div class="travail">
+			<ol>
+				<li>en vous inspirant du précédent, réfléchir <em>sur papier</em> à l'algorithme à utiliser pour compter les pions d'une couleur sur une diagonale ascendante.
+				</li>	
+				<li>traduire alors l'algorithme précédent en une fonction Python <code>alignement_ascendant</code> qui :
+					<ul>
+						<li>prend comme paramètre le tableau de tableau représentant la grille, les indices de ligne et de colonne où un pions vient d'être posé, et le numéro du joueur</li>	
+						<li>renvoie une information indiquant si le joueur est gagnant ou non.</li>				
+					</ul>
+					<pre><code class="language-python">
+def alignement_ascendant(grille, ligne, colonne, joueur):
+	'''Fonction qui détermine si une suite de 4 pions d'une même couleur se trouve sur une diagonale ascendante de la grille.
+	Entrée :
+		grille = le tableau de tableau représentant la grille du jeu
+		ligne, colonne = indices de la case où un pion vient d'être posé
+		joueur = le numéro du joueur qui vient de poser le pion
+	Sortie :
+		une information indiquant si le joueur est gagnant ou pas
+	'''
+	pass
+			
+					</code></pre>	
+			</ol>
+	</div>
+		
+	
+			<h3>Run n°4 : le jeu !</h3>
+			
+			<p>Vous avez maintenant les fonctions nécessaires pour gérer une partie entre deux joueurs humains.</p>
+			
+	<div class="travail">
+			<ol>
+				<li><strong>écrire</strong> l'algorithme à suivre pour, en utilisant les fonctions précédentes, simuler le déroulement d'une partie de puissance 4.</li>			
+				<li>En utilisant les fonctions écrites précédemment, compléter un script qui permet à deux joueurs de disputer une partie de Puissance 4.</li>
+			</ol>		
+	</div>
+	
+			<h3>Run n°5 : interface graphique</h3>
+			
+			<p>Votre jeu fonctionne ? Très bien ! Il serait sans doute plus convivial avec un affichage plus joli...</p>
+			
+			<p>Dans <a href="puissance_4.py">ce script</a>, vous trouverez des fonctions qui utilisent le module <code>Tkinter</code> pour gérer l'affichage d'une grille et des pions d'un Puissance 4.</p>
+	
+	<div class="travail">
+			<p>A vous de compléter ce script avec votre propre code en "l'intégrant" dans l'interface graphique.</p>
+			
+			<ul>
+				<li>au lancement du script, la grille du jeu s'affiche, mais c'est tout !</li>			
+				<li>il est indispensable que votre programme soit placé dans la partie indiquée du script.</li>
+				<li>vous disposez de deux fonctions déjà écrites :
+					<ul>
+						<li>une fonction <code>affiche_pion(ligne, colonne, couleur)</code> pour afficher un pion en indiquant sa ligne et sa colonne dans la grille, et sa couleur ( codée comme ci-dessus ) </li>					
+						<li>une fonction <code>clic()</code> qui détermine le numéro ( de 0 à 6 ) de la colonne de la grille sur laquelle un joueur a cliqué.</li>					
+					</ul>				
+					<p><em>Attention, cette dernière fonction ne peut pas être appelée directement par votre script</em> : elle est en réalité appelée <em>automatiquement</em> dès que Python détecte un clic souris.<br>
+					Vous pouvez par contre très bien la compléter avec votre propre code ! </p>
+				</li>
+			</ul>
+			
+			<p>La logique de cette interface graphique est donc un peu différente de la programmation Python telle que vous l'avez faite jusqu'à maintenant : on parle ici de <em>programmation évènementielle</em>, car certaines
+			 portions du code ne s'exécuteront que si certains évènements ( ici, un clic-droit ) se produisent.<br>
+			 On n'a donc plus vraiment cette exécution "linéaire" du script où les instructions s’exécutent les unes à la suite des autres dans l'ordre où elles ont été écrites.</p>
+			 
+			 <p>Il faudra tenir compte de ce fait pour intégrer votre code à cette interface graphique.</p>
+	</div>
+	
+			<h3>Run n°6 éventuel : améliorations de l'interface</h3>
+			
+			<p>Le jeu est encore "semi-graphique" puisque des informations s'affichent encore dans la console.</p>
+	
+	<div class="travail">		
+			<p>Si vous avez du temps, vous pouvez vous pencher de manière plus approfondi sur le fonctionnement du module <code>Tkinter</code> pour améliorer l'interface graphique du jeu : indication du joueur 
+			dont c'est le tour et indication du joueur gagnant directement dans l'interface, bouton pour relancer le jeu, etc...</p>
+	
+			<p>De nombreuses ressources sont disponibles sur le web; vous pouvez par exemple consulter <a href="http://tkinter.fdex.eu/">cette page</a>.</p>
+			
+			<p>Vous pouvez également essayer d'améliorer l'algorithme de détection de gagnant : après tout, ce n'est sans doute pas nécessaire de parcourir toutes les lignes/colonnes/diagonales pour détecter
+			 un alignement de 4 pions : on peut simplement compter les pions <em>autour de celui qui vient d'être posé</em>...</p>
+			 
+			<p>Plus délicat, vous pouvez vous intéresser à coder un jeu contre l'ordinateur : une "intelligence artificielle" basique serait une qui joue au hasard à chaque tour...très facile à battre, 
+			mais facile à programmer également !<br>
+			D'autres IA plus élaborées existent bien entendu, mais elles dépassent de loin le cours de Première NSI...</p>
+			 </p>
+	</div>
+	
+				
+						
+						
+						
+	
+	<script src="prism.js"></script>
+	<!--<script src="sommaire.js"></script>-->
+	</body>
+
+</html>
