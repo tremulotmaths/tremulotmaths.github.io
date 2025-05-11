@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ang">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Maria Gaetana Agnesi</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+         <div class="class1" id="Accueil">
+			<h1> Here is the scientist Maria Gaetana Agnesi ! </h1>
+			
+			
+			<div class="grid-container-element">
+				<div class="grid-child-element purple"><img id="photo" width="500" height="700" src="Maria_Gaetana_Agnesi.jpg" 
+                    onmouseover="agrandirImage();" 
+					onmouseout="reduireImage();" /></div>
+				<div class="grid-child-element green" id="textepre">
+                    <h1> Quick presentation</h1>
+					<div style="margin-top:1em;"> Maria was born in 1718 in Milan and died in 1799 also in Milan. She was from a rich family and she had 20 brothers and sisters.<br> 
+                    Maria studied ballistics and geometry and was a member of the faculty at the University of Bologna. She was a mathematician, philosopher, theologian and humanitarian.</div>
+                    <button class="back-button" onclick="history.back();">Go Back</button>
+				</div>
+			</div>
+		</div>
+
+
+         <div class="box-container">
+            <div class="box">  <img src="université.png">
+                <h1>Context</h1>
+                <div class="text-default" style="margin-bottom: 2em;">
+                <p> In the 18th century womens did not have as many rights as they do now. </p>
+                </div>
+                <div class="text-hidden" style="display: none;">
+                    The womens living during the 18th century couldn't have a formal science instruction. <br> Italian women were allowed to study at university in 1876. <br> Maria was an exception.
+                </div>
+                <div class="savoir_box">  <button class="bouton" onclick="toggleText(this)">See more</button></div>
+            </div>
+
+            <div class="box"> <img src="book.jpg">
+                <h1>Famous for</h1>
+                <div class="text-default" style="margin-bottom: 2em;">
+                <p> Maria is now really famous for her works. But what were her works ?</p>
+                </div>
+                <div class="text-hidden" style="display: none;">
+                    Maria is known for being the first women to write a mathematics handbook. In there they were analytical institutions for the use of italian youth, and also differential and integral calculus. <br>
+                    Her handbook was translated in french, german and english. Also, the Pape Benoit 14th read her book and appointed her as a professor in the university of Bologna. <br>
+                    This event made Maria the 1st women appointed as a mathematics professor at a university
+                </div>
+                <div class="savoir_box">  <button class="bouton" onclick="toggleText(this)">See more</button></div>
+            </div>
+
+            <div class="box">
+                <img src="impact.webp">
+                <h1>Impact of her work</h1>
+                <div class="text-default" style="margin-bottom: 2em;">
+                <p> But with this handbook did Maria impact the world ?</p>
+                </div>
+                <div class="text-hidden" style="display: none;">
+                    Yes of course, this handbook propelled Maria to be considered the 1st woman in the western world to have achieved a reputation in mathematics. <br>
+                    Also, an asteroid and a crater on Venus both bears the name Agnesi.
+                </div>
+                <div class="savoir_box">  <button class="bouton" onclick="toggleText(this)">See more</button></div>
+            </div>
+        </div>
+
+    </body>
+
+
+    <script src="script.js"></script>
+</html>

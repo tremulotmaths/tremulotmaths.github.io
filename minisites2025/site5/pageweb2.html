@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation NSI</title>
+  <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+
+  <div id="sidebar">
+    <a href="pagewebe2-2.html" onclick="afficherSection('presentation')">Information</a>
+    <a href="page2-3.html" onclick="afficherSection('programme')">Programme</a>
+    <a href="page2-4.html" onclick="afficherSection('orientation')">Orientation</a>
+  </div>
+ 
+  <img src="image_projet.jpg" alt="Logo NSI" class="headerImage">
+
+  <div id="mainContent">
+
+    <header>
+      <h1>Présentation NSI</h1>
+    </header>
+
+    <div id="presentation" class="contenuSection">
+      <div class="conteneur">
+        <div class="carre" onclick="ajouterEffet(this)">
+          <p class="texte">La spécialité NSI (Numérique et Sciences Informatiques) au lycée est dédiée à l'apprentissage des bases de l'informatique, de la programmation, des algorithmes et des systèmes informatiques...</p>
+        </div>
+        <div class="carre" onclick="ajouterEffet(this)">
+          <p class="texte">Le but de la spécialité NSI est de former des élèves capables de comprendre les enjeux technologiques actuels et de développer des compétences en programmation, analyse de données...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="programme" class="contenuSection" style="display:none;">
+      <div class="conteneur">
+        <div class="carre" onclick="ajouterEffet(this)">
+          <p class="texte">Le programme de NSI en première couvre la programmation orientée objet, les algorithmes de recherche, de tri, et d'autres concepts avancés en informatique...</p>
+        </div>
+        <div class="carre" onclick="ajouterEffet(this)">
+          <p class="texte">Les élèves apprennent également à travailler sur des projets en utilisant des langages comme Python et Java...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="orientation" class="contenuSection" style="display:none;">
+      <div class="conteneur">
+        <div class="carre" onclick="ajouterEffet(this)">
+          <p class="texte">Après le lycée, la spécialité NSI ouvre des portes vers des métiers comme développeur logiciel, analyste de données, administrateur système, et bien d'autres dans le domaine des technologies...</p>
+        </div>
+        <div class="carre" onclick="ajouterEffet(this)">
+          <p class="texte">Les élèves peuvent poursuivre leurs études en BTS, en écoles d'ingénieurs ou à l'université dans des filières liées à l'informatique et aux technologies...</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="back-button" onclick="history.back()">Retour</button>
+
+  <script src="java2.js"></script>
+  
+</body>
+</html>

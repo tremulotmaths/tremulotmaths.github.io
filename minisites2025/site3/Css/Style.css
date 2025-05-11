@@ -1,0 +1,233 @@
+/* ===== RÉINITIALISATION ===== */
+* {
+  margin: 0;
+}
+
+/* ===== EN-TÊTE ===== */
+header {
+  padding: 2rem;
+  background-color: black;
+}
+
+/* ===== NAVIGATION PRINCIPALE ===== */
+nav {
+  margin-left: -10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Helvetica, sans-serif;
+}
+
+nav a img {
+  height: 75px;
+}
+
+.nav_bar_bouton {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav_bar_bouton:hover {
+  color: turquoise;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ===== SECTION HÉRO (ANIMATION TITRE) ===== */
+.gradient {
+  background-color: black;
+  padding-bottom: 75px;
+}
+
+#section_1 h1 {
+  font-family: Helvetica, sans-serif;
+  animation: move 10s linear infinite;
+  background-image: linear-gradient(to right, 
+      rgb(255, 100, 100), 
+      rgb(255, 175, 100), 
+      rgb(255, 255, 100), 
+      rgb(175, 255, 100), 
+      rgb(100, 255, 100), 
+      rgb(100, 255, 175), 
+      rgb(100, 255, 255), 
+      rgb(100, 175, 255), 
+      rgb(100, 100, 255), 
+      rgb(175, 100, 255), 
+      rgb(255, 100, 255), 
+      rgb(255, 100, 175), 
+      rgb(255, 100, 100)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  font-size: 200px;
+  padding-top: 200px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  padding-bottom: 300px;
+}
+
+/* ===== ANIMATION DES VAGUES ===== */
+.vagues_section_1 svg {
+  rotate: 180deg;
+  background-color: white;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% { transform: translate3d(-90px, 0, 0); }
+  100% { transform: translate3d(85px, 0, 0); }
+}
+
+/* ===== SECTION CONTENU PRINCIPAL ===== */
+.section_2 {
+  padding: 2rem 1rem;
+  background: #ffffff;
+}
+
+/* Blocs de contenu */
+.titre, .texte {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(75, 75, 75);
+}
+
+.Titre {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* Images */
+.img_1, .img_2 {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Typographie */
+.texte h1 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  margin-bottom: 1rem;
+}
+
+.texte h2 {
+  font-size: 1.1rem;
+  color: #34495e;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== BOUTONS ===== */
+.bouton_projet {
+  text-decoration: none;
+  border-radius: 0.3rem;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #1b1919, #003099);
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+}
+
+.bouton_projet:hover {
+  color: turquoise;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ===== CARTES THÉMATIQUES ===== */
+.section_2 .box-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Espacement uniforme entre les boîtes */
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.section_2 .box {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Améliorations des titres */
+.section_2 .box h1 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #990002;
+}
+
+/* Contenu des boîtes */
+.section_2 .box p {
+  color: #34495e;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1; /* Maintient l'alignement en haut */
+}
+
+/* Effet au survol */
+.section_2 .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(153, 2, 2, 0.2);
+}
+
+/* ===== CARTES SIMPLES ===== */
+.box-container {
+  padding: 20px;
+}
+
+.box {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.box h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.box p {
+  margin: 0;
+}

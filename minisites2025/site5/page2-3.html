@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme NSI 1ère</title>
+  <link rel="stylesheet" href="page2-3.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><button class="navButton" onclick="afficherContenu('programme')">Les bases de la programmation</button></li>
+        <li><button class="navButton" onclick="afficherContenu('objectif')">Les algorithmes et la logique</button></li>
+        <li><button class="navButton" onclick="afficherContenu('cours')">Les projets pratiques</button></li>
+      </ul>
+    </nav>
+    <hr> 
+  </header>
+
+  
+  <div id="contenu">
+
+   
+    <div id="programme" class="contenu-section">
+      <div class="carre-violet">
+        <div class="carre-interieur" onclick="afficherTexte()">
+          <p>click ici</p>
+          <p id="programme-texte">Au début, tu apprendras les bases de la programmation avec Python, un langage simple mais puissant. Tu vas comprendre comment fonctionne un programme, comment il est écrit, et comment il résout des problèmes. .</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="objectif" class="contenu-section">
+      <p>Tu apprendras aussi comment créer des algorithmes pour résoudre des problèmes complexes. Par exemple, comment trier une liste d’éléments ou rechercher une donnée rapidement. Tu utiliseras des méthodes logiques pour penser à la solution avant d'écrire le programme.</p>
+    </div>
+
+    <div id="cours" class="contenu-section">
+      <p>En plus des cours théoriques, tu réaliseras des projets. Ces projets sont super importants car tu pourras mettre en pratique ce que tu as appris. Tu travailleras seul ou en groupe sur des applications ou des sites web, ce qui te permettra de mieux comprendre comment coder et résoudre des problèmes concrets.</p>
+    </div>
+    
+    
+    <div class="back-button-container">
+        <button class="back-button" onclick="history.back()">Retour</button>
+      </div>
+    
+ 
+
+  <script src="page2-3.js"></script>
+
+</body>
+</html>

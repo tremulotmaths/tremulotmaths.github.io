@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="fr">
+
+	
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Home Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+
+			<ul>
+				<li><img src="angleterre.png" width="60" height="40" /></li>
+				<li><a href="#formContainer">Contact</a></li>
+				<li><a href="#list">Scientists</a></li>
+				<li><a href="#Présentation" >Presentation</a></li>
+				<li><a href="#">Home page</a></li>
+
+			</ul>
+		</header>
+		<div class="class1" id="Accueil">
+			<h1> Welcome to Euro Maths English!</h1>
+			
+			
+			<div class="grid-container-element">
+				<div class="grid-child-element purple"><img id="photo" width="500" height="700" src="monopoly.png"          
+					onmouseover="agrandirImage();" 
+					onmouseout="reduireImage();" /></div>
+				<div class="grid-child-element green" id="textepre">
+					<div style="margin-top:5em;">Welcome to the Euro Maths English presentation page!<br>Here you can discover our Monopoly project!!! Have fun!!!</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+		<div class="presentation-section" id="Présentation">
+			<h1 class="presentation-section"> Presentation</h1>
+			<div class="game-presentation">
+    
+				<div class="section-card">
+					<h2>🎯 Aim of the Game</h2>
+					<ul>
+						<li>Become the smartest player through “buying” scientist.</li>
+						<li>The game ends when someone finishes their final year (Terminale) and gets their bac.</li>
+					</ul>
+				</div>
+			
+				<div class="section-card">
+					<h2>🎲 Equipment</h2>
+					<ul>
+						<li>The game board</li>
+						<li>2 dice</li>
+						<li>... scientists' cards</li>
+						<li>... chance cards</li>
+						<li>... knowledge points</li>
+					</ul>
+				</div>
+			
+				<div class="section-card">
+					<h2>🎮 Gameplay</h2>
+					<ul>
+						<li>Players take turns in order:
+							<ul>
+								<li>Roll both dice and move that number of spaces clockwise.</li>
+								<li>Depending on the space:
+									<ul>
+										<li>Unowned scientist: buy him</li>
+										<li>Owned property: Pay research fees to the owner.</li>
+										<li>Chance / Community Chest: Draw top card and follow instructions.</li>
+										<li>Go to exam room: Pass the exam or pay with your knowledge points if you fail.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>When passing GO, collect ...</li>
+					</ul>
+				</div>
+			
+				<div class="section-card">
+					<h2>📚 Buying a Scientist</h2>
+					<ul>
+						<li>Land on an unowned scientist: You can buy it for the price on the title deed.</li>
+						<li>If you decline to buy: The teacher auctions it to the highest bidder.</li>
+						<li>When you have a full set of scientists, you get their lab.</li>
+					</ul>
+				</div>
+			
+				<div class="section-card">
+					<h2>💰 Research Fees</h2>
+					<ul>
+						<li>Pay fees when landing on another player’s scientist.</li>
+						<li>Research fee amounts are shown on their card.</li>
+						<li>Fees increase with lab upgrades.</li>
+					</ul>
+				</div>
+			
+				<div class="section-card">
+					<h2>📝 Exam Room</h2>
+					<ul>
+						<li>You go to the exam room if:
+							<ul>
+								<li>You land on the "exam room" space.</li>
+								<li>You draw a "Go to exam room" card.</li>
+								<li>You roll 3 doubles in a row.</li>
+							</ul>
+						</li>
+						<li>To get out:
+							<ul>
+								<li>Pass the exam.</li>
+								<li>Use a "Get out of exam room free" card.</li>
+								<li>Roll doubles on one of your next 3 turns.</li>
+								<li>If you didn't get out in 3 turns, pay knowledge points and move.</li>
+							</ul>
+						</li>
+					</ul>
+
+					<h2>Aim of the game</h2>
+					<ul class="styled-list-8">
+						<li>Become the smartest player through “buying” scientist.</li>
+						<li>The game ends when someone finished his final year (Terminale) and got his bac.</li>
+						</ul>
+
+					<h2>Currency</h2>
+					<ul class="styled-list-9">
+							<li>Knowledge point</li>
+							<li>Money</li>
+						</ul>
+					<h2>Trading</h2>
+					<ul class="styled-list-10">
+						<li>Players may trade: 
+							<ul>
+							<li>Money</li>
+							<li>Knowledge points</li>
+							<li>Scientist</li>
+							<li>"Get out of exam room free" cards</li>
+							</ul></li>
+						<li>Players cannot trade:
+							<ul>
+								<li>Buildings (must be sold first)</li>
+								<li> Future promises (like immunity from rent)</li>
+							</ul></li>
+						</ul>
+						<h2> Winning the game</h2>
+						<p class="game-section winning-game">The game ends when a terminal ended his year and got his bac. They must collect enough knowledge points and scientists to be the smartest in the room.
+							To finish your year you got to do in total 7 rows one for each semesters.
+							Indeed 3 in seconde, 2 in premiere and finally also 2 in terminale.
+							But you still got to be acknowledged enough to handle the studies.
+							The scientist you’ll buy will help.
+							The winner will be the first to finish if he has enough knowledge points.</p>
+
+
+
+
+			</div>
+		</div>
+		</div>
+
+		<div class="scientists" id="list">
+			<div class="left-block">
+				<h2>List of all scientists</h2>
+				<p>Discover all the scientists in the project.</p>
+				<a href="Liste scientifique\Page liste scientifique.html" class="scientist-link">See the list</a>
+				</div>
+				<div class="right-block">
+					<h2>Search for a scientist</h2>
+					<p>Enter a scientist's name to access their page.</p>
+					<input type="text" id="searchInput" placeholder="Ex: Pythagoras">
+					<button onclick="searchScientist()">Search</button>
+					<p id="searchMessage" style="color: red;"></p></div>
+			</div>
+
+		<div class="form-container" id="formContainer">
+			<h1 class="classh12">Contact us </h1>
+			<label for="name">Name:</label>
+			<input type="text" id="name" required><br><br>
+
+			<label for="message">Message:</label>
+			<textarea id="message" required></textarea><br><br>
+
+			<button onclick="envoyerMessage()">Send</button>
+		</div>
+
+
+
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+
+</html>

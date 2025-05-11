@@ -1,0 +1,196 @@
+*{
+    margin:0em;
+    padding:0em;
+
+}
+
+.menu{
+    margin-top: -11.5%;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    display: block;
+    background-color: lightgray;
+    padding:0em;
+}
+
+.logo{
+    width: 10em;
+    padding-left: 87%;
+    margin-top: -3%;
+}
+a{
+    border-radius: 5px;
+    padding: 1em auto;
+    color:black;
+    text-decoration: none;
+    font-family: Gabriola;
+    font-size: 2em;
+}
+
+a:hover{
+    background-color: darkgray;
+}
+
+.logo img{
+    width: 15%;
+    margin:auto;
+}
+header{
+
+    margin-top:10em;
+}
+.text h1{
+    font-size: 8em;
+    color:#010107;
+    font-weight: 700;
+    font-family: Gabriola;
+    text-align: center;
+    margin-top:0% ;
+}
+.section_1 .text p{
+    font-size: 2em;
+    color:rgb(15, 0, 0);
+    margin-top: 1%;
+    font-family: Courier;
+    padding-right: 45%;
+    margin-left: 5%;
+}
+
+.section_1 .rectangle{
+    width:100%;
+    background:rgba(11, 100, 172, 0.692);
+}
+
+.section_1 img{
+    width:70%;
+    height:70%;
+}
+
+.section_1 .img1{
+    padding-left: 56%;
+    margin-top: -20%;
+}
+
+.section_1 .img2{
+    padding-left: 75%;
+    margin-top: -4%;
+}
+
+
+.section_2 .rectangle{
+    width:100%;
+    background:rgb(255, 255, 255);
+}
+
+.section_2 .tb{
+    padding-left: 5%;
+    margin-right: 60%;
+    margin-top:-30%
+}
+
+.section_2 .text p{
+    padding-left:50%;
+    padding-right: 5%;
+    font-size: 2em;
+    color:rgb(15, 0, 0);
+    font-family: Courier;
+    margin-top: 10%;
+}
+
+.section_2 .prog{
+    font-size: 3em;
+    font-family: Gabriola;
+    margin-top: -80%;
+    padding-top: -80%;
+    color: #010107;
+    margin-left: 50%;
+}
+
+
+.section_3 .rectangle{
+    width: 100%;
+    background: rgba(95, 183, 255, 0.712);
+}
+
+.section_3 .text p{
+    font-size: 2em;
+    color:rgb(15, 0, 0);
+    font-family: Courier;
+    padding-right: 45%;
+    padding-left: 5%; 
+    margin-top: -2%;
+}
+
+.section_3 .img3{
+    width:60%;
+    height:60%;
+    padding-left: 65%;
+    margin-top: -22%;
+}
+.section_3 .souriis{
+    padding-left: 50%;
+    margin-top: -15%;
+}
+
+
+.section_4 .rectangle{
+    width: 100%;
+    background: rgb(255, 255, 255);
+
+}
+
+.section_4 .text p{
+    padding-left:50%;
+    padding-right: 5%;
+    padding-top: -10%;
+    font-size: 2em;
+    color:rgb(15, 0, 0);
+    font-family: Courier;
+}
+
+.section_4 .img4{
+    margin-top: -15%;
+}
+
+.section_4 .t h2{
+    margin-left: 15%;
+    size:4em;
+}
+
+.section_4 .t p{
+    font-size: 0.75em;
+    margin-left: -40%;
+    margin-top: 1%;
+}
+
+
+footer {
+	background-color: #1f1f1f;
+	text-align: center;
+    margin-top: 5%;
+}
+
+.ftext {
+	padding-top: 0.25%;
+	padding-bottom: 0.25%;
+}
+
+#f1 {
+	color: #fff;
+	font-weight: 700;
+	margin: 2%;
+}
+
+#f2 {
+	color: #fff;
+	font-weight: 400;
+	margin: 0.75%;
+}
+
+
+
+
+
+
+

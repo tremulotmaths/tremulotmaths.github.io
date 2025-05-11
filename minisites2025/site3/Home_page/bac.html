@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+
+<html lang="fr">
+
+	
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Ma note au Bac</title>
+		<link rel="stylesheet" type="text/css" href="../Css/style_bac.css"/>
+	</head>
+
+	<body>
+		
+		<header>
+			<h1>Ma note au Bac</h1>
+		</header>
+		
+		<div id="general">
+			<div class="texte">
+				<p>Ce simulateur vous permettra  de calculer votre note finale au Bac en entrant vos notes aux différentes épreuves.</p>
+				
+				<p>L'image ci-contre vous rappelle la répartition des coefficients de ces différentes épreuves.</p>
+			</div>
+			<img src="../image/r-partition-de-la-note-finale-gt-octobre-95074.jpg" alt="Bac 2021" />	
+		</div>
+		
+		<form id="notes" name="formulaire">
+			<div id="premiere">
+				<h2>Première</h2>
+				<div class="bulletins">
+					<h3>Bulletins 1<sup>er</sup> :</h3>
+					
+					<div class="bulletins">
+						
+						<h3>LV1</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="LV1_1_1" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="LV1_2_1" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="LV1_3_1" min="0" max="20" step='0.5'></label>	
+						
+						<h3>LV2</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="LV2_1_1" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="LV2_2_1" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="LV2_3_1" min="0" max="20" step='0.5'></label>	
+
+						<h3>Histoire-Géo</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="HG_1_1" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="HG_2_1" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="HG_3_1" min="0" max="20" step='0.5'></label>
+
+						<h3>Ens. Scientifique</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="ES_1_1" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="ES_2_1" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="ES_3_1" min="0" max="20" step='0.5'></label>
+
+						<h3>EMC</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="EMC_1_1" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="EMC_2_1" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="EMC_3_1" min="0" max="20" step='0.5'></label>
+
+						<h3>SPE 1</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="SP_1_1" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="SP_2_1" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="SP_3_1" min="0" max="20" step='0.5'></label>
+
+						<h3>Options</h3>
+						<label>Option 1 : <input type="number" name="OPT_1_1" min="0" max="20" step='0.5'></label>
+						<label>Latin : <input type="number" name="LT_1" min="0" max="20" step='0.5'></label>
+						<label>Grec : <input type="number" name="GRC_1" min="0" max="20" step='0.5'></label>
+
+						<p>Moyenne Bulletins 1<sup>er</sup> :<span id ="moy_bull_1er"></span></p>
+						
+					</div>
+				</div>
+				
+				<div class="e_t">
+					
+					<h3>Épreuves Terminales</h3>	
+					<label>Français ecrit :<input type="number" name="philo" min="0" max="20" step='0.5'></label>		
+					<label>Français oral :<input type="number" name="oral" min="0" max="20" step='0.5'></label>
+
+					<p>Moyenne d'épreuve :<span id ="moy_epreuve_fr"></span></p>
+				
+				</div> 
+			</div>		
+			
+			<div id="terminale">
+				<h2>Terminale</h2>
+				<div class="bulletins">
+					<h3>Bulletins Terminale :</h3>
+					
+					<div class="bulletins">
+						<h3>LV1</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="LV1_1_2" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="LV1_2_2" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="LV1_3_2" min="0" max="20" step='0.5'></label>	
+						
+						<h3>LV2</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="LV2_1_2" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="LV2_2_2" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="LV2_3_2" min="0" max="20" step='0.5'></label>	
+
+						<h3>Histoire-Géo</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="HG_1_2" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="HG_2_2" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="HG_3_2" min="0" max="20" step='0.5'></label>
+
+						<h3>Ens. Scientifique</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="ES_1_2" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="ES_2_2" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="ES_3_2" min="0" max="20" step='0.5'></label>
+
+						<h3>EMC</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="EMC_1_2" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="EMC_2_2" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="EMC_3_2" min="0" max="20" step='0.5'></label>
+
+						<h3>EPS</h3>
+						<label>1<sup>er</sup> Trimestre : <input type="number" name="EPS_1" min="0" max="20" step='0.5'></label>
+						<label>2<sup>ème</sup> Trimestre : <input type="number" name="EPS_2" min="0" max="20" step='0.5'></label>
+						<label>3<sup>ème</sup> Trimestre : <input type="number" name="EPS_3" min="0" max="20" step='0.5'></label>
+
+						<h3>Options</h3>
+						<label>Option 1 : <input type="number" name="OPT_1_2" min="0" max="20" step='0.5'></label>
+						<label>Option 2 : <input type="number" name="OPT_2_2" min="0" max="20" step='0.5'></label>
+						<label>Latin : <input type="number" name="LT_2" min="0" max="20" step='0.5'></label>
+						<label>Grec : <input type="number" name="GRC_2" min="0" max="20" step='0.5'></label>			
+					
+						<p>Moyenne bulletins terminale:<span id ="moy_bull_T"></span></p>
+
+					</div>
+				</div>	
+				
+				<div class="e_t">
+					<h3>Épreuves terminales</h3>	
+					<label>Philo :<input type="number" name="philo" min="0" max="20" step='0.5'></label>		
+					<label>Spécialité 1 :<input type="number" name="SP1_2" min="0" max="20" step='0.5'></label>
+					<label>Spécialité 2 :<input type="number" name="SP2_2" min="0" max="20" step='0.5'></label>
+					<label>Grand oral :<input type="number" name="gd_oral" min="0" max="20" step='0.5'></label>
+
+					<p>Moyenne d'épreuve :<span id ="moy_epreuve_Term"></span></p>
+				</div>
+			</div>
+		</form>
+		
+		<div id="resultat">
+			<p>
+				<button type="button" name="calcul" onclick="calcul()">Ma note au Bac</button>	
+				<span id="note_finale"></span>
+			</p>
+		</div>
+		
+			
+		<script type="text/javascript" src="../Javascript/script_bac.js"></script>
+	</body>
+
+</html>

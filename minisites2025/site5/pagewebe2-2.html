@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme NSI 1ère</title>
+  <link rel="stylesheet" href="site css2.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><button class="navButton" onclick="afficherContenu('programme')">Introduction à la spécialité NSI</button></li>
+        <li><button class="navButton" onclick="afficherContenu('objectif')">Objectifs de la spécialité</button></li>
+        <li><button class="navButton" onclick="afficherContenu('cours')">Les compétences acquises</button></li>
+      </ul>
+    </nav>
+    <hr> 
+  </header>
+
+  <div id="contenu">
+
+    <div id="programme" class="contenu-section">
+      <div class="carre-violet">
+        <div class="carre-interieur" onclick="afficherTexte()">
+          <p>click ici </p>
+          <p id="programme-texte">La spécialité NSI (Numérique et Sciences Informatiques) au lycée permet d'apprendre l'informatique et la programmation. En choisissant cette spécialité, tu vas découvrir les bases des ordinateurs, des réseaux et comment coder des programmes.</p>
+      </div>
+      </div>
+    </div>
+
+    <div id="objectif" class="contenu-section">
+      <p>L'objectif principal de la spécialité NSI est de te donner les compétences pour résoudre des problèmes avec des outils informatiques. Tu apprendras à coder en Python, à utiliser des algorithmes, à analyser des données et à comprendre le monde du numérique.</p>
+    </div>
+
+    <div id="cours" class="contenu-section">
+      <p>En suivant cette spécialité, tu vas acquérir des compétences pratiques, comme la programmation, la création de sites web, ou encore la gestion des bases de données. Ces compétences sont utiles pour de nombreux métiers dans l’informatique.</p>
+    </div>
+    
+    
+    <div class="back-button-container">
+        <button class="back-button" onclick="history.back()">Retour</button>
+      </div>
+    
+ 
+
+  <script src="pageweb2.js"></script>
+
+</body>
+</html>

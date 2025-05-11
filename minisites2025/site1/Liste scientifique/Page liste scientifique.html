@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ang">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>List of scientists</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class="class1" id="Accueil">
+			<h1> Here is the list of all the scientists!</h1>
+			
+			
+			<div class="grid-container-element">
+				<div class="grid-child-element purple"><img id="photo" width="500" height="700" src="scientifique.png" 
+                    onmouseover="agrandirImage();" 
+                    onmouseout="reduireImage();" /></div>
+				<div class="grid-child-element green" id="textepre">
+					<div style="margin-top:5em;">Here you can see all of the scientists present in the game!<br> Between Europe, Asia and Americas you choose which scientist you want to know more about!! </div>
+                    <button class="back-button" onclick="history.back();">Go Back</button>
+				</div>
+			</div>
+		</div>
+        
+        <div class="top_nav">
+            <ul id="onglets" class="clearfix">
+                <li id="greek" class="actif">Greek</li>
+                <li id="polish" class="actif">Polish</li>
+                <li id="italian" class="actif">Italian</li>
+                <li id="german" class="actif">German</li>
+                <li id="french" class="actif">French</li>
+                <li id="british" class="actif">British</li>
+                <li id="asian" class="actif">Asian</li>
+                <li id="american" class="actif">American</li>
+            </ul>
+        </div>
+
+        <div id="info-container" class="hidden">
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+    </body>

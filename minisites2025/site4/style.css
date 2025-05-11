@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to top, #ffffff, #000000);
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    right: 140px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.menu-item {
+    background-image: url("eaudefond.jpeg");
+    background-size: cover;
+    background-blend-mode: lighten;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: #b30000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 130px;
+    margin-right: 10px;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #b30000;
+    text-decoration: underline;
+}
+
+#nsi-num-pro {
+    position: absolute;
+    bottom: 60px;
+    right: 90px;
+    width: 400px;
+    height: auto;
+}
+
+
+#code-python {
+    position: absolute;
+    bottom: -320px;
+    right: 120px;
+    width: 300px;
+    height: auto;
+}
+#exemple-html {
+    position: absolute;
+    bottom: -310px;
+    right: 450px;
+    width: 300px;
+    height: auto;
+}
+.data-science, .femme-nsi {
+    float: right;
+    width: 400px;
+    margin-left: 20px;
+}
+
+
+.section-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    max-width: 40%; 
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-content {
+    max-width: 55%;
+}
+#click-ici {
+    cursor: pointer;
+    width: 300px;
+    height: auto;
+}
+
+#message {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+body {
+    margin-top: 80px;
+}

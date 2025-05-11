@@ -1,0 +1,21 @@
+body {
+	/* Gestion du corps de la page */
+	width: 100%;
+	margin: 0 auto;
+	font-family: arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.alignement{
+	/* Gestion l'intérieur du bloc div de classe alignement */
+	display: flex;
+}
+
+.alignement img{
+	/* Toutes les images des blocs de classe alignement */
+	width:20%;
+	margin-left:auto;
+	margin-right:auto;
+}

@@ -1,0 +1,216 @@
+/* Animation Matrix */
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+h2{
+    color: white;
+}
+
+/* Contenu principal */
+.background {
+    background-color: black;
+    padding-bottom: 75px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.nav {
+    background-color: rgb(0, 0, 0);
+    margin-left: -10rem;
+    margin-top: -0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Helvetica, sans-serif;
+    border-color: rgb(153, 2, 2);
+    border-bottom-style: inset;    
+    border-width: 0.25rem;
+    position: relative;
+    z-index: 2;
+}
+
+.conteneur-projet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 1;
+}
+
+.project-python {
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-web {
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-web:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+}
+
+.project-haut {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(153, 2, 2, 0.3);
+    padding-bottom: 1rem;
+}
+
+.tech-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.project-content {
+    color: #ffffff;
+}
+
+.feature-list {
+    padding-left: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.feature-list li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.feature-list li::before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    color: #00ffff;
+}
+
+.download-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #00cccc, #009999);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.download-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 204, 204, 0.4);
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tech-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-3px);
+}
+
+.tech-item h3 {
+    color: #00cccc;
+    margin: 0.5rem 0;
+}
+
+.conteneur-projet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 500px;
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tech-item {
+    flex: 1 1 120px;
+    padding: 1rem;
+}
+
+.project-header {
+    flex-direction: column;
+    text-align: center;
+}
+
+.tech-logo {
+    width: 15vw;
+    height: 15vw;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.download-button {
+    font-size: max(2vw, 14px);
+}
+
+.feature-item {
+    font-size: clamp(14px, 2vw, 16px);
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    color:turquoise;
+    font-weight: bold;
+    font-size:large;
+
+}
+
+.boutton_projet{
+    border-radius: 0.5em;
+    border-color: rgba(50, 50, 50, 0.5);
+    background: linear-gradient(135deg, #fa7900, #003cff , rgb(255, 217, 0) );
+    padding: auto;
+}
+.boutton_projet:hover{
+    transform: scale(1.05);
+}
