@@ -1,0 +1,170 @@
+body { 
+    background-color: rgb(248, 249, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+.page {
+    text-align: center;
+}
+
+.Titre {
+    background-color: rgb(30, 58, 95);
+    color: rgb(248, 249, 250);
+    padding: 10px 0;
+    text-align: left;
+}
+
+.onglets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    background-color: rgb(30, 58, 95);
+    color: rgb(248, 249, 250);
+}
+
+h1 {
+    margin: 0; 
+    padding-left: 20px; 
+    font-size: 2em; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    color: rgb(225, 65, 65); 
+}
+
+.onglets h1 {
+    flex: 1; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    flex-grow: 1;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    background-color: rgb(30, 58, 95);
+    color: rgb(248, 249, 250);
+}
+.groupes_de_mots{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+}
+.ecart{
+    flex: 1;
+    padding: 10px;
+}
+.ecart img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tableau {
+    text-align: center;
+    margin: 40px auto;
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid rgb(30, 58, 95);
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(30, 58, 95);
+    color: white;
+}
+.quiz-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(30, 58, 95);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(225, 65, 65);
+}
+
+#resultat {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(30, 58, 95);
+}
+.liens{
+    text-align: center;
+    margin: 20px 0; 
+    padding: 10px;
+    border-radius: 8px; 
+}
+.liens a{
+    display: inline-block;
+    color:rgb(30, 58, 95);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.liens a:hover{
+    transform: scale(1.20);
+    background-color:rgb(196, 196, 196);
+    text-decoration: underline;
+}
+.auteurs{
+    text-align: center;
+}
+.auteurs a{
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auteurs a:hover{
+    color:rgb(196, 196, 196);
+    background-color: rgb(30, 58, 95);
+}
