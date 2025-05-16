@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link type="text/css"  rel="stylesheet" href="style.css" id="linkcss">
+</head>
+
+<body>
+    <nav>
+        <li class="logo" id="secretButton">
+            <a href="https://cat-bounce.com/"> <img src="bouton.webp"> </a>            
+        </li>
+        
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="#" id="nav-smooth-accueil">Accueil</a></li>
+            <li><a href="#section_2" id="nav-smooth-prog">Programmes</a></li>
+            <li><a href="#section_3" id="nav-smooth-eval">Evaluation</a></li>
+            <li><a href="#section_4" id="nav-smooth-orien">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <section class="section_1" id="section_1">
+        
+        <div class="text" id="toppp">
+            <h1>Bienvenue dans la spécialité NSI
+                <span class="wave-emoji">
+                    <img alt="👋" draggable="false" src="https://twemoji.maxcdn.com/v/13.0.1/72x72/1f44b-1f3fb.png" style="height: 1.1em; width: 1.1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">
+                </span>
+            </h1>
+            <p>L’informatique ne cesse de se
+                développer, elle intervient de plus en
+                plus dans les sciences de la vie, humaines
+                ou sociales, la médecine comme dans
+                tous les domaines liés aux
+                communications numériques.
+                Les ordinateurs et les objets numériques sont omniprésents
+                dans la vie professionnelle comme dans la vie privée et sont
+                fortement interconnectés.
+                L’informatique et les sciences du numérique représentent
+                un vaste et dynamique gisement d’activités et d’emplois.</p>
+          </div>
+    </section>
+    <section class="section_2" id="section_2">
+        <div class="text" id="toppp">
+            <h1> Quel est le programme abordé </h1>
+            <p id="prog"><h2>En Première</h2>
+
+    <p>Histoire de l'informatique
+        Exploration des événements clés et des figures marquantes de l'histoire de l'informatique.
+
+    Représentation des données : types et valeurs de base
+        Étude des types de données fondamentaux tels que les entiers, flottants, caractères, etc.
+
+    Représentation des données : types construits
+        Introduction aux types de données complexes comme les p-uplets et les tableaux.
+
+    Traitement de données en tables
+        Apprentissage des bases de données et de leur manipulation.
+
+    Interactions entre l'homme et la machine sur le Web
+        Analyse des interfaces et des interactions utilisateur sur les sites web.
+
+    Architectures matérielles et systèmes d'exploitation
+        Compréhension des composants matériels et des systèmes d'exploitation.
+
+    Langages et programmation
+        Initiation aux langages de programmation, principalement Python.
+
+    Algorithmique
+        Introduction aux concepts d'algorithmes, y compris les algorithmes de recherche et de tri.
+
+<h2>En Terminale</h2>
+
+    <p>Les thèmes de terminale approfondissent les notions étudiées en première, en mettant l'accent sur :
+        Calculabilité et décidabilité
+        Paradigmes de programmation
+        Modularité et API
+        Structures de données avancées
+        Algorithmes sur les graphes et les arbres
+        Bases de données relationnelles et SQL
+        Sécurisation des communications </p>
+
+    </section>
+
+    <section class="section_3" id="section_3">
+        <h1>Les évaluations</h1>
+        <img src="https://s2.qwant.com/thumbr/474x358/5/9/ea58553df091b16014e1907aaa468bbf0869a15fa79cc3127b4eedaee53777/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.00nJwTqylqvFuehIGAL90gHaFm%26pid%3DApi&q=0&b=1&p=0&a=0"/>
+
+    </section>
+
+    <section class="section_4" id="section_4">
+            <h1>Quiz NSI - JavaScript</h1>
+
+            <!-- Question 1 -->
+            <div class="question">
+              <p>1. Que veut dire NSI ?</p>
+              <input type="radio" name="q1" value="A"> Numérique et Saucisse Intelligente<br>
+              <input type="radio" name="q1" value="B"> Numérique et Sciences Informatiques<br>
+              <input type="radio" name="q1" value="C"> Neymar Suarez Ibrahimovich<br>
+            </div>
+          
+            <!-- Question 2 -->
+            <div class="question">
+              <p>2.Quels métier ne va pas avec la NSI ?</p>
+              <input type="radio" name="q2" value="A"> Avocat<br>
+              <input type="radio" name="q2" value="B"> Maçon<br>
+              <input type="radio" name="q2" value="C"> Technicien en Base de Donnée<br>
+            </div>
+          
+            
+            <div class="question">
+              <p>3. Quel logiciel utilise-t-on en NSI ?`</p>
+              <input type="radio" name="q3" value="A"> Python<br>
+              <input type="radio" name="q3" value="B"> Geo Gebra<br>
+              <input type="radio" name="q3" value="C"> Unreal Engines<br>
+            </div>
+            <span></span>
+            <button onclick="submitQuiz()">Soumettre le quiz</button>
+          
+            <div id="result" class="result"></div>
+    </section>
+    <script src="java.js"></script>
+</body>
