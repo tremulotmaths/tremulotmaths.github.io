@@ -24,68 +24,48 @@
 				
 				<p>L'image ci-contre vous rappelle la répartition des coefficients de ces différentes épreuves.</p>
 			</div>
-			<img src="bac2021.jpg" alt="Bac 2021" />	
+			<img src="bac2027.jpg" alt="Bac 2027" />
 		</div>
 		
 		<form id="notes" name="formulaire">
 			<div id="premiere">
 				<h2>Première</h2>
-				<div class="bulletins">
-					<h3>Bulletins</h3>
-						<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-						<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-						<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-						<p>Moyenne bulletins première :<span id="moy_bull"></span></p>
-				</div>
-				
-				<div class="e3c">
-					<h3>E3C</h3>
-						<h4>E3C 1</h4>
-						<label>Histoire-Géo. :<input type="number" name="hg_1" min="0" max="20" step='0.5'></label>
-						<label>LVA :<input type="number" name="lva_1" min="0" max="20" step='0.5'></label>
-						<label>LVB :<input type="number" name="lvb_1" min="0" max="20" step='0.5'></label>					
-					
-						<h4>E3C 2</h4>
-						<label>Histoire-Géo. :<input type="number" name="hg_2" min="0" max="20" step='0.5'></label>
-						<label>LVA :<input type="number" name="lva_2" min="0" max="20" step='0.5'></label>
-						<label>LVB :<input type="number" name="lvb_2" min="0" max="20" step='0.5'></label>	
-						<label>Enseignement Sci. :<input type="number" name="es_2" min="0" max="20" step='0.5'></label>
-						<label>Spécialité Première :<input type="number" name="spe_2" min="0" max="20" step='0.5'></label>				
+				<div class="continu">
+					<h3>Contrôle continu</h3>
+						<label>Histoire-Géo. :<input type="number" name="hg_1" min="0" max="20" step='0.1'></label>
+						<label>LVA :<input type="number" name="lva_1" min="0" max="20" step='0.1'></label>
+						<label>LVB :<input type="number" name="lvb_1" min="0" max="20" step='0.1'></label>
+						<label>Enseignement Sci. :<input type="number" name="es_1" min="0" max="20" step='0.1'></label>
+						<label>Spécialité Première :<input type="number" name="spe_3" min="0" max="20" step='0.1'></label>
+						<label>EMC :<input type="number" name="emc_1" min="0" max="20" step='0.1'></label>
 				</div>
 				<div class="e_t">
 					<h3>Épreuves terminales</h3>	
-					<label>Français écrit :<input type="number" name="fr_ecrit" min="0" max="20" step='0.5'></label>		
-					<label>Français oral :<input type="number" name="fr_oral" min="0" max="20" step='0.5'></label>
+					<label>Français écrit :<input type="number" name="fr_ecrit" min="0" max="20" step='1'></label>
+					<label>Français oral :<input type="number" name="fr_oral" min="0" max="20" step='1'></label>
+					<label>Mathématiques :<input type="number" name="math" min="0" max="20" step='1'></label>
 				</div>
 			</div>		
 			
 			<div id="terminale">
 				<h2>Terminale</h2>
-				<div class="bulletins">
-					<h3>Bulletins</h3>
-						<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-						<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-						<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-						<p>Moyenne bulletins terminale :<span id="moy_bull_t"></span></p>
-				</div>
-				
-				<div class="e3c">
-					<h3>E3C</h3>
-					
-						<h4>E3C 3</h4>
-						<label>Histoire-Géo. :<input type="number" name="hg_3" min="0" max="20" step='0.5'></label>
-						<label>LVA :<input type="number" name="lva_3" min="0" max="20" step='0.5'></label>
-						<label>LVB :<input type="number" name="lvb_3" min="0" max="20" step='0.5'></label>	
-						<label>Enseignement Sci. :<input type="number" name="es_3" min="0" max="20" step='0.5'></label>
-						<label>EPS :<input type="number" name="eps_3" min="0" max="20" step='0.5'></label>				
+
+				<div class="continu">
+					<h3>Contrôle continu</h3>
+						<label>Histoire-Géo. :<input type="number" name="hg_t" min="0" max="20" step='0.1'></label>
+						<label>LVA :<input type="number" name="lva_t" min="0" max="20" step='0.1'></label>
+						<label>LVB :<input type="number" name="lvb_t" min="0" max="20" step='0.1'></label>
+						<label>Enseignement Sci. :<input type="number" name="es_t" min="0" max="20" step='0.1'></label>
+						<label>EPS :<input type="number" name="eps" min="0" max="20" step='0.1'></label>
+						<label>EMC :<input type="number" name="emc_t" min="0" max="20" step='0.1vertical-align: middle;'></label>
 					
 				</div>
 				<div class="e_t">
 					<h3>Épreuves terminales</h3>	
-					<label>Philo :<input type="number" name="philo" min="0" max="20" step='0.5'></label>		
-					<label>Spécialité 1 :<input type="number" name="spe1" min="0" max="20" step='0.5'></label>
-					<label>Spécialité 2 :<input type="number" name="spe2" min="0" max="20" step='0.5'></label>
-					<label>Grand oral :<input type="number" name="gd_oral" min="0" max="20" step='0.5'></label>
+					<label>Philo :<input type="number" name="philo" min="0" max="20" step='1'></label>
+					<label>Spécialité 1 :<input type="number" name="spe1" min="0" max="20" step='1'></label>
+					<label>Spécialité 2 :<input type="number" name="spe2" min="0" max="20" step='1'></label>
+					<label>Grand oral :<input type="number" name="gd_oral" min="0" max="20" step='1'></label>
 				</div>
 			</div>
 		</form>
@@ -98,7 +78,7 @@
 		</div>
 		
 			
-		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="script_final.js"></script>
 	</body>
 
 </html>

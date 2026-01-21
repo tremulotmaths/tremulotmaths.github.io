@@ -14,14 +14,15 @@ body {
 }
 
 #general img{
-	width: 500px;
+	width: 700px;
+	padding:2em;
 }
 
 #general .texte{
 	padding:2em;
 }
 
-.bulletins, .e3c, .e_t{
+.continu, .e_t{
 	display: flex;
 	flex-direction: column;
 	margin: 0.5em 0;
@@ -30,11 +31,7 @@ body {
 	border-radius: 1em;
 }
 
-.bulletins {
-	background-color: #ffe0e0;
-}
-
-.e3c {
+.continu {
 	background-color: #e0ffe0;
 }
 
