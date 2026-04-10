@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Spécialité N.S.I.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <img src="linux2.png" class="logo">
+        <nav>
+    <div class="nav-links">
+    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Accueil</a>
+    <a href="pageProgramme.html">Programme Scolaire</a>
+    <a href="Parcours supérieur.html">Parcours Supérieurs</a>
+    <a href="Pagemétiers.html">Métiers possibles</a>
+    <a href="Aide.html">Aide</a>
+    </div>
+</nav>
+
+
+    </div>
+    <main>
+    <h1>Bienvenue en Spécialité NSI</h1>
+    <h4><i>Numérique et Sciences Informatiques : Comprendre et construire le monde de demain</i></h4>
+    
+    <div class="intro1">
+    <p>
+    La spécialité NSI n'est pas seulement un cours d'informatique, c'est découvrir les fondements 
+    du monde numérique. Que vous soyez passionné par la création de sites web, la cybersécurité ou l'intelligence 
+    artificielle, cette spécialité vous apporte les bases solides nécessaires.
+    </p>
+    </div>
+
+    <div class="ensemble">
+    <div class="ensemble1">
+    <h3>Ce que vous allez apprendre :</h3>
+    <ul>
+    <li><strong>Le traitement des données :</strong> Maîtrisez les structures de données et leur organisation.</li>
+    <li><strong>Les algorithmes :</strong> Apprenez à concevoir des solutions logiques à des problèmes complexes.</li>
+    <li><strong>Programmation :</strong> Devenez autonome en langage Python et technologies du Web.</li>
+    <li><strong>Systèmes & Réseaux :</strong> Comprenez comment fonctionnent les machines et internet.</li>
+    </ul>
+    </div>
+    </div>
+
+    <div class="cta-section">
+    <p>Vous voulez savoir ce qu'il y aura au programme ?</p>
+    <a href="pageProgramme.html" class="btn-decouvrir">Découvrir le programme complet</a>
+    </div>
+</main>
+    <footer>
+    <p>© 2026 NSI-Debunk – 
+    <a href="#">Mentions légales</a> – 
+    <a href="#">Contact</a>–
+    <a href="#" onclick="ouvrirRick()">?</a>
+    </p>
+    </footer>
+    <script src="script.js"></script>
+<div id="nyan">
+    <video id="nyan-video" onclick="fermerNyan()">
+        <source src="cat.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="rick">
+    <video id="rick-video" onclick="fermerRick()">
+        <source src="rick.mp4" type="video/mp4">
+    </video>
+
+</div>
+<div id="shrimp" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; z-index: 9999; cursor: pointer;">
+    <video id="shrimp-video" onclick="fermerShrimp()">
+        <source src="shrimp.mp4" type="video/mp4">
+    </video>
+</div>
+</body>
+</html>

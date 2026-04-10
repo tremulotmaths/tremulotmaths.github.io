@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition de l'encodage des caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Meta tag pour le responsive design sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers la feuille de styles CSS principale -->
+    <link type="text/css" rel="stylesheet" href="nsi_style.css">
+    <!-- Titre de la page Projets -->
+    <title>Projets - Spécialité NSI</title>
+</head>
+<body>
+    <!-- ==========================================================================
+         NAVIGATION BAR - BARRE DE NAVIGATION FIXE
+         ========================================================================== -->
+    <!-- Cette barre de navigation est présente sur toutes les pages du site.
+          Elle permet à l'utilisateur de naviguer facilement entre les différentes sections.
+          La barre est structurée avec:
+          - Un logo cliquable qui ramène à l'accueil
+          - Une liste de liens (<ul>, <li>, <a>) pour la navigation -->
+    <nav class="navbar">
+        <!-- Logo/Titre du site - lien vers la page d'accueil -->
+        <a href="index.html" class="logo">Mini Site NSI</a>
+        
+        <!-- Liste des liens de navigation -->
+        <!-- Chaque élément <li> contient un lien <a> vers une page différente.
+              Les pages sont: Accueil, Présentation, Orientation, Projets, Conclusion -->
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="orientation.html">Orientation</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================================================
+         COMPTEUR D'EASTER EGGS - Affichage du nombre trouvé
+         ========================================================================== -->
+    <!-- Ce compteur affiche le nombre d'Easter Eggs trouvés sur les 7 total.
+          Il est mis à jour par le JavaScript quand l'utilisateur découvre un Easter Egg. -->
+    <div class="easter-egg-counter">
+        <span class="counter-icon">🥚</span>
+        <span class="counter-text">Easter Eggs:</span>
+        <span class="counter-number" id="egg-counter">0/7</span>
+    </div>
+
+    <!-- ==========================================================================
+         CONTENU PRINCIPAL DE LA PAGE PROJETS
+         ========================================================================== -->
+    <!-- Cette section présente les projets réalisés dans le cadre du cours de NSI.
+          Elle mentionne les projets Python, les sites web et les projets personnels.
+          Elle inclut également une introduction aux bases de Python et du Web. -->
+    <div class="container">
+        <section id="sec_projets">
+            <!-- Titre de la section Projets -->
+            <h1 class="fade-in">Projet de l'année</h1>
+            
+            <!-- Introduction aux projets -->
+            <p class="fade-in stagger-1">
+            Voila je vien de jeté Nathanaël a la poubelle. On va parler des projet vu en cour et a la maison:
+            </p>
+            
+            <!-- Présentation d'un exemple de site web -->
+            <p class="fade-in stagger-2">Nous vous avonz mis des explication et des exercice pour que vous voyez a quoi vous attendre l'année prochaine.</p>
+
+            <!-- Projet personnel avec IA -->
+            <p class="fade-in stagger-3">Et moi j'ai voulut faire un projet personel chez moi (ps Nathanaël voulez m'aider mais il a rien fait TwT) c'est des buttons intéractif vous pouvez tester si vous voulez mais oublier pas que si vous faites pareil il faudra savoir ou est l'erreur car dans votre projet il a que vous pour trouver les erreurs.</p>
+            
+            <!-- ==========================================================================
+                 PARAGRAPHE 1: BASES PYTHON + EXERCICE INTERACTIF
+                 ========================================================================== -->
+            <div class="info-card fade-in stagger-4">
+                <h2>🐍 Python - Les bases</h2>
+                <p>Python est le langage principal enseigné en NSI. Voici les concepts fondamentaux:</p>
+                
+                <h3 style="margin: 15px 0 10px 0; color: #e94560;">Les Variables</h3>
+                <p style="margin-bottom: 10px;">En Python, les variables stockent des données. On définit une fonction avec <strong>def</strong>:</p>
+                
+                <div class="code-block">
+                    <p style="color: #888; margin-bottom: 10px;"># Exemple de fonction avec variable:</p>
+                    <pre style="color: #0f0; margin-bottom: 15px;">def calcul(a, b):
+    c = a + b
+    print(c)</pre>
+                    
+                    <p style="color: #888; margin-bottom: 10px;"># Explication:</p>
+                    <ul style="color: #ccc; margin-left: 20px; margin-bottom: 15px;">
+                        <li><strong>def calcul(a, b):</strong> - Déclare une fonction avec deux paramètres</li>
+                        <li><strong>c = a + b</strong> - Crée une variable qui stocke la somme</li>
+                        <li><strong>print(c)</strong> - Affiche le résultat</li>
+                    </ul>
+                </div>
+                
+                <h3 style="margin: 15px 0 10px 0; color: #e94560;">✏️ Exercice: Créez une fonction</h3>
+                <p style="margin-bottom: 10px;">Créez une fonction qui:</p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Prend deux paramètres <strong>a</strong> et <strong>b</strong></li>
+                    <li>Si <strong>a + b = 3</strong>, affiche "<strong>Hello world</strong>"</li>
+                    <li>Sinon, affiche "<strong>Goodbye world</strong>"</li>
+                </ul>
+                
+                <!-- Zone de code interactive Python -->
+                <div class="code-block" style="margin-top: 20px;">
+                    <p style="margin-bottom: 10px; color: #888;"># Écrivez votre code ici:</p>
+                    <textarea id="python-code" style="width: 100%; height: 100px; background: #1a1a2e; color: #0f0; border: none; padding: 10px; font-family: monospace; border-radius: 5px;" placeholder="def ma_fonction(a, b):
+    # Votre code ici"></textarea>
+                    <button id="run-python" style="margin-top: 10px; padding: 8px 20px; background: #e94560; color: white; border: none; border-radius: 5px; cursor: pointer;">▶ Exécuter</button>
+                    <div id="python-output" style="margin-top: 15px; padding: 10px; background: #0a0a0f; border-radius: 5px; color: #0f0; font-family: monospace;">> Résultat: </div>
+                </div>
+            </div>
+            
+            <!-- ==========================================================================
+                 PARAGRAPHE 2: BASES WEB + EXERCICE INTERACTIF
+                 ========================================================================== -->
+            <div class="info-card fade-in stagger-5">
+                <h2>🌐 Le Web - HTML, CSS, JavaScript</h2>
+                <p>Les sites web sont construits avec trois langages complémentaires:</p>
+                
+                <h3 style="margin: 15px 0 10px 0; color: #e94560;">Les Bases</h3>
+                
+                <div class="code-block">
+                    <p style="color: #888; margin-bottom: 10px;"># Exemple de structure HTML + CSS:</p>
+                    <pre style="color: #ff9900; margin-bottom: 15px;"><!-- HTML -->
+<h1 class="titre">Mon Titre</h1>
+<p class="texte">Mon paragraphe</p>
+
+<!-- CSS -->
+.titre {
+    color: blue;
+    font-size: 24px;
+}
+.texte {
+    color: gray;
+}</pre>
+                    
+                    <p style="color: #888; margin-bottom: 10px;"># Explication:</p>
+                    <ul style="color: #ccc; margin-left: 20px; margin-bottom: 15px;">
+                        <li><strong><h1></strong> - Balise de titre principal</li>
+                        <li><strong>class="titre"</strong> - Attribut pour appliquer un style CSS</li>
+                        <li><strong>.titre { }</strong> - Sélecteur CSS pour la classe</li>
+                    </ul>
+                </div>
+                
+                <h3 style="margin: 15px 0 10px 0; color: #e94560;">✏️ Exercice: Créez votre page</h3>
+                <p style="margin-bottom: 10px;">Créez une page web qui:</p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>A un <strong>titre</strong> avec le texte "Bienvenue"</li>
+                    <li>A un <strong>paragraphe</strong> avec le texte "Ceci est mon site"</li>
+                    <li>Le titre doit être en <strong>rouge</strong></li>
+                </ul>
+                
+                <!-- Zone de code interactive Web -->
+                <div class="code-block" style="margin-top: 20px;">
+                    <p style="margin-bottom: 10px; color: #888;"># HTML:</p>
+                    <textarea id="html-code" style="width: 100%; height: 60px; background: #1a1a2e; color: #ff9900; border: none; padding: 10px; font-family: monospace; border-radius: 5px;" placeholder="<h1>Votre titre</h1>"></textarea>
+                    <p style="margin: 10px 0 10px 0; color: #888;"># CSS:</p>
+                    <textarea id="css-code" style="width: 100%; height: 40px; background: #1a1a2e; color: #66b3ff; border: none; padding: 10px; font-family: monospace; border-radius: 5px; margin-top: 5px;" placeholder="h1 { color: red; }"></textarea>
+                    <button id="run-web" style="margin-top: 10px; padding: 8px 20px; background: #e94560; color: white; border: none; border-radius: 5px; cursor: pointer;">▶ Afficher</button>
+                    <div id="web-output" style="margin-top: 15px;"></div>
+                </div>
+            </div>
+            
+            <!-- ==========================================================================
+                 PARAGRAPHE 3: BLOC INTERACTIF AVEC TOUCHES DIRECTIONNELLES
+                 ========================================================================== -->
+            <div class="info-card fade-in">
+                <h2>🎮 Touche interactif</h2>
+                
+                <div class="code-block" style="text-align: center; padding: 20px;">
+                    <p style="color: #888; margin-bottom: 15px;">Cliquez sur les touches:</p>
+                    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                        <button class="konami-key" data-key="ArrowUp" style="background: #333; padding: 10px 15px; border-radius: 5px; color: white; border: none; cursor: pointer;">↑</button>
+                        <button class="konami-key" data-key="ArrowDown" style="background: #333; padding: 10px 15px; border-radius: 5px; color: white; border: none; cursor: pointer;">↓</button>
+                        <button class="konami-key" data-key="ArrowLeft" style="background: #333; padding: 10px 15px; border-radius: 5px; color: white; border: none; cursor: pointer;">←</button>
+                        <button class="konami-key" data-key="ArrowRight" style="background: #333; padding: 10px 15px; border-radius: 5px; color: white; border: none; cursor: pointer;">→</button>
+                        <button class="konami-key" data-key="KeyB" style="background: #333; padding: 10px 15px; border-radius: 5px; color: white; border: none; cursor: pointer;">B</button>
+                        <button class="konami-key" data-key="KeyA" style="background: #333; padding: 10px 15px; border-radius: 5px; color: white; border: none; cursor: pointer;">A</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Note pour les exercices -->
+            <div class="info-card fade-in">
+                <h2>📋 Projets à venir</h2>
+                <p>Au cours de l'année, vous réaliserez plusieurs projets:</p>
+                <ul>
+                    <li><strong>Paradoxe des anniversaires</strong> - Calculer la probabilité que deux personnes partagent leur anniversaire</li>
+                    <li><strong>Site web personnalisé</strong> - Créer votre propre site avec HTML, CSS et JavaScript</li>
+                    <li><strong>Language Machine</strong> - Vous verez comment fonctione les ordinateur de plus pres</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE CHANGEMENT DE THÈME (Easter Egg 1)
+         ========================================================================== -->
+    <!-- Ce bouton caché permet de changer le thème du site.
+          CLIQUE GAUCHE: Génère une palette de couleurs aléatoire
+          CLIQUE MOLETTE: Active le mode RGB arc-en-ciel -->
+    <button id="theme-button" class="theme-button" title="Changer le thème">🎨</button>
+
+    <!-- ==========================================================================
+         MODAL POUR LES VIDÉOS CACHÉES
+     ========================================================================== -->
+    <!-- Ce modal affiche les vidéos cachées (Anas, Shenron, Dio) -->
+    <div id="video-modal" class="video-modal">
+        <span class="close-btn">&times;</span>
+        <!-- Vidéo Anas (Easter Egg 4) -->
+        <video id="anas-video" loop>
+            <source src="anas.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Shenron (Récompense) -->
+        <video id="shenron-video" loop>
+            <source src="shenron.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Dio (Easter Egg 7) -->
+        <video id="dio-video" loop>
+            <source src="Stop Time.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE RÉCOMPENSE FINALE
+         ========================================================================== -->
+    <!-- Ce bouton apparaît quand tous les Easter Eggs sont trouvés.
+          Il permet de regarder la vidéo Shenron. -->
+    <button id="reward-button" class="reward-button">🏆 RÉCOMPENSE!</button>
+
+    <!-- ==========================================================================
+         PIED DE PAGE
+         ========================================================================== -->
+    <footer>
+        <p>Site créé dans le cadre du projet NSI – 1ère</p>
+        <p>Par: Rodrigo Duarte Ferreira, Nathanael Feuillatre (Anas)</p>
+    </footer>
+
+    <!-- ==========================================================================
+         LIEN VERS LE SCRIPT JAVASCRIPT
+         ========================================================================== -->
+    <!-- Le script JavaScript contient toutes les fonctionnalités interactives:
+          - Animations d'apparition
+          - Compteur d'Easter Eggs (avec localStorage)
+          - Changement de thème aléatoire (Easter Egg 1)
+          - Exercices Python et Web interactifs
+          - Code Konami (Easter Egg 6)
+          - Toutes les autres fonctionnalités -->
+    <script type="text/javascript" src="nsi_script.js"></script>
+</body>
+</html>

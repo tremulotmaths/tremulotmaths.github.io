@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Indique au navigateur que le document utilise du HTML5 -->
+<html lang="fr"> <!-- Début du HTML, indique que la langue principale est le français -->
+<head> <!-- Début de l'en-tête du document -->
+  <meta charset="utf-8"> <!-- Définit l'encodage des caractères "UTF-8" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Badinter - NSI - Accueil</title> <!-- Titre affiché dans l'onglet du navigateur -->
+  <link rel="stylesheet" href="style.css"> <!-- Lie la feuille de style CSS au fichier HTML -->
+</head> <!-- Fin de la partie head -->
+
+<body> <!-- Début du contenu visible de la page -->
+
+  <header> <!-- En-tête du site  -->
+  <div class="conteneur entete-interieur"> <!-- Conteneur principal de l'en-tête -->
+
+    <!-- Logo et bandeau d'informations-->
+    <div class="conteneur-logo"> <!-- Conteneur pour le logo et les informations du lycée -->
+      <img src="Logo lycée.jpg" alt="Logo" class="image-logo"> <!-- Image du logo du lycée -->
+      <div class="bandeau-info"> <!-- Bloc contenant les informations du lycée -->
+        <p><strong>Lycée Robert Badinter</strong></p> <!-- Nom du lycée -->
+        <p><strong>Adresse :</strong> 13 avenue de Châteaudun, 41018 Blois</p> <!-- Adresse -->
+        <p><strong>Téléphone :</strong> 02 54 56 29 00</p> <!-- Numéro de téléphone -->
+        <p><strong>Email :</strong> tremulotmaths@ik.me</p> <!-- Adresse email -->
+        <p> <strong>Lien :</strong> <a href="https://citescolaire-robertbadinter.fr/" target="_blank"> Accéder au site du lycée</a> <!-- Lien externe ouvrant dans un nouvel onglet --></p> <!-- Paragraphe contenant un lien vers le site officiel -->
+      </div>
+    </div>
+    
+    <nav> <!-- Barre de navigation -->
+      <ul> <!-- Liste contenant les liens du menu -->
+        <li><a href="index.html">Accueil</a></li> <!-- Lien vers la page d'accueil -->
+        <li><a href="information.html">Informations</a></li> <!-- Lien vers la page informations -->
+        <li><a href="programme.html">Programme</a></li> <!-- Lien vers la page programme -->
+        <li><a href="orientation.html">Orientation</a></li> <!-- Lien vers la page orientation -->
+        <li><a href="faq.html">FAQ</a></li> <!-- Lien vers la page FAQ -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Titre et sous-titre -->
+<section class="section-principale conteneur"> <!-- Section principale de présentation -->
+  <h1>La NSI au lycée</h1> <!-- Titre principal de la page -->
+  <p>Découvrez la spécialité Numérique et Sciences de l'Informatique</p> <!-- Sous-titre -->
+</section>
+
+<!-- Cartes d'informations -->
+<section class="conteneur"> <!-- Section contenant les cartes d'information -->
+  <div class="grille"> <!-- Grille CSS pour organiser les cartes -->
+
+    <div class="carte"> <!-- Première carte -->
+      <h3>Informations</h3> <!-- Titre de la carte -->
+      <p>Qu'est-ce que la NSI ?</p> <!-- Sous-titre -->
+      <div class="more-info hidden">
+        <ul> <!-- Liste des éléments -->
+          <li>Encadrement de la spécialité</li>
+          <li>Organisation des cours</li>
+          <li>Évaluations et projets</li>
+          <li>L’épreuve de spécialité NSI au baccalauréat</li>
+          <li>Le profil idéal pour suivre la spécialité NSI</li>
+          </ul>
+      </div>
+      <a href="information.html" class="bouton">En savoir plus</a> <!-- Bouton vers la page informations -->
+    </div>
+
+    <div class="carte"> <!-- Deuxième carte -->
+      <h3>Programme</h3> <!-- Titre de la carte -->
+      <p>Quelles sont les notions étudiées en première et en terminale ?</p> <!-- Sous-titre -->
+      <div class="more-info hidden">
+        <ul> <!-- Liste des éléments -->
+          <li>Programme de première</li>
+          <li>Programme de terminale</li>
+        </ul>
+      </div>
+      <a href="programme.html" class="bouton">En savoir plus</a> <!-- Bouton vers la page informations -->
+    </div>
+
+    <div class="carte"> <!-- Carte contenant des images -->
+      <img src="1.png" alt="Illustration" class="image-section"> <!-- Première image -->
+    </div>
+
+    <div class="carte"> <!-- Carte contenant des image -->
+      <img src="2.png" alt="Illustration" class="image-section"> <!-- Première image -->
+    </div>
+
+    <div class="carte"> <!-- Troisième carte -->
+      <h3>Orientation</h3> <!-- Titre de la carte -->
+      <p>Quelles sont les études possibles après le bac ?</p> <!-- Sous-titre -->
+      <div class="more-info hidden">
+        <ul> <!-- Liste des éléments -->
+          <li>Domaines professionnels et secteurs</li>
+          <li>Métiers possibles</li>
+          <li>Informations pour l’orientation</li>
+        </ul>
+      </div>
+      <a href="orientation.html" class="bouton">En savoir plus</a> <!-- Bouton vers la page informations -->
+    </div>
+
+<div class="carte"> <!-- Troisième carte -->
+      <h3>FAQ</h3> <!-- Titre de la carte -->
+      <p>Nos réponses à vos questions</p> <!-- Sous-titre -->
+      <div class="more-info hidden">
+        <ul> <!-- Liste des éléments -->
+          <li>La NSI est-elle une spécialité difficile ?</li>
+          <li>Avec quelles autres spécialités combiner la NSI en Première ?</li>
+          <li>Comment savoir si la NSI pourrait me plaire ?</li>
+          <li>Puis-je prendre la spécialité NSI sans vouloir travailler dans le numérique plus tard ?</li>
+          <li>Faut-il déjà avoir programmé pour prendre la spécialité NSI ?</li>
+        </ul>
+      </div>
+      <a href="faq.html" class="bouton">En savoir plus</a> <!-- Bouton vers la page FAQ -->
+    </div>
+
+  </div>
+    <p>&nbsp;</p> <!-- Espace vide -->
+</section>
+  
+<!-- Pied de page -->
+<footer> <!-- Pied de page du site -->
+  <div>© 2026 — Site NSI</div> <!-- Copyright -->
+  <div>GODEFROY Maxime - LERASLE Ilan</div> <!-- Auteurs du site -->
+  <div id="horloge"></div> <!-- Zone où un script Java-Script affichera l'heure -->
+</footer>
+
+  <script src="script.js"></script> <!-- Importation du fichier JavaScript -->
+
+</body> <!-- Fin du contenu de la page -->
+</html> <!-- Fin du document HTML -->

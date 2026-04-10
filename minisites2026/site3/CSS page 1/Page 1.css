@@ -1,0 +1,176 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%); /*Fondu transparent*/
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.texte {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    margin-top: 10em;
+    transform: scale(.8);
+
+    animation: 
+    opaque 3s ease-in-out forwards,/* APPELLE LA FONCTION */
+    oscillate 5s ease-in-out infinite alternate; /* APPELLE LA FONCTION */
+
+
+    /*REDUIRE LA ZONE D'ACTION*/
+    width: 100%;
+    height: 400px;           /* Hauteur fixe */
+    object-fit: cover;       /* Remplit en rognant */
+    object-position: center; /* Centre le rognage */
+}
+
+
+@keyframes oscillate { /*FONCTION APPELE*/
+    0% {
+        top: 2.5em;
+
+    }
+
+    100% {
+        top: 0em ;
+
+    }
+}
+
+@keyframes opaque { /*FONCTION APPELE*/
+    0% { opacity: 0;}
+    100%{ opacity: 0.8;}
+}
+
+.texte:hover { /*ACTION AU SURVOL*/
+    transform: scale(.9);  /*ASSOMBRIT*/
+    
+}
+
+
+body{
+background-color: black; /*FOND NOIR*/
+color: white; /*TEXTE BLANC*/
+}
+
+
+.titre{ /*ENCADREMENT DU TITRE*/
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(112, 212, 255);
+    border-radius: 50px;
+    background-color: #0a3f55;
+    margin-left: 17em;
+    margin-right: 17em;
+    margin-bottom: 5em;
+    margin-top: 10em;
+}
+
+
+.titre_présentation{ /*SOUS-TITRE*/
+    margin-left: -2em;
+    text-decoration: underline;
+    margin-bottom: 3em;
+}
+
+.Présentation{ /*CONTENU DE LA PAGE*/
+    margin-top: 6em;
+    margin-left: 16em; /*ALIGNER*/
+    margin-right: 16em;
+    font-size: 17px;
+    margin-bottom: 3em;
+    text-decoration: none;
+}
+
+#info{ /*LIEN QUI RENVOI EN BAS DE PAGE*/
+    text-decoration: none; /*SUPPRIME LA DECO*/
+    font-size: small; /*PETITE TAILLE*/
+    color: rgb(112, 212, 255); /*COULEUR BLEU CLAIR*/
+}
+
+
+/*CADRE AVEC LIEN*/
+.left , .right{
+    margin-top: 1em;
+    border-radius: 50px; /*ARRONDIR LES BORDS*/
+    display: inline-block;  
+    text-align: center;
+    line-height: 500px;     
+    width: 25em;
+    height: 500px;
+    font-weight: bold; /*TEXTE EN GRAS*/
+    font-size: 25px; /*TAILLE DU TEXTE*/
+    text-decoration: none; /*SUPPRIME LA DECO*/
+    color: white;
+
+
+}
+
+.left:hover, .right:hover { /*INTERACTION*/
+    filter: brightness(0.8);  /* Assombrit l'image */
+    color: rgb(180, 236, 255); /*CHANGE LA COULEUR DU TEXTE*/
+}
+
+.left { /*PLACEMENT DES CADRES DE GAUCHES*/
+    margin-left: 2.5em; 
+    vertical-align: top;
+}
+
+.right { /*PLACEMENT DES CADRES DE DROITES*/
+    margin-right: 2.5em; 
+    float: right;           
+}
+
+#POURQUOI {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), /*DEGRADE DE COULEUR SUR L'IMAGE*/
+        url('Image/salle_info.png'); /*IMAGE DE FOND*/
+    
+}
+#PROGRAMME {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),/*DEGRADE DE COULEUR SUR L'IMAGE*/
+        url('Image/programme.jpg');/*IMAGE DE FOND*/
+    background-position: center; /*CENTRE L'IMAGE*/
+    background-size: cover;
+}
+
+
+#DÉBOUCHÉS {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),/*DEGRADE DE COULEUR SUR L'IMAGE*/
+        url('Image/débouchés.jpg');/*IMAGE DE FOND*/
+    background-position: center;/*CENTRE L'IMAGE*/
+    background-size: cover;
+}
+
+#AVIS {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),/*DEGRADE DE COULEUR SUR L'IMAGE*/
+        url('Image/avis.jpeg');/*IMAGE DE FOND*/
+    background-position: center;/*CENTRE L'IMAGE*/
+    background-size: cover;
+}
+
+video{ /*PLACEMENT DE LA VIDEO*/
+    display:block;
+    margin:auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+ 
+
+address{
+    text-align: center; /*CENTRE LE TEXTE*/
+    text-align: bottom;
+    background-color: #0a3f55; /*COULEUR FOND*/
+    color: rgb(112, 212, 255); /*CONLEUR TEXTE*/
+}

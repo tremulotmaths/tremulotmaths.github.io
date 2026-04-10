@@ -1,0 +1,2 @@
+Le site a un ordre, il s'ouvre avec index.html en premier pour accéder à l'accueil.
+merci :D

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>NSI 2026 - jeu</title>
+</head>
+<body id ="jeu">
+<nav class="navbar">
+  <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+	<li><a href="presentation.html">Présentation de la NSI</a></li>
+	<li><a href="minijeu.html">Mini Jeu</a></li>
+	<li class = dropdown>
+	  <a href="orientation.html">Orientation</a>
+	  <ul class="submenu">
+        <li><a href="https://www.onisep.fr/">Pour s'orienter: Onisep</a></li>
+        <li><a href="https://www.parcoursup.gouv.fr/">Pour s'orienter: Parcoursup</a></li>
+      </ul>
+	</li>
+    <li class="dropdown">
+      <a href="#">Les Ressources utilisées pour faire ce site</a>
+      <ul class="submenu">
+        <li><a href="https://tremulotmaths.github.io/minisites2025/site4/index.html">minisites2025</a></li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Web">dev.mozilla.org</a></li>
+        <li><a href="https://www.w3schools.com/Jsref/">w3schools</a></li>
+      </ul>
+    </li>
+
+    </ul>
+  </nav>
+
+ <h1> Voici un exemple de ce que l'on peut programmer en NSI </h1>
+ <h3> Ceci est un mini-jeu avec des fonctionnalités cachées </h3>
+<input type="button" value="Démarrer le jeu" onclick="bouton_minijeu()">
+
+<div id="bloc1" hidden>
+    <div id="info">
+        <span id="score">Score : 0</span>
+        <span id="temps">Temps : 30</span>
+    </div>
+    <div id="bloc2">
+        <div id="bloc3">
+            <div id="cube"></div>
+        </div>
+    </div>
+</div>
+
+<div class="cred">Auteurs: E.U & M.B</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

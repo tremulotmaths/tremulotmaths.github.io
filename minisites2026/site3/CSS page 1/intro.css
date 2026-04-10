@@ -1,0 +1,60 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Terminal plein écran */
+#terminal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: black;
+  color: #00ff00;
+  font-family: monospace;
+  padding: 20px;
+
+  overflow-y: auto;
+  text-shadow: 0 0 5px #00ff00;
+  z-index: 9999;
+}
+
+/* Curseur clignotant */
+#cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Scanlines subtiles */
+#terminal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,255,0,0.03) 0px,
+    rgba(0,255,0,0.03) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Page principale cachée au début */
+.hidden {
+  display: none;
+}
+

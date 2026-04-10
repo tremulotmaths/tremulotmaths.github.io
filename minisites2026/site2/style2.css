@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+	animation: duree 3s;
+	background-color: #0ec9b9;
+}
+
+@keyframes duree {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.o {
+    display: flex;
+    height: 100vh;
+}
+
+.i {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.i::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.i * {position: relative;}
+
+.dev { background-image: url("ll.webp"); }
+.cyber { background-image: url("c.jpg"); }
+.data { background-image: url("dd.jpg"); }
+
+.m {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    z-index: 10;
+    font-size: 21px;
+}
+
+.mm {
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    z-index: 10;
+    font-size: 21px;
+}
+
+.mmm {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    font-size: 21px;
+}
+
+.k {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    width: 100%;
+    text-align: left;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  background-color: #333;
+  font-family: sans-serif;
+  position: fixed;   /* fixe la barre par rapport à la fenêtre */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;     /* passe au-dessus du contenu */
+}
+
+/* Menu principal */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Liens du menu */
+.menu > li {
+  position: relative;          /* Nécessaire pour positionner le sous‑menu */
+}
+
+.menu > li > a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu > li > a:hover {
+  background-color: #444;
+}
+
+/* Sous‑menu (caché par défaut) */
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;                   /* Juste sous l’élément parent */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  display: none;               /* Caché au départ */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Liens du sous‑menu */
+.submenu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #eee;
+}
+
+/* Affichage du sous‑menu au survol */
+.dropdown:hover .submenu {
+  display: block;
+}

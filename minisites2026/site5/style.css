@@ -1,0 +1,196 @@
+/* Variables globales des couleurs et de la tailles pour faciliter les modifications futures.*/
+:root { /* Définit des variables accessibles partout dans le CSS */
+--beige-principal:#f5f1ea; /* Variable : couleur principale du fond du site */
+--beige-clair:#faf8f4; /* Variable : couleur plus claire utilisée pour header et footer */
+--beige-fonce:#e6ddcf; /* Variable : couleur utilisée pour le fond des cartes */
+--texte-principal:#2b2a28; /* Variable : couleur principale du texte */
+--texte-secondaire:#7a746b; /* Variable : couleur du texte secondaire */
+--couleur-accent:#a68b5b; /* Variable : couleur utilisée pour les liens et boutons */
+--couleur-accent-survol:#8f7548; /* Variable : couleur quand on survole un lien ou bouton */
+--bordure-douce:#ddd3c2; /* Variable : couleur utilisée pour les bordures */
+  --largeur-max:1200px; /* Variable : largeur maximale du contenu du site */
+} /* Fin du bloc :root */
+
+/* Réinitialisation des marges et paddings */
+ * { /* Sélecteur universel : s'applique à tous les éléments HTML */
+box-sizing:border-box; /* Inclut padding et bordure dans le calcul de la largeur */
+margin:0; /* Supprime toutes les marges par défaut des éléments */
+padding:0; /* Supprime tous les espacements internes par défaut */
+} /* Fin de la réinitialisation globale */
+
+/* Définit le style du corps de la page */
+body { /* Style appliqué à l'ensemble de la page */
+font-family:"Courier New",monospace; /* Définit la police principale */
+background:var(--beige-principal); /* Applique la couleur du fond principale */
+color:var(--texte-principal); /* Définit la couleur principale du texte */
+line-height:1.6; /* Définit l'espacement vertical entre les lignes de texte */
+} /* Fin du style du body */
+
+/* Liens du site */
+a { /* Style appliqué à tous les liens */
+color:var(--couleur-accent); /* Définit la couleur du lien */
+text-decoration:none; /* Supprime le soulignement des liens */
+transition:0.3s; /* Ajoute une animation de 0.3 secondes pour les changements */
+} /* Fin du style des liens */
+
+a:hover { /* Style quand la souris passe sur un lien */
+color:var(--couleur-accent-survol); /* Change la couleur du lien au survol */
+} /* Fin du hover */
+
+/* Centre le contenu et limite sa largeur. */
+.conteneur { /* Classe utilisée pour contenir le contenu principal */
+max-width:var(--largeur-max); /* Limite la largeur maximale du contenu */
+margin:0 auto; /* Centre le conteneur horizontalement */
+padding:0 6vw; /* Ajoute un espace intérieur gauche/droite adaptable */
+} /* Fin du conteneur */
+
+/* Définit l’espace vertical entre les sections. */
+ section { /* Style appliqué à toutes les sections */
+padding:80px 0; /* Ajoute 80px d'espace en haut et en bas */
+} /* Fin du style de la section */
+
+/* Style de l'en-tête du site */
+header { /* Style de l'en-tête du site */
+background:var(--beige-clair); /* Couleur de fond */
+border-bottom:1px solid var(--bordure-douce); /* Ajoute une bordure en bas */
+} /* Fin du header */
+.entete-interieur { /* Conteneur interne du header */
+display:flex; /* Utilise Flexbox pour l'organisation */
+justify-content:space-between; /* Met un espace maximum entre les éléments */
+align-items:center; /* Centre les éléments verticalement */
+height:80px; /* Hauteur fixe de la barre */
+} /* Fin du conteneur header */
+
+/* logo */
+.conteneur-logo { /* Conteneur du logo */
+position:relative; /* Permet de positionner des éléments internes en absolu */
+cursor:pointer; /* Change le curseur en main */
+display:flex; /* Utilise Flexbox */
+align-items:center; /* Centre verticalement les éléments */
+gap:20px; /* Ajoute un espace de 20px entre les éléments */
+} /* Fin du conteneur logo */
+.image-logo { /* Image du logo */
+height:50px; /* Définit la hauteur du logo */
+transition:transform 0.3s ease; /* Animation fluide pour les transformations */
+} /* Fin du style image */
+.conteneur-logo:hover .image-logo { /* Quand on survole le conteneur logo */
+transform:scale(1.1); /* Agrandit l'image */
+} /* Fin effet hover logo */
+
+/* Bandeau d'information qui apparait au survol du logo. */
+.bandeau-info { /* Bloc d'information affiché au survol */
+position:absolute; /* Positionné par rapport au conteneur parent */
+top:60px; /* Position verticale sous le logo */
+left:0; /* Aligné à gauche */
+background:var(--beige-clair); /* Couleur de fond */
+border:1px solid var(--bordure-douce); /* Bordure */
+padding:15px 20px; /* Espacement intérieur */
+font-size:14px; /* Taille du texte */
+opacity:0; /* Rend invisible par défaut */
+visibility:hidden; /* Cache complètement l'élément */
+transform:translateY(10px); /* Décale vers le bas */
+transition:all 0.3s ease; /* Animation fluide */
+box-shadow:0 8px 20px rgba(0,0,0,0.05); /* Ombre */
+min-width:430px; /* Largeur minimale */
+z-index:100; /* Place l'élément au-dessus des autres */
+} /* Fin du bandeau */
+.conteneur-logo:hover .bandeau-info { /* Quand on survole le logo */
+opacity:1; /* Rend visible */
+visibility:visible; /* Rend affichable */
+transform:translateY(0); /* Replace à la position normale */
+} /* Fin affichage du bandeau */
+
+/* Suppression des puces */
+header nav ul,
+.bandeau-info ul {
+list-style:none; /* Supprime les puces */
+padding:0; /* Supprime le padding */
+margin:0; /* Supprime les marges */
+}
+
+/* Menu de navigation */
+header nav ul { /* Liste du menu principal */
+display:flex; /* Affiche les éléments horizontalement */
+gap:25px; /* Espace entre les liens */
+}
+
+/* Horloge */
+#horloge { /* Élément avec id horloge */
+font-family:monospace; /* Police type machine */
+text-align:center; /* Centre le texte */
+font-size:14px; /* Taille du texte */
+color:var(--texte-secondaire); /* Couleur secondaire */
+}
+
+/* Section principale */
+.section-principale {text-align:center;}
+.section-principale h1 {
+font-size:48px;
+margin-bottom:15px;
+}
+.section-principale p {color:var(--texte-secondaire);}
+
+/* Grille */
+.grille {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+/* Cartes */
+.carte {
+background:var(--beige-fonce);
+border:1px solid var(--bordure-douce);
+padding:25px;
+transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+.carte:hover {
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+.carte h3 {
+margin-top:0;
+cursor:pointer;
+}
+.carte p {margin:10px 0;}
+
+/* Listes dans les cartes */
+.carte ul {
+list-style:none;
+padding-left:0;
+margin:10px 0 0 0;
+color:var(--texte-secondaire);
+font-size:14px;
+}
+.carte ul li {margin:5px 0;}
+
+/* Images dans les cartes */
+.image-section {
+width:100%;
+margin-top:15px;
+border-radius:5px;
+}
+
+/* Boutons */
+.bouton {
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+border:1px solid var(--couleur-accent);
+color:var(--couleur-accent);
+cursor:pointer;
+transition:all 0.3s ease;
+}
+.bouton:hover {
+background:var(--couleur-accent);
+color:white;
+}
+
+/* Pied de page */ 
+footer { 
+background: var(--beige-clair); 
+border-top: 1px solid var(--bordure-douce); 
+text-align: center; 
+padding: 20px 0; font-size: 14px; 
+color: var(--texte-secondaire); 
+}

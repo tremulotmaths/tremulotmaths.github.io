@@ -1,0 +1,59 @@
+.smallbackground { /*IMAGE DE FOND*/
+    margin-top: -55em;
+    margin-bottom: 5em;
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%); /*Fondu transparent*/
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+
+}
+
+.button{ /*BOUTON ENCADRE*/
+    margin-top: 1em;
+    border-radius: 50px; /*ARRONDISSEMENT*/
+    display: inline-block;  /*GRAND ENCADREMENT*/
+    text-align: center; /*TEXTE CENTRER*/
+    line-height: 150px;     
+    width: 25em;
+    height: 150px;
+    font-weight: bold;
+    background-color: #137ca9; /*COULEUR DE FOND*/
+    font-size: 25px; /*TAILLE TEXTE*/
+    text-decoration: none; /*TEXTE EN GRAS*/
+    color: white; /*COULEUR TEXTE*/
+
+}
+
+.button:hover, .buttonBack:hover { /*INTERACTION AU SURVOL*/
+    filter: brightness(0.8);  /* Assombrit l'image */
+    opacity: 1;
+    color: rgb(180, 236, 255);
+}
+
+.buttonBack{
+    border-radius: 50px; /*ARRONDISSEMENT*/
+    display: inline-block;  /*GRAND ENCADREMENT*/
+    text-align: center;/*TEXTE CENTRER*/
+    line-height: 4em;     
+    width: 4em;
+    height: 4em;
+    font-weight: bold;
+    background-color: #137ca9;/*COULEUR DE FOND*/
+    color: white;/*TAILLE TEXTE*/
+    font-size: 17px;
+    text-decoration: none;
+    margin-bottom: 2em;
+    margin-left: 2em;
+}
+
+.titre1{ /*TITRE*/
+    border-radius: 50px; /*ARRONDISSEMENT*/
+    text-align: center;
+    color: rgb(112, 212, 255); /*COULEUR TEXTE*/
+    border-radius: 50px;
+    background-color: #0a3f55;/*COULEUR DE FOND*/
+    margin-left: 17em;
+    margin-right: 17em;
+    margin-bottom: 5em;
+
+}

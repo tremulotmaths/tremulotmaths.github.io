@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition de l'encodage des caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Meta tag pour le responsive design sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers la feuille de styles CSS principale -->
+    <link type="text/css" rel="stylesheet" href="nsi_style.css">
+    <!-- Titre de la page d'accueil -->
+    <title>Accueil - Spécialité NSI</title>
+</head>
+<body>
+    <!-- ==========================================================================
+         NAVIGATION BAR - BARRE DE NAVIGATION FIXE
+         ========================================================================== -->
+    <!-- Cette barre de navigation est présente sur toutes les pages du site.
+          Elle permet à l'utilisateur de naviguer facilement entre les différentes sections.
+          La barre est fixe: elle reste toujours visible en haut de la page grâce à
+          la propriété CSS "position: fixed". -->
+    <nav class="navbar">
+        <!-- Logo/Titre du site - lien vers la page d'accueil -->
+        <a href="index.html" class="logo">Mini Site NSI</a>
+        
+        <!-- Liste des liens de navigation -->
+        <!-- Chaque lien <a> permet d'accéder à une page différente du site.
+              Les liens sont: Accueil, Présentation, Orientation, Projets, Conclusion -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="orientation.html">Orientation</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================================================
+         COMPTEUR D'EASTER EGGS - Affichage du nombre trouvé
+         ========================================================================== -->
+    <!-- Ce compteur affiche le nombre d'Easter Eggs trouvés sur les 7 total.
+          Il est mis à jour par le JavaScript quand l'utilisateur découvre un Easter Egg. -->
+    <div class="easter-egg-counter">
+        <span class="counter-icon">🥚</span>
+        <span class="counter-text">Easter Eggs:</span>
+        <span class="counter-number" id="egg-counter">0/7</span>
+    </div>
+
+    <!-- ==========================================================================
+         HORLOGE - Affichage de l'heure (Easter Egg 7)
+         ========================================================================== -->
+    <!-- Cette horloge affiche l'heure actuelle en temps réel.
+          Elle est positionnée en haut à droite de la page.
+          DOUBLE-CLIC: Déclenche l'effet "Dio Time Stop" (Easter Egg 7) -->
+    <div class="clock-container" title="Double-cliquez pour un effet spécial!">
+        <div class="clock">
+            <!-- Aiguilles de l'horloge -->
+            <div class="clock-face">
+                <div class="clock-hand hour-hand"></div>
+                <div class="clock-hand minute-hand"></div>
+                <div class="clock-hand second-hand"></div>
+                <div class="clock-center"></div>
+            </div>
+        </div>
+        <!-- Horloge digitale en dessous -->
+        <div class="digital-clock">00:00:00</div>
+    </div>
+
+    <!-- ==========================================================================
+         CONTENU PRINCIPAL DE LA PAGE D'ACCUEIL
+         ========================================================================== -->
+    <!-- Cette section contient le contenu d'accueil du site.
+          Elle présente brièvement le projet Mini Site et la Spécialité NSI.
+          Les éléments ont des classes d'animation pour les effets d'apparition. -->
+    <div class="container">
+        <section id="accueil">
+            <!-- Titre principal de la page d'accueil -->
+            <h1 class="fade-in">Spécialité NSI ? C'est quoi?</h1>
+            
+            <!-- Paragraphe d'introduction -->
+            <!-- Ce texte présente le projet Mini Site aux visiteurs -->
+            <p class="fade-in stagger-1">Vous savez pas ? Bas moi non plus mais c'est pas grave on va apprendre tout sa ensemble avec ce magnifique et sublime projet. Le projet de Mini site est un projet pour revoir tout les language du site web donc <span style="color: #e94560; font-weight: bold;">HTML, CSS et le JavaScript</span> vous savez pas encore ce que c'est mais c'est pas grave on y reviendra plus tard.</p>
+            
+            <!-- Informations supplémentaires avec animation -->
+            <div class="info-card fade-in stagger-2">
+                <p>Ce site a été créé dans le cadre de la Spécialité NSI (Numérique et Sciences Informatiques) au lycée. Il présente les différentes facettes de cette matière passionnante!</p>
+                <!-- Trigger caché pour la vidéo Anas (Easter Egg 4) - très petit point -->
+                <span id="anas-trigger" style="cursor: pointer; opacity: 0.01; font-size: 1px;">.</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE CHANGEMENT DE THÈME (Easter Egg 1)
+         ========================================================================== -->
+    <!-- Ce bouton caché permet de changer le thème du site.
+          CLIQUE GAUCHE: Bascule entre thème sombre et thème clair
+          CLIQUE MOLETTE: Active le mode RGB arc-en-ciel -->
+    <button id="theme-button" class="theme-button" title="Changer le thème">🎨</button>
+
+    <!-- ==========================================================================
+         BOUTON CACHÉ CAT BOUNCE (Easter Egg 2)
+         ========================================================================== -->
+    <!-- Ce bouton caché redirige vers le jeu Cat Bounce -->
+    <button id="cat-bounce-button" style="display: none;">🐱</button>
+
+    <!-- ==========================================================================
+         ŒUF DE PAQUES CACHÉ - Demande le mot "CAT"
+         ========================================================================== -->
+    <!-- Cet œuf demande à l'utilisateur de taper un mot.
+          - Si le mot est "CAT" (majuscules): redirige vers cat-bounce.com
+          - Sinon: l'œuf disparaît -->
+    <button id="secret-egg" class="secret-egg" title="Cliquez pour un secret...">🥚</button>
+
+    <!-- ==========================================================================
+         MODAL POUR LES VIDÉOS CACHÉES
+         ========================================================================== -->
+    <!-- Ce modal affiche les vidéos cachées (Anas, Shenron, Dio) -->
+    <div id="video-modal" class="video-modal">
+        <span class="close-btn">&times;</span>
+        <!-- Vidéo Anas (Easter Egg 4) -->
+        <video id="anas-video" loop>
+            <source src="anas.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Shenron (Récompense) -->
+        <video id="shenron-video" loop>
+            <source src="shenron.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Dio Time Stop (Easter Egg 7) -->
+        <video id="dio-video" loop>
+            <source src="Stop Time.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Gyaru (Œuf Secret) -->
+        <video id="gyaru-video" loop>
+            <source src="Gyaru.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ==========================================================================
+         SHENRON RÉCOMPENSE - Modal et choix
+         ========================================================================== -->
+    <!-- Ce modal affiche Shenron et les choix de récompense -->
+    <div id="shenron-modal" class="shenron-modal">
+        <div class="shenron-content">
+            <img id="shenron-image" src="shenron.gif" alt="Shenron">
+            <div id="shenron-choices" class="shenron-choices" style="display: none;">
+                <button class="shenron-choice" data-choice="note">Je veux avoir une bonne note</button>
+                <button class="shenron-choice" data-choice="anas">Je veux que Anas disparaisse</button>
+                <button class="shenron-choice" data-choice="nsi">Je veux faire de la NSI</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio pour le son Shenron -->
+    <audio id="shenron-sound" src="shenron sound.mp3"></audio>
+
+    <!-- ==========================================================================
+         BOUTON DE RÉCOMPENSE FINALE
+         ========================================================================== -->
+    <!-- Ce bouton apparaît quand tous les Easter Eggs sont trouvés.
+          Il permet de regarder la vidéo Shenron. -->
+    <button id="reward-button" class="reward-button">🏆 RÉCOMPENSE!</button>
+
+    <!-- ==========================================================================
+         PIED DE PAGE
+     ========================================================================== -->
+    <footer>
+        <p>Site créé dans le cadre du projet NSI – 1ère</p>
+        <p>Par: Rodrigo Duarte Ferreira, Nathanael Feuillatre <span id="anas-link" style="cursor: pointer;">Anas</span></p>
+    </footer>
+
+    <!-- ==========================================================================
+         LIEN VERS LE SCRIPT JAVASCRIPT
+         ========================================================================== -->
+    <!-- Le script JavaScript contient toutes les fonctionnalités interactives -->
+    <script type="text/javascript" src="nsi_script.js"></script>
+</body>
+</html>

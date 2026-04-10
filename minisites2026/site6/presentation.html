@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition de l'encodage des caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Meta tag pour le responsive design sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers la feuille de styles CSS principale -->
+    <link type="text/css" rel="stylesheet" href="nsi_style.css">
+    <!-- Titre de la page Présentation -->
+    <title>Présentation - Spécialité NSI</title>
+</head>
+<body>
+    <!-- ==========================================================================
+         NAVIGATION BAR - BARRE DE NAVIGATION FIXE
+         ========================================================================== -->
+    <!-- Cette barre de navigation est présente sur toutes les pages du site.
+          Elle permet à l'utilisateur de naviguer facilement entre les différentes sections.
+          La barre est fixe: elle reste toujours visible en haut de la page grâce à
+          la propriété CSS "position: fixed". -->
+    <nav class="navbar">
+        <!-- Logo/Titre du site - lien vers la page d'accueil -->
+        <a href="index.html" class="logo">Mini Site NSI</a>
+        
+        <!-- Liste des liens de navigation -->
+        <!-- Chaque lien <a> permet d'accéder à une page différente du site.
+              Les liens sont: Accueil, Présentation, Orientation, Projets, Conclusion -->
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html" class="active">Présentation</a></li>
+            <li><a href="orientation.html">Orientation</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================================================
+         COMPTEUR D'EASTER EGGS - Affichage du nombre trouvé
+         ========================================================================== -->
+    <!-- Ce compteur affiche le nombre d'Easter Eggs trouvés sur les 7 total.
+          Il est mis à jour par le JavaScript quand l'utilisateur découvre un Easter Egg. -->
+    <div class="easter-egg-counter">
+        <span class="counter-icon">🥚</span>
+        <span class="counter-text">Easter Eggs:</span>
+        <span class="counter-number" id="egg-counter">0/7</span>
+    </div>
+
+    <!-- ==========================================================================
+         CONTENU PRINCIPAL DE LA PAGE PRÉSENTATION
+         ========================================================================== -->
+    <!-- Cette section présente la Spécialité NSI (Numérique et Sciences Informatiques).
+          Elle explique le contenu du programme, les languages de programmation enseignés
+          (Python, JavaScript, HTML, CSS) et l'organisation des cours. -->
+    <div class="container">
+        <section id="sec_presentation">
+            <!-- Titre de la section Présentation avec animation -->
+            <h1 class="fade-in">Présentation de la NSI</h1>
+            
+            <!-- Introduction à la présentation -->
+            <!-- Ce paragraphe donne un aperçu général de la spécialité -->
+            <p class="fade-in stagger-1">On va passer tout le charabiat comme les autres presentations, juste ce qu'il faut savoir c'est que c'est génial pour ceux qui aime bien les ordinateur voila XD
+            <br> Bon mon collègue Rodrigo a dis qu'on allez passer ça mais c'est important et faut s'y coller donc :
+            <br> Il y a <span style="color: #e94560; font-weight: bold;">4h en première</span> et <span style="color: #e94560; font-weight: bold;">6h en terminale</span>, on voit environ 14 sequence dans chacunne des deux année et il faut bien bosser, (ps: vous finirez comme moi avec 9 de moyenne).</p>
+            
+            <!-- Présentation des contenus pédagogiques -->
+            <!-- Explique ce que les élèves vont apprendre en NSI:
+                  - Python comme langage principal
+                  - JavaScript pour le web
+                  - HTML et CSS pour la création de sites -->
+            <p class="fade-in stagger-2">Daccord Nathanaël, arrete ton charabiat, je vous avez prévenue que c'était pas très cool (mais important!). Bref on passe a quelque chose de plus sympa, nan mais serieux c'est une spécialité concentré sur l'informatique et la programation vous savez les petite lettres en vert c'est drole donc c'est cool, dedans on y voit du <span style="color: #e94560; font-weight: bold;">Python</span> c'est le language principale que vous utiliseraient toute l'année de premiere et Terminale, il vous permetera de tout faire a peu pres, des calculs aux JEUX! on vera par la suite le java script ou c'est la meme chose que le python mais un peu plus complexe et que c'est pour les site web en grande partie, voila voilou. Ah mince j'ai faili oublier le HTML et le CSS, les deux sont pour les site web, le HTML pour le contenue et le CSS pour la Forme (de la décoration en bref le plus cool c'est que on peut faire <span id="piou-piou" style="cursor: pointer; color: var(--accent-primary); font-weight: bold;">piou piou</span> avec les lumiere XD).</p>
+            
+            <!-- Carte avec les langages de programmation -->
+            <div class="info-card fade-in stagger-3">
+                <h2>Les langages enseignés</h2>
+                <ul>
+                    <li><strong>Python</strong> - Langage principal pour les calculs et les jeux</li>
+                    <li><strong>JavaScript</strong> - Pour les sites web interactifs</li>
+                    <li><strong>HTML</strong> - Pour le contenu des pages web</li>
+                    <li><strong>CSS</strong> - Pour le design et la présentation</li>
+                </ul>
+            </div>
+            
+            <!-- Animation d'échelle -->
+            <div class="scale-in stagger-4" style="text-align: center; margin: 30px 0;">
+                <img src="Ilustration NSI.png" alt="Illustration NSI"/>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE CHANGEMENT DE THÈME (Easter Egg 1)
+         ========================================================================== -->
+    <!-- Ce bouton caché permet de changer le thème du site.
+          CLIQUE GAUCHE: Bascule entre thème sombre et thème clair
+          CLIQUE MOLETTE: Active le mode RGB arc-en-ciel -->
+    <button id="theme-button" class="theme-button" title="Changer le thème">🎨</button>
+
+    <!-- ==========================================================================
+         MODAL POUR LES VIDÉOS CACHÉES
+         ========================================================================== -->
+    <!-- Ce modal affiche les vidéos cachées (Anas, Shenron, Dio) -->
+    <div id="video-modal" class="video-modal">
+        <span class="close-btn">&times;</span>
+        <!-- Vidéo Anas (Easter Egg 4) -->
+        <video id="anas-video" loop>
+            <source src="anas.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Shenron (Récompense) -->
+        <video id="shenron-video" loop>
+            <source src="shenron.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Dio Time Stop (Easter Egg 7) -->
+        <video id="dio-video" loop>
+            <source src="Stop Time.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE RÉCOMPENSE FINALE
+         ========================================================================== -->
+    <!-- Ce bouton apparaît quand tous les Easter Eggs sont trouvés.
+          Il permet de regarder la vidéo Shenron. -->
+    <button id="reward-button" class="reward-button">🏆 RÉCOMPENSE!</button>
+
+    <!-- ==========================================================================
+         PIED DE PAGE
+         ========================================================================== -->
+    <footer>
+        <p>Site créé dans le cadre du projet NSI – 1ère</p>
+        <p>Par: Rodrigo Duarte Ferreira, Nathanael Feuillatre (Anas)</p>
+    </footer>
+
+    <!-- ==========================================================================
+         LIEN VERS LE SCRIPT JAVASCRIPT
+         ========================================================================== -->
+    <!-- Le script JavaScript contient toutes les fonctionnalités interactives:
+          - Animations d'apparition
+          - Compteur d'Easter Eggs
+          - Effet "Piou Piou" (Easter Egg 5)
+          - Changement de thème (Easter Egg 1)
+          - Toutes les autres fonctionnalités -->
+    <script type="text/javascript" src="nsi_script.js"></script>
+</body>
+</html>

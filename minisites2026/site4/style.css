@@ -1,0 +1,448 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    background-color: black;
+    color: rgb(226, 157, 97);
+    /*transition: background-color 0.4s ease, color 0.4s ease;*/
+}
+
+
+
+
+
+
+/* ===== BANDEAU FIXE ===== */
+
+.bandeau {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(222, 182, 107);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+.barre-bas {
+    position: fixed;       /* fixe au bas */
+    bottom: 0;             /* position basse */
+    width: 100%;           /* full largeur */
+    background-color: rgb(222, 182, 107);
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 4px;
+    padding: 8px 0;
+    z-index: 1000;
+}
+
+
+/*===== Bouton stylé =====*/
+.theme {
+    border: none;
+    background: black;
+    color: rgb(222, 182, 107);
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    /*transition: transform 0.2s ease, background-color 0.3s ease;*/
+}
+.theme:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* ===== LOGO ===== */
+
+.logo {
+    position: relative;
+    display: inline-block; /*le bloc prend uniquement la taille de son contenu (l’image).*/
+}
+
+.logo img {
+    height: 50px;
+    cursor: context-menu;
+    
+}
+
+
+
+
+
+/* ===== MENU CACHE ===== */
+
+.menu {
+    position: absolute;
+    top: 80px;
+    left: -30px; /*plus proche du bord*/
+    border-radius: 30px;
+    background-color: rgb(222, 182, 107);
+    width: 200px;
+    opacity: 0;
+    transform: translateY(-10px);/*le menu descend*/
+    transition: 0.3s ease;
+}
+
+/* Apparition au hover */
+.logo:hover .menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu ul {
+    list-style: none; /*enlève les points devant le texte*/
+    padding: 20px;
+    margin: 5px;
+}
+
+.menu li {
+    padding: 20px 10px;
+    cursor: pointer; /*change la souris pour la main quand elle arrive sur un lien donc montre que c'est interactif*/
+    
+}
+
+/* ===== Hover : assombrir le bloc ===== */
+.menu li:hover {
+    background-color:rgb(227, 193, 128); 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+/* ===== TITRE ===== */
+
+.titre {
+    /*margin: 0;*/
+    font-weight: 400; /*épaisseur du texte */
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+
+
+/* ===== CONTENU ===== */
+
+main {
+    margin-top: 150px;/*évite que le contenu passe derrière */
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: larger;
+}
+
+
+
+.section1 h2,
+.section2 h2,
+.section4 h2 {
+    margin-bottom: 80px;
+}
+.section1 div,
+.section2 div,
+.section4 div {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+}
+
+
+
+
+
+/*======== CARTES INDEX1=========*/
+.container-section {
+    width: 100%; /* largeur complète de la fenêtre */
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.container-section h2, 
+.container-section div {
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    justify-content:center;
+    padding: 100px; /* écart autour des cartes et du texte*/
+    display: flex; /* met les cartes toutes sur une seule ligne*/
+    gap: 150px; /* espace entre les cartes */
+}
+
+
+/* Coder des cartes tournantes 3D en CSS -École du Web */
+.card { /* contient la carte*/
+    width: 300px;
+    height: 260px;
+    perspective: 1000px; /*donne l'effet 3d*/
+}
+
+.card-inner { /* partie de la carte qui tourne*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;/* garde la profondeur*/
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);/*se retourne horizontalement*/
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /*cache la face arriere quand elle est retournée*/
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+.front {
+    background-color: rgb(226, 157, 97);
+    color: black;
+}
+
+.back {
+    background-color:rgb(222, 182, 107);
+    color: rgb(178, 111, 22);
+    transform: rotateY(180deg);
+}
+
+
+
+.bordure {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px; /*angles arrondis*/
+    border: 3px solid transparent;
+    background: linear-gradient(#000, #000)
+    padding-box,
+    linear-gradient(45deg, rgb(208, 157, 62), rgb(88, 145, 232), rgb(27, 33, 210)) 
+    border-box;
+}
+
+
+
+
+
+/*======== CARTES INDEX3=========*/
+.container-section2 h2, 
+.container-section2 div {
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;/*si j'ai plus de place sur la ligne, on passe a la suivante*/
+    justify-content:center;/*centre les cartes par lignes*/
+    gap: 200px 300px; /* espace entre les cartes*/
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 60px; /* écart autour des cartes et du texte*/
+}
+
+.card2 { /*chaque carte*/
+    width: 360px;
+    height: 320px;
+    perspective: 1000px; /*donne l'effet 3d*/
+    z-index: 1;
+}
+
+
+
+
+/* Ligne horizontale vers la carte de droite */
+.card2:nth-child(1)::after,
+.card2:nth-child(3)::after,
+.card2:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    top: 50%; /*place la ligne au milieu de la carte*/
+    left: 100%; /*place le debut de la ligne collé a la carte*/
+    width: 300px; /* correspond au gap horizontal */
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        transparent,       /* gauche fondu */
+        #fcd024,           /* centre couleur néon */
+        transparent        /* droite fondu */
+    );
+}
+
+/* Ligne verticale vers la carte du dessous */
+.card2:nth-child(2)::before,
+.card2:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 4px;
+    height: 200px; /* correspond au gap vertical */
+    background: linear-gradient(
+        to top,
+        transparent,       /* haut fondu */
+        #fcd024,           /* centre couleur néon */
+        transparent        /* bas fondu */
+    );
+}
+
+
+
+.card-inner2 { /* partie de la carte qui tourne*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;/* garde la profondeur*/
+}
+
+.card2:hover .card-inner2 {
+    transform: rotateY(180deg);/*se retourne horizontalement*/
+}
+
+.front2,
+.back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /*cache la face arriere quand elle est retournée*/
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+.front2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* evite la répétition de l'image en mosaîque, s'affiche qu'une seule fois*/
+    position: absolute; /*la carte ne bouge pas*/
+}
+.front2 h3 { /* pour pouvoir voir le texte*/
+    color: black;
+    background-color: rgb(251, 202, 88);
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+
+
+.back2 {
+    background-color:rgb(222, 182, 107);
+    color: rgb(178, 111, 22);
+    transform: rotateY(180deg);
+}
+
+
+
+.section4 img {
+    display: block; /*aucune autre balise sur la meme ligne*/
+    margin: auto; /*au milieu automatiquement comme le reste*/
+    filter: brightness(60%);
+} 
+
+
+
+.image-bouton {
+  width:120px;
+  height:120px;
+  background-image:url("projet2.png");
+  background-size:cover;
+  border:50px radius;/*bords arrondis*/
+  cursor:pointer;
+  transition:0.3s;
+  
+}
+
+.image-bouton:hover{ /*bouge légérement quand on va dessus*/
+  transform:scale(1.1);
+}
+
+
+
+
+/* ====== BOUTON THEME =====*/
+
+.dark .bandeau {
+    background-color:rgb(129, 146, 255);
+}
+.dark .barre-bas {
+    background-color: rgb(129, 146, 255);
+}
+.dark .theme {
+    background-color: black;
+    color: rgb(129, 146, 255);
+}
+.dark .menu {
+    background-color:rgb(129, 146, 255);
+}
+.dark .menu li:hover {
+    background-color: rgb(162, 174, 249);
+}
+body.dark  { /* inversé car le body est une racine/ base et ne peut être dans une classe*/
+    color: rgb(94, 125, 192);
+}
+.dark .section1 {
+    color: rgb(94, 125, 192);
+}
+.dark .front {
+    background-color: rgb(94, 125, 192);
+}
+.dark .back,
+.dark .back2 {
+    background-color: rgb(129, 146, 255);
+    color: rgb(55, 103, 207);
+}
+.dark .front2 h3 {
+    background-color: rgb(102, 203, 234);
+}
+.dark .card2:nth-child(1)::after,
+.dark .card2:nth-child(3)::after,
+.dark .card2:nth-child(5)::after{
+    background: linear-gradient(
+        to right,
+        transparent,
+        #12bbf9,
+        transparent
+    );
+}
+.dark .card2:nth-child(2)::before,
+.dark .card2:nth-child(3)::before {
+    background: linear-gradient(
+        to top,
+        transparent,       
+        #12bbf9,           
+        transparent        
+    );
+}

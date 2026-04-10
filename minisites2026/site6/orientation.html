@@ -1,0 +1,156 @@
+;<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition de l'encodage des caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Meta tag pour le responsive design sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers la feuille de styles CSS principale -->
+    <link type="text/css" rel="stylesheet" href="nsi_style.css">
+    <!-- Titre de la page Orientation -->
+    <title>Orientation Post Bac - Spécialité NSI</title>
+</head>
+<body>
+    <!-- ==========================================================================
+         NAVIGATION BAR - BARRE DE NAVIGATION FIXE
+         ========================================================================== -->
+    <!-- Cette barre de navigation est présente sur toutes les pages du site.
+          Elle permet à l'utilisateur de naviguer facilement entre les différentes sections.
+          La barre est fixe: elle reste toujours visible en haut de la page grâce à
+          la propriété CSS "position: fixed". -->
+    <nav class="navbar">
+        <!-- Logo/Titre du site - lien vers la page d'accueil -->
+        <a href="index.html" class="logo">Mini Site NSI</a>
+        
+        <!-- Liste des liens de navigation -->
+        <!-- Chaque lien <a> permet d'accéder à une page différente du site.
+              Les liens sont: Accueil, Présentation, Orientation, Projets, Conclusion -->
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="orientation.html" class="active">Orientation</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================================================
+         COMPTEUR D'EASTER EGGS - Affichage du nombre trouvé
+         ========================================================================== -->
+    <!-- Ce compteur affiche le nombre d'Easter Eggs trouvés sur les 7 total.
+          Il est mis à jour par le JavaScript quand l'utilisateur découvre un Easter Egg. -->
+    <div class="easter-egg-counter">
+        <span class="counter-icon">🥚</span>
+        <span class="counter-text">Easter Eggs:</span>
+        <span class="counter-number" id="egg-counter">0/7</span>
+    </div>
+
+    <!-- ==========================================================================
+         CONTENU PRINCIPAL DE LA PAGE ORIENTATION POST BAC
+         ========================================================================== -->
+    <!-- Cette section présente les possibilités d'orientation après le baccalauréat
+          pour les élèves ayant suivi la Spécialité NSI.
+          Elle inclut une carte mentale (image) et des informations sur les métiers
+          et les filières d'études supérieures. -->
+    <div class="container">
+        <section id="sec_orientation">
+            <!-- Titre de la section Orientation Post Bac -->
+            <h1 class="fade-in">Orientation <span style="color: #e94560; font-weight: bold;">Post Bac</span> avec la spécialité NSI</h1>
+            
+            <!-- Introduction -->
+            <p class="fade-in stagger-1">Bon moi ici je me la ferme et je laisse Nathanaël parler.</p>
+            
+            <!-- Présentation de la carte mentale -->
+            <!-- Cette carte mentale montre les différentes possibilités d'études
+                  après le baccalauréat pour les élèves de NSI.
+                  L'image est cliquable et ouvre le fichier source. -->
+            <p class="fade-in stagger-2">Voici une carte mentale pour vous montrer toutes les possibilité <span style="color: #e94560; font-weight: bold;">post bac</span> en partant de la NSI.</p>
+            
+            <!-- Image de la carte mentale d'orientation -->
+            <!-- L'image est stylisée avec une animation scale-in -->
+            <a href="Image1_minisite.png" class="scale-in stagger-3">
+                <img src="Image1_minisite.png" alt="Image orientation post bac"/>
+            </a>
+            
+            <!-- Conseils pour les études supérieures -->
+            <!-- Cette partie explique l'importance des mathématiques avec NSI
+                  et les différentes voies d'études possibles. -->
+            <div class="info-card fade-in stagger-4">
+                <p>Bon cette partie va etre un peu chiante, mais c'est important donc je vous demande un minimum d'attention: 
+                <br><br>
+                Deja la spé <span style="color: #e94560; font-weight: bold;">NSI</span> ne suffit pas pour le <span style="color: #e94560; font-weight: bold;">post bac</span> souvent pour viser des etudes informatique vaut mieu avoir <span style="color: #e94560; font-weight: bold;">maths</span> c'est meme presque obligatoire et garder la <span style="color: #e94560; font-weight: bold;">NSI</span> en <span style="color: #e94560; font-weight: bold;">terminale</span> est le mieu pour les etudes (pas forcément obligatoire de garder NSI en term mais le plus conseils).</p>
+            </div>
+            
+            <!-- Métiers possibles -->
+            <div class="info-card fade-in stagger-5">
+                <h2>Les métiers après NSI</h2>
+                <ul>
+                    <li><strong>Développeur en logiciel</strong> - Création d'applications et logiciels</li>
+                    <li><strong>Cybersécurité</strong> - Protection des systèmes informatiques</li>
+                    <li><strong>Ingénierie informatique</strong> - Conception de systèmes complexes</li>
+                </ul>
+            </div>
+            
+            <!-- Voies alternatives -->
+            <div class="info-card fade-in stagger-5">
+                <h2>Autres voies possibles</h2>
+                <p>Pour faire des études vous n'êtes pas obligés d'aller en général. Vous pouvez aussi aller en technologique en STI2D où vous faites de l'ingénierie informatique.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE CHANGEMENT DE THÈME (Easter Egg 1)
+         ========================================================================== -->
+    <!-- Ce bouton caché permet de changer le thème du site.
+          CLIQUE GAUCHE: Bascule entre thème sombre et thème clair
+          CLIQUE MOLETTE: Active le mode RGB arc-en-ciel -->
+    <button id="theme-button" class="theme-button" title="Changer le thème">🎨</button>
+
+    <!-- ==========================================================================
+         MODAL POUR LES VIDÉOS CACHÉES
+         ========================================================================== -->
+    <!-- Ce modal affiche les vidéos cachées (Anas, Shenron, Dio) -->
+    <div id="video-modal" class="video-modal">
+        <span class="close-btn">&times;</span>
+        <!-- Vidéo Anas (Easter Egg 4) -->
+        <video id="anas-video" loop>
+            <source src="anas.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Shenron (Récompense) -->
+        <video id="shenron-video" loop>
+            <source src="shenron.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Dio Time Stop (Easter Egg 7) -->
+        <video id="dio-video" loop>
+            <source src="Stop Time.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE RÉCOMPENSE FINALE
+         ========================================================================== -->
+    <!-- Ce bouton apparaît quand tous les Easter Eggs sont trouvés.
+          Il permet de regarder la vidéo Shenron. -->
+    <button id="reward-button" class="reward-button">🏆 RÉCOMPENSE!</button>
+
+    <!-- ==========================================================================
+         PIED DE PAGE
+         ========================================================================== -->
+    <footer>
+        <p>Site créé dans le cadre du projet NSI – 1ère</p>
+        <p>Par: Rodrigo Duarte Ferreira, Nathanael Feuillatre (Anas)</p>
+    </footer>
+
+    <!-- ==========================================================================
+         LIEN VERS LE SCRIPT JAVASCRIPT
+         ========================================================================== -->
+    <!-- Le script JavaScript contient toutes les fonctionnalités interactives:
+          - Animations d'apparition
+          - Compteur d'Easter Eggs
+          - Changement de thème (Easter Egg 1)
+          - Code Konami (Easter Egg 6)
+          - Toutes les autres fonctionnalités -->
+    <script type="text/javascript" src="nsi_script.js"></script>
+</body>
+</html>

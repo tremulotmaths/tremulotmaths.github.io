@@ -1,0 +1,329 @@
+.{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	overflow: hidden;
+}
+
+
+
+.body {
+    margin: 0;
+    height: 1vh;
+    color: white;
+}
+
+.matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+.titree {
+	position: relative;
+	text-align: center;
+	top: 180px;
+    font-family: Arial, sans-serif;
+	animation: duree 3s;
+	color: white;
+}
+
+
+
+
+
+.credi {
+    position: absolute;
+	font-family: Arial, sans-serif;
+	animation: duree 3s;
+	text-align: left;
+	margin-top: 89vh;
+	font-size: 19px;
+	color: white;
+	
+}
+
+@keyframes duree {
+	from { opacity: 0; }
+	to { opacity: 1; }
+
+}
+
+
+.pimg {
+  position: fixed;
+  animation: duree 3s;
+  top: -1;
+  left: -465px;
+  width: 100%;
+  height: 100%;
+  background: url("nsi img.webp") center/contain no-repeat;
+  background-size: 180px;
+  z-index: 0;
+}
+
+.dimg {
+  position: fixed;
+  animation: duree 3s;
+  top: -1;
+  left: -65px;
+  width: 100%;
+  height: 100%;
+  background: url("orientationn img.webp") center/contain no-repeat;
+  background-size: 200px;
+  z-index: 0;
+}
+
+.timg {
+  position: fixed;
+  animation: duree 3s;
+  top: -1;
+  left: 335px;
+  width: 100%;
+  height: 100%;
+  background: url("dino img.webp") center/contain no-repeat;
+  background-size: 150px;
+  z-index: 0;
+}
+
+
+
+
+.div1{
+	position: absolute;
+	font-family: Arial, sans-serif;
+	animation: duree 3s;
+	text-align: left;
+	top: 450px;
+	left: 450px;
+}
+
+
+.div2{
+	position: absolute;
+	font-family: Arial, sans-serif;
+	animation: duree 3s;
+	text-align: center;
+	top: 460px;
+	left: 850px;
+}
+.div3 {
+	position: absolute;
+	font-family: Arial, sans-serif;
+	animation: duree 3s;
+	text-align: center;
+	top: 450px;
+	left: 1250px;
+}
+
+.div4 {
+	position: absolute;
+	font-family: Arial, sans-serif;
+	animation: duree 3s;
+	text-align: right;
+	top: 450px;
+	left: 1650px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding-top: 50px;   /* la hauteur approximative du menu déroulant */
+  padding-bottom: 30px;   /* la hauteur approximative de la barre address */
+}
+
+#centre {text-align: center;}
+
+p {
+font-size: 1em;
+}
+
+#liste {
+position: relative;
+left: 420px;
+text-align: left;
+}
+
+h1 {
+color: blue;
+text-decoration: underline;
+}
+
+h3 {
+color: blue;
+}
+
+#bloc1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40em;
+    width: 80em;
+    background-color: gray;
+    border-radius:4em;
+}
+
+#info {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+    width: 100%;
+}
+
+#bloc2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33em;
+    width: 73em;
+    background-color: black;
+    border-radius:1em;
+}
+
+#bloc3 {
+    position: relative;
+    width: 70em;
+    height: 30em;
+    background-color: white;
+}
+
+#cube {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background-color: black;
+}
+
+
+#img1 {
+position: absolute;
+top: 80px ;
+left: 20px;
+}
+
+#img2 {
+position: absolute;
+top:120px;
+left:1200px;
+}
+
+
+#img3 {
+transform: scale(0.6);
+transform-origin: top left;
+position: absolute;
+top:320px;
+left:1300px;
+}
+
+
+#img4 {
+transform: scale(0.5);
+transform-origin: top left;
+position: absolute;
+top:200px;
+left:20px;
+}
+
+
+
+
+
+
+.img {
+border: 6px solid black;
+border-radius: 2px;
+}
+
+.img:hover {
+border: 6px solid blue;
+border-radius: 2px;
+}
+
+
+.navbar {
+  background-color: #333;
+  font-family: sans-serif;
+  position: fixed;   /* fixe la barre par rapport à la fenêtre */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;     /* passe au-dessus du contenu */
+}
+
+/* Menu principal */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Liens du menu */
+.menu > li {
+  position: relative;          /* Nécessaire pour positionner le sous‑menu */
+}
+
+.menu > li > a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu > li > a:hover {
+  background-color: #444;
+}
+
+/* Sous‑menu (caché par défaut) */
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;                   /* Juste sous l’élément parent */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  display: none;               /* Caché au départ */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Liens du sous‑menu */
+.submenu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #eee;
+}
+
+/* Affichage du sous‑menu au survol */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+
+
+
+
+

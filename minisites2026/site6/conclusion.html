@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition de l'encodage des caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Meta tag pour le responsive design sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers la feuille de styles CSS principale -->
+    <link type="text/css" rel="stylesheet" href="nsi_style.css">
+    <!-- Titre de la page Conclusion -->
+    <title>Conclusion - Spécialité NSI</title>
+</head>
+<body>
+    <!-- ==========================================================================
+         NAVIGATION BAR - BARRE DE NAVIGATION FIXE
+         ========================================================================== -->
+    <!-- Cette barre de navigation est présente sur toutes les pages du site.
+          Elle permet à l'utilisateur de naviguer facilement entre les différentes sections.
+          La barre est positionnée en "fixed" grâce au CSS, ce qui signifie qu'elle reste
+          toujours visible en haut de la fenêtre, même lors du défilement de la page. -->
+    <nav class="navbar">
+        <!-- Logo/Titre du site - lien vers la page d'accueil -->
+        <!-- Le lien utilise la classe "logo" pour un style particulier dans le CSS -->
+        <a href="index.html" class="logo">Mini Site NSI</a>
+        
+        <!-- Liste des liens de navigation -->
+        <!-- Cette liste (<ul>) contient tous les liens vers les différentes pages.
+              Chaque lien est un élément <li> contenant une balise <a>.
+              La navigation permet de passer d'une page à l'autre sans recharger. -->
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="orientation.html">Orientation</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="conclusion.html" class="active">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================================================
+         COMPTEUR D'EASTER EGGS - Affichage du nombre trouvé
+         ========================================================================== -->
+    <!-- Ce compteur affiche le nombre d'Easter Eggs trouvés sur les 7 total.
+          Il est mis à jour par le JavaScript quand l'utilisateur découvre un Easter Egg. -->
+    <div class="easter-egg-counter">
+        <span class="counter-icon">🥚</span>
+        <span class="counter-text">Easter Eggs:</span>
+        <span class="counter-number" id="egg-counter">0/7</span>
+    </div>
+
+    <!-- ==========================================================================
+         CONTENU PRINCIPAL DE LA PAGE CONCLUSION
+         ========================================================================== -->
+    <!-- Cette section constitue la conclusion du site.
+          Elle contient un message de fin, des easter eggs à découvrir.
+          C'est la dernière page que l'utilisateur voit.
+          Le texte "OH PINAISE" est cliquable et joue un son (Easter Egg 3). -->
+    <div class="container">
+        <section id="Fin">
+            <!-- Titre de la section Conclusion -->
+            <h1 class="fade-in">Conclusion</h1>
+            
+            <!-- Message de conclusion -->
+            <!-- Ce paragraphe conclut le site en mentionnant:
+                  - Les easter eggs cachés dans le site
+                  - Un compteur d'easter eggs trouvés
+                  - Un message de remerciement et d'au revoir
+                  - Le texte "OH PINAISE" est un Easter Egg (Easter Egg 3) -->
+            <p class="fade-in stagger-1">
+                bon je sais pas pourquoi il m'a jeté dans une poubelle mais dès que je suis revenu je l'ai jeté dans cette même poubelle donc c'est moi qui vais finir de parler.
+                <br><br>
+                Donc pour en finir avec la partie HTML parce que ça fait déjà deux séance qu'on est dessus et ça commence à être long, dans ce site y'a 6 easter egg à trouver, y'en a certains plus visible que d'autre et si vous faites attention vous pouver voir un compteur d'easter egg trouver.
+                <br><br>
+                <span id="oh-pinaise" style="cursor: pointer; color: var(--accent-primary); font-weight: bold; font-size: 1.2em;">OH PINAISE</span> IL ARRIVE ! AU SECOURS !
+                <br><br>
+                Ah cette petite peste, bon Je vous souhaite bonne chance pour la suite et j'espere que notre site vous aura aider et amusez. Aurevoir, AHHHH! ah toi si je t'attrappe! XD
+            </p>
+            
+            <!-- Message de remerciement final -->
+            <div class="info-card fade-in stagger-2">
+                <h2>Merci de votre visite!</h2>
+                <p>Nous esperons que ce site vous a plu et que vous avez appris plein de choses sur la Spécialité NSI. N'hésitez pas à explorer toutes les pages et à trouver tous les Easter Eggs cachés!</p>
+            </div>
+            
+            <!-- Indice pour les Easter Eggs -->
+            <div class="info-card fade-in stagger-3">
+                <h2>💡 Indices pour les Easter Eggs</h2>
+                <ul>
+                    <li><strong>1)</strong> Une couleur rayonnante...</li>
+                    <li><strong>2)</strong> Miaou! et cot cot!</li>
+                    <li><strong>3)</strong> Homer Simpson</li>
+                    <li><strong>4)</strong> Une personne danse</li>
+                    <li><strong>5)</strong> Des lasers</li>
+                    <li><strong>6)</strong> Code Konami</li>
+                    <li><strong>7)</strong> Tic Tac</li>
+                </ul>
+            </div>
+            
+            <!-- Commentaire: Bouton "to be continued" avec l'image Jojo -->
+            <!-- Cette partie contient un easter egg visuel (non implémenté ici) -->
+            <div class="fade-in stagger-4" style="text-align: center; margin-top: 30px;">
+                <p style="font-style: italic; color: var(--text-secondary);">"Ce n'est qu'un au revoir..." - À bientôt!</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE CHANGEMENT DE THÈME (Easter Egg 1)
+         ========================================================================== -->
+    <!-- Ce bouton caché permet de changer le thème du site.
+          CLIQUE GAUCHE: Bascule entre thème sombre et thème clair
+          CLIQUE MOLETTE: Active le mode RGB arc-en-ciel -->
+    <button id="theme-button" class="theme-button" title="Changer le thème">🎨</button>
+
+    <!-- ==========================================================================
+         MODAL POUR LES VIDÉOS CACHÉES
+         ========================================================================== -->
+    <!-- Ce modal affiche les vidéos cachées (Anas, Shenron) -->
+    <div id="video-modal" class="video-modal">
+        <span class="close-btn">&times;</span>
+        <!-- Vidéo Anas (Easter Egg 4) -->
+        <video id="anas-video" loop>
+            <source src="anas.mp4" type="video/mp4">
+        </video>
+        <!-- Vidéo Shenron (Récompense) -->
+        <video id="shenron-video" loop>
+            <source src="shenron.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- ==========================================================================
+         BOUTON DE RÉCOMPENSE FINALE
+         ========================================================================== -->
+    <!-- Ce bouton apparaît quand tous les Easter Eggs sont trouvés.
+          Il permet de regarder la vidéo Shenron. -->
+    <button id="reward-button" class="reward-button">🏆 RÉCOMPENSE!</button>
+
+    <!-- ==========================================================================
+         PIED DE PAGE
+         ========================================================================== -->
+    <footer>
+        <p>Site créé dans le cadre du projet NSI – 1ère</p>
+        <p>Par: Rodrigo Duarte Ferreira, Nathanael Feuillatre (Anas)</p>
+    </footer>
+
+    <!-- ==========================================================================
+         LIEN VERS LE SCRIPT JAVASCRIPT
+         ========================================================================== -->
+    <!-- Le script JavaScript contient toutes les fonctionnalités interactives:
+          - Animations d'apparition
+          - Compteur d'Easter Eggs
+          - Son "OH PINAISE" (Easter Egg 3)
+          - Changement de thème (Easter Egg 1)
+          - Code Konami (Easter Egg 6)
+          - Horloge et effet Dio (Easter Egg 7)
+          - Toutes les autres fonctionnalités -->
+    <script type="text/javascript" src="nsi_script.js"></script>
+</body>
+</html>
