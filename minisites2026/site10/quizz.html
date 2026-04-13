@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz NSI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Quizz NSI</h1>
+    <p>Es-tu fait pour la spécialité NSI ?</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="temoignage.html">Témoignages</a>
+</nav>
+
+<main>
+
+<form>
+
+<h2>1. Aimes-tu résoudre des problèmes ?</h2>
+<label><input type="radio" name="q1" value="1"> Pas du tout</label><br>
+<label><input type="radio" name="q1" value="3"> Un peu</label><br>
+<label><input type="radio" name="q1" value="5"> Beaucoup</label>
+
+<h2>2. Aimes-tu utiliser un ordinateur ?</h2>
+<label><input type="radio" name="q2" value="1"> Non</label><br>
+<label><input type="radio" name="q2" value="3"> Ça dépend</label><br>
+<label><input type="radio" name="q2" value="5"> Oui</label>
+
+<h2>3. Es-tu curieux(se) de comprendre comment fonctionnent les applications ?</h2>
+<label><input type="radio" name="q3" value="1"> Pas vraiment</label><br>
+<label><input type="radio" name="q3" value="3"> Un peu</label><br>
+<label><input type="radio" name="q3" value="5"> Oui beaucoup</label>
+
+<h2>4. Aimes-tu travailler sur des projets en groupe ?</h2>
+<label><input type="radio" name="q4" value="1"> Non</label><br>
+<label><input type="radio" name="q4" value="3"> Ça va</label><br>
+<label><input type="radio" name="q4" value="5"> Oui</label>
+
+<h2>5. Es-tu prêt(e) à réfléchir et chercher des solutions ?</h2>
+<label><input type="radio" name="q5" value="1"> Pas trop</label><br>
+<label><input type="radio" name="q5" value="3"> Oui parfois</label><br>
+<label><input type="radio" name="q5" value="5"> Oui toujours</label>
+
+<br><br>
+<button type="button" onclick="calculerResultat()">Voir le résultat</button>
+
+</form>
+
+<p id="resultat"></p>
+
+</main>
+
+<footer>
+    <p>© 2026 - Spécialité NSI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
